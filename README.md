@@ -13,9 +13,9 @@
 <!-- STATUS PILLS -->
 <p align="center">
   <img src="https://img.shields.io/badge/Identity-Cell1991-0d1117?style=flat-square&logo=github&logoColor=58a6ff" alt="GitHub Identity" />
-  <img src="https://img.shields.io/badge/Academics-CS%20%40%20NU%20(GPA%203.70)-0d1117?style=flat-square&logo=google-scholar&logoColor=3fb950" alt="Education" />
+  <img src="https://img.shields.io/badge/Academics-CS%20%40%20Naresuan%20University-0d1117?style=flat-square&logo=google-scholar&logoColor=3fb950" alt="Education" />
   <img src="https://img.shields.io/badge/Graduation-Class%20of%202027-0d1117?style=flat-square&logo=clockify&logoColor=bc8cff" alt="Graduation" />
-  <img src="https://img.shields.io/badge/Location-Thailand-0d1117?style=flat-square&logo=target&logoColor=f0883e" alt="Location" />
+  <img src="https://img.shields.io/badge/Focus-Full%20Stack%20%2F%20Backend%20%2F%20DevOps-0d1117?style=flat-square&logo=docker&logoColor=58a6ff" alt="Core Focus" />
 </p>
 
 </div>
@@ -31,7 +31,7 @@ cell1991@workstation:~$ neofetch --profile
 ```ini
   OS          : Arch Linux / Windows 11 Pro (WSL2)
   Host        : Naresuan University • B.Sc. Computer Science (Year 4)
-  GPA         : 3.70 / 4.00 (Expected Grad: 2027)
+  ExpectedGrad: Class of 2027
   Role        : Aspiring Software Engineer & Full Stack Developer
   Focus Areas : Scalable Web Apps • FastAPI Microservices • Relational Modeling • Containerization
   Networking  : TCP/IP • Routing & Switching (RIP/Static) • Cisco IOS • Wireshark • Nmap
@@ -253,11 +253,8 @@ community:
   <a href="https://github.com/Cell1991">
     <img src="https://img.shields.io/badge/GitHub-Cell1991-0d1117?style=for-the-badge&logo=github&logoColor=f0f6fc&logoWidth=18" alt="GitHub Profile" />
   </a>
-  <a href="mailto:your.email@example.com">
-    <img src="https://img.shields.io/badge/Email-Get%20in%20Touch-0d1117?style=for-the-badge&logo=gmail&logoColor=ea4335&logoWidth=18" alt="Email" />
-  </a>
-  <a href="https://linkedin.com/in/your-linkedin">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0d1117?style=for-the-badge&logo=linkedin&logoColor=0a66c2&logoWidth=18" alt="LinkedIn" />
+  <a href="mailto:celleb1991@gmail.com">
+    <img src="https://img.shields.io/badge/Email-celleb1991%40gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=ea4335&logoWidth=18" alt="Email" />
   </a>
 </p>
 
