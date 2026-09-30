@@ -1,173 +1,214 @@
+<!-- HERO -->
 <div align="center">
 
-  <!-- Header Banner / Typing SVG -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=220&section=header&text=Hi%2C%20I'm%20Chu%20👋&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=200&section=header&text=Thanaphat%20Chichu&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=36" width="100%" alt="Header Banner" />
 
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=600&height=50&lines=Full+Stack+Developer;Computer+Science+Student;Backend+%26+Database+Architect;Exploring+Cloud%2C+DevOps+%26+AI" alt="Typing SVG" />
+  <a href="https://github.com/Cell1991">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=620&height=48&lines=B.Sc.+Computer+Science+Student+%40+NU;Full+Stack+%26+Backend+Systems;Docker%2C+Cloud+Infrastructure+%26+DevOps;Network+Engineering+%26+Data+Pipelines" alt="Typing Headline" />
   </a>
 
   <p align="center">
-    🎓 <b>Computer Science Student</b> @ <a href="https://www.nu.ac.th/">Naresuan University</a><br/>
-    🚀 Passionate about building scalable web applications, robust backend systems, and cloud infrastructure.
+    <strong>Computer Science Student</strong> at <strong>Naresuan University</strong> (GPA 3.70 / 4.00) <br />
+    Focused on full-stack architecture, high-performance backend APIs, containerized deployments, and network systems.
   </p>
 
-  <!-- Quick Badges -->
   <p align="center">
-    <img src="https://img.shields.io/badge/Focus-Full%20Stack%20%26%20Backend-0052CC?style=for-the-badge&logo=react&logoColor=white" />
-    <img src="https://img.shields.io/badge/Location-Thailand-FF4500?style=for-the-badge&logo=googlemaps&logoColor=white" />
-    <img src="https://img.shields.io/badge/Status-Building%20Projects-10B981?style=for-the-badge&logo=rocket&logoColor=white" />
+    <a href="https://github.com/Cell1991"><img src="https://img.shields.io/badge/Identity-Cell1991-0969DA?style=flat-square&logo=github&logoColor=white" alt="GitHub Identity" /></a>
+    <img src="https://img.shields.io/badge/Graduation-Expected%202027-238636?style=flat-square&logo=academia&logoColor=white" alt="Graduation Year" />
+    <img src="https://img.shields.io/badge/Focus-Full%20Stack%20%2F%20Backend%20%2F%20DevOps-8957E5?style=flat-square&logo=docker&logoColor=white" alt="Core Focus" />
+    <img src="https://img.shields.io/badge/Location-Phitsanulok%2C%20Thailand-1F6FEB?style=flat-square&logo=google-maps&logoColor=white" alt="Location" />
   </p>
 
 </div>
 
 ---
 
-### 👨‍💻 About Me
+<!-- ABOUT & OVERVIEW -->
+### `//` System Architecture & Positioning
 
-```yaml
-name: Chu
-role: Full Stack Developer / CS Student
-university: Naresuan University
-interests:
-  - Full Stack & Backend Architecture
-  - Database Design & Query Optimization
-  - Containerization, Cloud & DevOps (Docker, AWS)
-  - AI Model Inference Pipelines (ONNX)
-  - Network Engineering & Cybersecurity
-current_focus: Building real-world production-ready web platforms
+```typescript
+interface DeveloperProfile {
+  identity: "Thanaphat Chichu (Cell1991)";
+  academic: "4th-Year B.Sc. Computer Science @ Naresuan University";
+  metrics: { gpa: "3.70 / 4.00"; expectedGraduation: 2027 };
+  coreStrengths: [
+    "End-to-End Full Stack Development (Next.js + FastAPI)",
+    "Relational Data Modeling & Query Optimization (PostgreSQL, Prisma)",
+    "Containerized Microservices & Cloud Environments (Docker, AWS EC2)",
+    "Network Infrastructure & Packet Analysis (Cisco IOS, Wireshark, Nmap)",
+    "Data Extraction, OCR Pipelines & Analytical Dashboards"
+  ];
+  currentTrajectory: "Building scalable production-grade web systems & backend microservices";
+}
 ```
 
 ---
 
-### 🛠️ Tech Stack & Skills
+<!-- TECH STACK -->
+### `🛠️` Technical Arsenal
 
 <div align="center">
 
-<!-- Modern Icon Grid via Skillicons -->
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,python,fastapi,postgres,prisma,docker,aws,linux,git,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,python,fastapi,postgres,prisma,docker,aws,linux,git,github,vscode" alt="Core Tech Stack" />
 </a>
 
 </div>
 
-<br/>
+<br />
 
-<details open>
-<summary><b>📂 Categorized Technologies</b></summary>
-<br/>
-
-| Category | Technologies / Tools |
+| Domain | Core Technologies & Competencies |
 | :--- | :--- |
-| **Frontend** | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) |
-| **Backend & APIs** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square) |
-| **Database & ORM** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=databricks&logoColor=white) |
-| **DevOps & Cloud** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) |
-| **Networking & AI** | ![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white) ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white) ![ONNX Runtime](https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white) |
-
-</details>
+| **Frontend Engineering** | `Next.js` `React` `TypeScript` `JavaScript (ES6+)` `Tailwind CSS` `Responsive UI/UX` |
+| **Backend & APIs** | `Python` `FastAPI` `RESTful API Design` `Asynchronous I/O` `Service Layer Pattern` |
+| **Database & Modeling** | `PostgreSQL` `SQL` `Prisma ORM` `Relational Schema Design` `Data Dictionary` |
+| **Cloud & DevOps** | `Docker` `Docker Compose` `AWS EC2` `Linux Environment` `CI/CD Automation` `App Deployment` |
+| **Networking & Security** | `TCP/IP` `OSI Model` `Subnetting (IPv4)` `Routing & Switching (Static, RIPv2)` `ACL` `Cisco IOS` `Wireshark` `Nmap` `Packet Tracer` |
+| **Data & Analytics** | `Data Cleaning & Validation` `OCR / Text Extraction` `Data Visualization` `Power BI` `Excel` `Analytics Dashboards` |
 
 ---
 
-### 🚀 Featured Projects
+<!-- FEATURED PROJECTS -->
+### `🚀` Featured Engineering Case Studies
 
 <table>
+  <!-- Project 1 & Project 2 -->
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">🎮 Crossword Game</h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Status-Completed-success?style=flat-square" />
-      </p>
-      <p>A real-time multiplayer web-based Crossword game with dynamic board generation and word validation system.</p>
+      <div align="center">
+        <h3>🎮 Multiplayer Crossword Game</h3>
+        <img src="https://img.shields.io/badge/Architecture-Realtime%20Multiplayer-0969DA?style=flat-square" alt="Architecture" />
+        <img src="https://img.shields.io/badge/Stack-FastAPI%20%7C%20Docker-238636?style=flat-square" alt="Stack" />
+      </div>
+      <br />
+      <b>Overview:</b>
+      A web-based multiplayer puzzle engine featuring room orchestration, synchronized player states, and dynamic crossword generation.
       <ul>
-        <li>Multiplayer room & player management</li>
-        <li>Real-time websocket / API interactions</li>
-        <li>Algorithmic crossword puzzle generation</li>
+        <li><b>Real-time Room System:</b> Custom session & room management supporting unique nicknames and concurrent multiplayer lobbies.</li>
+        <li><b>Board Generation Engine:</b> Algorithmic crossword puzzle grid construction validated against curated vocabulary datasets.</li>
+        <li><b>Deployment:</b> Fully containerized multi-container setup via Docker Compose for local isolation and rapid deployment.</li>
       </ul>
-      <p>
-        <b>Tech:</b> <code>Next.js</code> <code>TypeScript</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>Docker</code>
-      </p>
-      <p align="center">
-        <a href="https://github.com/Cell1991/crossword-game"><b>👉 View Repository</b></a>
-      </p>
+      <b>Stack:</b> <code>FastAPI</code> <code>JavaScript</code> <code>Docker Compose</code> <code>GitHub</code>
+      <br /><br />
+      <div align="center">
+        <a href="https://github.com/Cell1991/crossword-game"><b>[ View Source Repository ]</b></a>
+      </div>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🧠 NU Stroke Scan</h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Status-Active-blue?style=flat-square" />
-      </p>
-      <p>A medical image analysis system designed for stroke-related image processing and AI-driven diagnostics.</p>
+      <div align="center">
+        <h3>🧠 NU Stroke Scan</h3>
+        <img src="https://img.shields.io/badge/Domain-Medical%20AI%20Inference-8957E5?style=flat-square" alt="Domain" />
+        <img src="https://img.shields.io/badge/Stack-Next.js%20%7C%20ONNX-0969DA?style=flat-square" alt="Stack" />
+      </div>
+      <br />
+      <b>Overview:</b>
+      A specialized medical imaging platform designed for stroke image preprocessing, segmentation workflows, and AI model inference.
       <ul>
-        <li>Secure medical image upload interface</li>
-        <li>AI inference pipeline with ONNX Runtime</li>
-        <li>Containerized backend microservice</li>
+        <li><b>Inference Pipeline:</b> Integrated ONNX Runtime within FastAPI to process high-resolution medical scans with low-latency predictions.</li>
+        <li><b>Clinical UI Layer:</b> Interactive Next.js frontend built for secure file uploading and responsive segmentation visualization.</li>
+        <li><b>Microservice Architecture:</b> Decoupled frontend and model execution services encapsulated in isolated Docker containers.</li>
       </ul>
-      <p>
-        <b>Tech:</b> <code>Next.js</code> <code>TypeScript</code> <code>FastAPI</code> <code>ONNX Runtime</code> <code>Docker</code>
-      </p>
-      <p align="center">
-        <a href="https://github.com/Cell1991/nu-stroke-scan"><b>👉 View Repository</b></a>
-      </p>
+      <b>Stack:</b> <code>Next.js</code> <code>FastAPI</code> <code>ONNX Runtime</code> <code>Docker Compose</code>
+      <br /><br />
+      <div align="center">
+        <a href="https://github.com/Cell1991/nu-stroke-scan"><b>[ View Source Repository ]</b></a>
+      </div>
     </td>
   </tr>
+
+  <!-- Project 3 -->
   <tr>
     <td colspan="2" valign="top">
-      <h3 align="center">🩺 Wellness Demo</h3>
-      <p align="center">
-        A web application focused on comprehensive health data management, dashboard metrics, and interactive visualizations.
-      </p>
-      <p align="center">
-        <b>Tech:</b> <code>Next.js</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>Prisma</code> <code>Docker</code>
-      </p>
+      <div align="center">
+        <h3>🩺 Wellness Platform & Data Architecture</h3>
+        <img src="https://img.shields.io/badge/Tier-Full%20Stack%20%26%20Data-1F6FEB?style=flat-square" alt="Tier" />
+        <img src="https://img.shields.io/badge/ORM-Prisma%20%7C%20PostgreSQL-316192?style=flat-square" alt="ORM" />
+      </div>
+      <br />
+      <b>Overview:</b>
+      An end-to-end wellness tracking platform focusing on strict relational schema modeling, data dictionary compliance, interactive analytical dashboards, and continuous database health monitoring.
       <ul>
-        <li>End-to-end data modeling & relational schema design with Prisma</li>
-        <li>Interactive analytics & metric dashboard UI/UX</li>
-        <li>Database monitoring and automated testing workflows</li>
+        <li><b>Relational Schema & Modeling:</b> Designed complete normalized database architecture using PostgreSQL and Prisma ORM, accompanied by comprehensive data dictionaries.</li>
+        <li><b>Monitoring & Analytics:</b> Engineered dedicated metrics dashboard for real-time tracking of database status and health indicators.</li>
+        <li><b>Quality Assurance:</b> Established structured integration and unit testing workflows across API routes and client data layers.</li>
       </ul>
+      <p align="center">
+        <b>Stack:</b> <code>Next.js</code> <code>TypeScript</code> <code>PostgreSQL</code> <code>Prisma ORM</code> <code>Docker Compose</code>
+      </p>
     </td>
   </tr>
 </table>
 
 ---
 
-### 📊 GitHub Analytics & Activity
+<!-- ACHIEVEMENTS & RECOGNITION -->
+### `🏆` Honors & Key Milestones
+
+```text
+202X — 🥉 LINE Hackathon                     → 3rd Place Winner
+202X — 🥈 Anthropocene Smart Medication Box  → 2nd Place Award
+202X — 📊 Data Visualization Competition     → Outstanding Achievement Award
+202X — 💻 Competitive Programming Contest    → Honorable Mention
+202X — 🤝 Academic Outreach & Mentorship    → CSIT Teaching Assistant & Technical Volunteer
+```
+
+---
+
+<!-- GITHUB ANALYTICS -->
+### `📊` Engineering Activity & Repository Metrics
 
 <div align="center">
+
   <table border="0">
     <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Cell1991&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" height="175" alt="GitHub Stats" />
+      <td align="center" valign="middle">
+        <img src="https://github-readme-stats.vercel.app/api?username=Cell1991&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" height="175" alt="GitHub Overview Stats" />
       </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Cell1991&layout=compact&theme=tokyonight&hide_border=true" height="175" alt="Top Languages" />
+      <td align="center" valign="middle">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Cell1991&layout=compact&theme=tokyonight&hide_border=true" height="175" alt="Top Languages Stats" />
       </td>
     </tr>
     <tr>
-      <td colspan="2" align="center">
-        <img src="https://streak-stats.demolab.com?user=Cell1991&theme=tokyonight&hide_border=true" alt="Streak Stats" />
+      <td colspan="2" align="center" valign="middle">
+        <img src="https://streak-stats.demolab.com?user=Cell1991&theme=tokyonight&hide_border=true" alt="Commit Streak Statistics" />
       </td>
     </tr>
   </table>
+
 </div>
 
 ---
 
+<!-- ROADMAP / CURRENT FOCUS -->
+### `🧭` Technical Growth & Continuous Exploration
+
+```
+[01] Advanced Distributed Systems  ───> Microservices, Message Queues & Event-Driven Architecture
+[02] Production Cloud & CI/CD     ───> Automated GitHub Actions Pipelines, Multi-tier AWS Infrastructure
+[03] System Observability         ───> Prometheus, Structured Logging & API Performance Profiling
+[04] Applied Network Security     ───> Zero-trust architectures, packet inspection & hardened configurations
+```
+
+---
+
+<!-- ENGINEERING PHILOSOPHY -->
+### `💡` Engineering Philosophy
+
+> *"High-quality software is the intersection of clean system architecture, uncompromising data integrity, and purposeful user experiences. I prioritize maintainability, structured documentation, and writing code that solves concrete engineering challenges."*
+
+---
+
+<!-- CONTACT & FOOTER -->
 <div align="center">
 
-### 📬 Connect With Me
+### `📬` Connect & Collaborate
 
-<a href="https://github.com/Cell1991">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<a href="mailto:your-email@example.com">
-  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://linkedin.com">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
+<p align="center">
+  <a href="https://github.com/Cell1991"><img src="https://img.shields.io/badge/GitHub-Cell1991-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="mailto:[YOUR_EMAIL_HERE]"><img src="https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://linkedin.com/in/[YOUR_LINKEDIN_HERE]"><img src="https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+</p>
 
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=90&section=footer" width="100%" alt="Footer Wave" />
 
 </div>
