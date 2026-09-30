@@ -1,64 +1,68 @@
-<!-- ======================================================= -->
-<!--                   ⚡ GRAND CYBER HERO ⚡                 -->
-<!-- ======================================================= -->
+<!-- ================================================================================= -->
+<!--                       🌌 INTERSTELLAR COMMAND DECK // HERO 🌌                     -->
+<!-- ================================================================================= -->
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,12,20,24&height=260&section=header&text=THANAPHAT%20CHICHU&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=%E2%9A%A1%20FULL%20STACK%20DEVELOPER%20%7C%20SYSTEMS%20%26%20CLOUD%20ENGINEER%20%E2%9A%A1&descFontSize=16&descColor=38bdf8&descAlignY=58" width="100%" alt="Header Banner" />
+  <!-- Twinkling Cosmic Nebula Header -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,12,20,24&height=280&section=header&text=%E2%9C%A8%20THANAPHAT%20CHICHU%20%E2%9C%A8&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=%F0%9F%9B%B0%EF%B8%8F%20COSMIC%20SYSTEMS%20ARCHITECT%20%7C%20INTERSTELLAR%20FULL%20STACK%20ENGINEER%20%F0%9F%9A%80&descFontSize=16&descColor=38bdf8&descAlignY=58" width="100%" alt="Cosmic Header Banner" />
 
+  <!-- Orbitron Sci-Fi Animated Typing Headline -->
   <a href="https://github.com/Cell1991">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=21&pause=1200&color=38BDF8&center=true&vCenter=true&width=720&height=55&lines=%24+sys.init()+--role+%22Full+Stack+%26+Backend+Developer%22;%24+docker+compose+up+-d+--build+%22Scalable+Microservices%22;%24+cloud.deploy()+--target+%22AWS+EC2+%2B+Containerized+Apps%22;%24+ai.inference()+--engine+%22ONNX+Runtime+%2B+FastAPI%22;%24+net.analyze()+--protocols+%22TCP%2FIP+%2B+Wireshark+%2B+Cisco%22" alt="Dynamic Typing Headline" />
+    <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=20&pause=1400&color=38BDF8&center=true&vCenter=true&width=780&height=55&lines=%F0%9F%9B%B0%EF%B8%8F+MISSION%3A+Architecting+Scalable+Full-Stack+Universes;%F0%9F%AA%90+ORBIT%3A+FastAPI+Microservices+%2B+Distributed+Docker+Clusters;%E2%9C%A8+NEBULA%3A+PostgreSQL+Relational+Cores+%2B+Prisma+Engines;%F0%9F%8C%8C+TELEMETRY%3A+TCP%2FIP+Deep-Space+Networking+%2B+Wireshark;%F0%9F%A7%A0+AI+PROBE%3A+ONNX+Runtime+Neural+Inference+Pipelines" alt="Starship Typing Telemetry" />
   </a>
 
   <br/>
 
-  <!-- STATUS BADGES -->
+  <!-- GALACTIC STATUS BADGES -->
   <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=Cell1991&style=for-the-badge&color=00d2ff&labelColor=0d1117&label=SYSTEM+VIEWS" alt="Profile Views" />
-    <img src="https://img.shields.io/badge/Identity-Cell1991-0d1117?style=for-the-badge&logo=github&logoColor=00d2ff" alt="GitHub Identity" />
-    <img src="https://img.shields.io/badge/University-Naresuan_University-0d1117?style=for-the-badge&logo=academia&logoColor=a855f7" alt="University" />
-    <img src="https://img.shields.io/badge/Degree-B.Sc._Computer_Science-0d1117?style=for-the-badge&logo=computermods&logoColor=22c55e" alt="Degree" />
-    <img src="https://img.shields.io/badge/Status-Building_Production_Apps-0d1117?style=for-the-badge&logo=rocket&logoColor=38bdf8" alt="Status" />
+    <img src="https://komarev.com/ghpvc/?username=Cell1991&style=for-the-badge&color=00f2fe&labelColor=0b0f19&label=GALACTIC+VIEWS" alt="Galactic Telemetry Views" />
+    <img src="https://img.shields.io/badge/Vessel-CELL1991_FLAGSHIP-0b0f19?style=for-the-badge&logo=spacex&logoColor=00f2fe" alt="Starship Identity" />
+    <img src="https://img.shields.io/badge/Academy-Naresuan_University-0b0f19?style=for-the-badge&logo=nasa&logoColor=c084fc" alt="Space Academy" />
+    <img src="https://img.shields.io/badge/Discipline-B.Sc._Computer_Science-0b0f19?style=for-the-badge&logo=stellar&logoColor=4ade80" alt="Specialization" />
+    <img src="https://img.shields.io/badge/Status-WARP_DRIVE_ONLINE-0b0f19?style=for-the-badge&logo=rocket&logoColor=f43f5e" alt="Warp Status" />
   </p>
 
 </div>
 
 ---
 
-<!-- ======================================================= -->
-<!--              🖥️ SYSTEM INITIALIZATION / SPEC            -->
-<!-- ======================================================= -->
+<!-- ================================================================================= -->
+<!--                     🛰️ STARSHIP HUD & TELEMETRY LOG 🛰️                           -->
+<!-- ================================================================================= -->
 
-### `//` 01. SYSTEM ARCHITECTURE & PROFILE MATRIX
+### `✦` `01` // STARSHIP FLIGHT DECK & TELEMETRY LOG
 
-```bash
-╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
-║  ⚡ CELL1991 // COMMAND LINE INTERFACE & SYSTEM TELEMETRY                                        ║
-╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
+```asciidoc
+ ___________________________________________________________________________________________________
+/                                                                                                   \
+|  🛰️  STARFLEET COMMAND: DEEP-SPACE TELEMETRY & SYSTEM SPECIFICATION                               |
+\___________________________________________________________________________________________________/
 ```
 
-```ini
-  [>] OPERATOR        : Thanaphat Chichu (Handle: @Cell1991)
-  [>] ACADEMIC STATUS : 4th-Year B.Sc. in Computer Science @ Naresuan University
-  [>] CORE FOCUS      : Full Stack Systems • High-Throughput Backend APIs • Containerization • Cloud
-  [>] INFRASTRUCTURE  : Docker Compose Orchestration • AWS EC2 • Linux Kernel • Microservice Design
-  [>] NETWORK SPEC    : TCP/IP Stack • Cisco IOS • Static Routing / RIPv2 • Packet Analysis (Wireshark)
-  [>] DATA LAYER      : PostgreSQL Relational Modeling • Prisma ORM • Query Optimization • OCR / ETL
-  [>] STATUS          : 🟢 ACTIVE // Architecting Real-World Production Platforms
+```yaml
+STARSHIP_IDENTITY:
+  Commander        : Thanaphat Chichu (Callsign: @Cell1991)
+  Starfleet Base   : Naresuan University • Department of Computer Science (Senior Cadence)
+  Primary Sector   : Full-Stack Web Architecture & High-Performance Distributed Systems
+  Warp Propulsion  : Containerized Microservices (Docker Compose) • Cloud Fleet Deployment (AWS EC2)
+  Subspace Comms   : TCP/IP Routing Protocols (Static / RIPv2) • Deep Packet Radiometry (Wireshark)
+  Quantum Core     : PostgreSQL 3NF Relational Schemas • Prisma Data Engines • Real-Time Dashboards
+  Mission Directive: "Deploy resilient, high-throughput software architectures across digital galaxies."
 ```
 
 ---
 
-<!-- ======================================================= -->
-<!--                 🛠️ TECHNICAL ARSENAL                     -->
-<!-- ======================================================= -->
+<!-- ================================================================================= -->
+<!--                   🌌 STELLAR TECH MATRIX & ARSENAL 🌌                             -->
+<!-- ================================================================================= -->
 
-### `//` 02. FULL-STACK TECHNICAL ARSENAL
+### `✦` `02` // CONSTELLATION OF TECHNICAL WEAPONRY
 
 <div align="center">
 
-<!-- Modern Skill Icons Matrix -->
+<!-- Multi-Cluster Glowing Skillicons Matrix -->
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,html,css,python,fastapi,postgres,prisma,docker,aws,linux,git,github,vscode,bash" alt="Skill Matrix" />
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind,html,css,python,fastapi,postgres,prisma,docker,aws,linux,git,github,vscode,bash" alt="Stellar Tech Arsenal" />
 </a>
 
 </div>
@@ -67,14 +71,14 @@
 
 <table width="100%">
   <thead>
-    <tr style="background-color: #161b22;">
-      <th width="30%" align="left">🚀 Technical Domain</th>
-      <th width="70%" align="left">⚡ Technologies, Frameworks & Tooling</th>
+    <tr style="background-color: #0b0f19;">
+      <th width="32%" align="left">🌌 Orbital Cluster</th>
+      <th width="68%" align="left">⚡ Propulsion & Tactical Technologies</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><b>🌐 Frontend Engineering</b></td>
+      <td><b>✨ Orbital Frontend Array</b></td>
       <td>
         <img src="https://img.shields.io/badge/Next.js_14-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
         <img src="https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -82,32 +86,32 @@
         <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
         <img src="https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
         <br/>
-        <sub>▸ Server-Side Rendering (SSR) • Client State Orchestration • Dynamic Component Architecture</sub>
+        <sub>🪐 <i>Server-Side Rendering (SSR) • Reactive Component Orbit • Dynamic Client State Hydration</i></sub>
       </td>
     </tr>
     <tr>
-      <td><b>⚙️ Backend & API Services</b></td>
+      <td><b>🚀 Quantum Backend Core</b></td>
       <td>
         <img src="https://img.shields.io/badge/Python_3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" />
         <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-        <img src="https://img.shields.io/badge/RESTful_APIs-02569B?style=for-the-badge&logo=airbrake&logoColor=white" />
-        <img src="https://img.shields.io/badge/Async_I/O-FF6F00?style=for-the-badge&logo=databricks&logoColor=white" />
+        <img src="https://img.shields.io/badge/RESTful_Mesh-02569B?style=for-the-badge&logo=airbrake&logoColor=white" />
+        <img src="https://img.shields.io/badge/Async_Engine-FF6F00?style=for-the-badge&logo=databricks&logoColor=white" />
         <br/>
-        <sub>▸ High-performance asynchronous endpoints • Pydantic data contracts • Clean Service-Layer Patterns</sub>
+        <sub>🪐 <i>Asynchronous Non-Blocking I/O • Strict Pydantic Data Contracts • Decoupled Micro-Engines</i></sub>
       </td>
     </tr>
     <tr>
-      <td><b>🗄️ Database & Data Modeling</b></td>
+      <td><b>🗄️ Relational Gravity Storage</b></td>
       <td>
         <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
         <img src="https://img.shields.io/badge/Prisma_ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
-        <img src="https://img.shields.io/badge/SQL_Engine-4479A1?style=for-the-badge&logo=sqlite&logoColor=white" />
+        <img src="https://img.shields.io/badge/SQL_Telemetry-4479A1?style=for-the-badge&logo=sqlite&logoColor=white" />
         <br/>
-        <sub>▸ 3NF Relational Schemas • Strict Entity Relationships • Data Dictionary Standardization • Query Tuning</sub>
+        <sub>🪐 <i>3NF Normalized Relational Citadel • Data Dictionary Schemas • Query Acceleration & Optimization</i></sub>
       </td>
     </tr>
     <tr>
-      <td><b>☁️ DevOps & Cloud Infrastructure</b></td>
+      <td><b>🛸 Deep-Space Cloud & DevOps</b></td>
       <td>
         <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
         <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
@@ -115,29 +119,29 @@
         <img src="https://img.shields.io/badge/Linux_Kernel-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
         <img src="https://img.shields.io/badge/Git_&_GitHub-F05032?style=for-the-badge&logo=git&logoColor=white" />
         <br/>
-        <sub>▸ Multi-service container orchestration • Automated CI/CD pipelines • Server deployment & isolation</sub>
+        <sub>🪐 <i>Multi-Container Fleet Orchestration • Automated Deployment Pods • Sub-system Isolation</i></sub>
       </td>
     </tr>
     <tr>
-      <td><b>📡 Networking & Security</b></td>
+      <td><b>📡 Subspace Comms & Security</b></td>
       <td>
         <img src="https://img.shields.io/badge/Cisco_IOS-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" />
-        <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
-        <img src="https://img.shields.io/badge/Nmap_Audit-4A90E2?style=for-the-badge&logo=securityscorecard&logoColor=white" />
+        <img src="https://img.shields.io/badge/Wireshark_Sniffer-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
+        <img src="https://img.shields.io/badge/Nmap_Recon-4A90E2?style=for-the-badge&logo=securityscorecard&logoColor=white" />
         <img src="https://img.shields.io/badge/TCP/IP_Stack-0052CC?style=for-the-badge&logo=dependabot&logoColor=white" />
         <br/>
-        <sub>▸ Subnetting (IPv4) • Static & RIPv2 Routing • Access Control Lists (ACL) • Deep Packet Inspection</sub>
+        <sub>🪐 <i>Subnetting (IPv4) • Static / RIPv2 Star Routing • ACL Defenses • Deep Packet Inspection</i></sub>
       </td>
     </tr>
     <tr>
-      <td><b>📊 Data Science & Analytics</b></td>
+      <td><b>🔭 Stellar Analytics & OCR</b></td>
       <td>
         <img src="https://img.shields.io/badge/Pandas_/_NumPy-150458?style=for-the-badge&logo=pandas&logoColor=white" />
         <img src="https://img.shields.io/badge/OCR_Extraction-FF6F00?style=for-the-badge&logo=googlelens&logoColor=white" />
         <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
         <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" />
         <br/>
-        <sub>▸ Data cleaning pipelines • Validation algorithms • Interactive telemetry dashboards & ETL workflows</sub>
+        <sub>🪐 <i>Data Cleansing Pipelines • Statistical Anomaly Detection • Mission Dashboard Telemetry</i></sub>
       </td>
     </tr>
   </tbody>
@@ -145,165 +149,166 @@
 
 ---
 
-<!-- ======================================================= -->
-<!--            🚀 FEATURED CASE STUDIES & ARCHITECTURE      -->
-<!-- ======================================================= -->
+<!-- ================================================================================= -->
+<!--               🚀 EXPEDITION SHOWCASE & SYSTEM ARCHITECTURE 🚀                     -->
+<!-- ================================================================================= -->
 
-### `//` 03. FEATURED ENGINEERING CASE STUDIES
+### `✦` `03` // STARSHIP FLAGSHIP EXPEDITIONS
 
 <table>
-  <!-- PROJECT 1: MULTIPLAYER CROSSWORD ENGINE -->
+  <!-- EXPEDITION 01: REALTIME CROSSWORD ENGINE -->
   <tr>
-    <td colspan="2" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 8px;">
+    <td colspan="2" style="background-color: #030712; border: 1px solid #1e293b; border-radius: 10px; padding: 16px;">
       <div align="left">
-        <h3>🎮 01 // MULTIPLAYER REAL-TIME CROSSWORD ENGINE</h3>
+        <h3>🎮 EXPEDITION I // INTERSTELLAR MULTIPLAYER CROSSWORD ENGINE</h3>
         <p>
-          <img src="https://img.shields.io/badge/Architecture-Realtime_WebSockets-0284c7?style=for-the-badge&logo=socketdotio&logoColor=white" />
-          <img src="https://img.shields.io/badge/Backend-FastAPI_Async-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-          <img src="https://img.shields.io/badge/Client-JavaScript_ES6+-f59e0b?style=for-the-badge&logo=javascript&logoColor=black" />
-          <img src="https://img.shields.io/badge/Deployment-Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+          <img src="https://img.shields.io/badge/Protocol-WebSocket_Starlink-0284c7?style=for-the-badge&logo=socketdotio&logoColor=white" />
+          <img src="https://img.shields.io/badge/Propulsion-FastAPI_Async-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+          <img src="https://img.shields.io/badge/Interface-JavaScript_ES6+-f59e0b?style=for-the-badge&logo=javascript&logoColor=black" />
+          <img src="https://img.shields.io/badge/Pod-Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
         </p>
       </div>
 
 ```
-┌─────────────────┐       WebSocket Events       ┌────────────────────────┐       State Sync       ┌────────────────────────┐
-│  Client Game UI ├─────────────────────────────►│ FastAPI Engine Gateway ├───────────────────────►│ In-Memory Room Manager │
-└─────────────────┘                              └───────────┬────────────┘                        └────────────────────────┘
-                                                             │ Validate
-                                                             ▼
-                                                 ┌────────────────────────┐
-                                                 │ Lexicon & Board Solver │
-                                                 └────────────────────────┘
+╔═════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║                             ⚡ REAL-TIME MULTIPLAYER DATA FLOW ARCHITECTURE                         ║
+╚═════════════════════════════════════════════════════════════════════════════════════════════════════╝
+
+   [ 👾 Starship Players ]  ──( WebSockets )──►  [ 🛰️ FastAPI Gateway ]  ──►  [ 🪐 In-Memory Room Core ]
+                                                         │                                  │
+                                                   ( Matrix Check )                   ( State Broadcast )
+                                                         ▼                                  ▼
+                                                [ 🧩 Lexicon Solver ]               [ 🌌 Synchronized Board ]
 ```
 
-  <h4>⚡ Key Engineering Highlights & Innovations:</h4>
+  <h4>⚡ Spacecraft Engineering Innovations:</h4>
   <ul>
-    <li><b>Real-Time Room Orchestrator:</b> Designed dynamic lobby and session management system handling concurrent player synchronization, custom nicknames, and low-latency state broadcasts.</li>
-    <li><b>Algorithmic Board Generator:</b> Implemented programmatic crossword puzzle grid matrix algorithm validated against custom vocabulary lexicons.</li>
-    <li><b>Microservice Containerization:</b> Complete development and production environments packaged inside isolated multi-container Docker Compose definitions.</li>
+    <li><b>Orbital Room Orchestrator:</b> Designed dynamic multiplayer session management handling concurrent player synchronization, custom callsign resolution, and synchronized game ticks across nodes.</li>
+    <li><b>Algorithmic Board Generator:</b> Engineered programmatic crossword puzzle grid matrix algorithm validated in real time against curated vocabulary datasets.</li>
+    <li><b>Containerized Pod Architecture:</b> Entire multiplayer engine encapsulated within reproducible Docker Compose definitions for rapid fleet deployment.</li>
   </ul>
   <div align="left">
     <a href="https://github.com/Cell1991/crossword-game">
-      <img src="https://img.shields.io/badge/Explore_Source_Code-181717?style=for-the-badge&logo=github&logoColor=38bdf8" alt="View Repository" />
+      <img src="https://img.shields.io/badge/Access_Flight_Repository-00f2fe?style=for-the-badge&logo=github&logoColor=030712" alt="View Repo" />
     </a>
   </div>
     </td>
   </tr>
 
-  <!-- PROJECT 2 & 3 SIDE-BY-SIDE -->
+  <!-- EXPEDITION 02 & 03 SIDE-BY-SIDE -->
   <tr>
-    <!-- PROJECT 2: NU STROKE SCAN -->
-    <td width="50%" valign="top" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 8px;">
-      <h3>🧠 02 // NU STROKE SCAN (MEDICAL AI)</h3>
+    <!-- EXPEDITION 02: NU STROKE SCAN -->
+    <td width="50%" valign="top" style="background-color: #030712; border: 1px solid #1e293b; border-radius: 10px; padding: 14px;">
+      <h3>🧠 EXPEDITION II // NU STROKE SCAN</h3>
       <p>
-        <img src="https://img.shields.io/badge/AI_Engine-ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white" />
-        <img src="https://img.shields.io/badge/API-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-        <img src="https://img.shields.io/badge/Frontend-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/Neural_Core-ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white" />
+        <img src="https://img.shields.io/badge/API_Pod-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+        <img src="https://img.shields.io/badge/Deck-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
       </p>
       <p>
-        A mission-critical medical image analysis platform designed for stroke image preprocessing, clinical segmentation masks, and AI inference.
+        An advanced medical image analysis probe designed for stroke image preprocessing, neural segmentation masks, and high-velocity inference.
       </p>
-      <h4>🔍 Architectural Pillars:</h4>
+      <h4>🔍 Flight Systems:</h4>
       <ul>
-        <li><b>High-Throughput Inference Worker:</b> Integrated ONNX Runtime directly into FastAPI to process multi-channel medical scans with high computational efficiency.</li>
-        <li><b>Clinical UI Interface:</b> Responsive Next.js frontend for secure DICOM/PNG uploading, interactive zooming, and segmentation overlay rendering.</li>
-        <li><b>Decoupled Workflows:</b> Microservice separation isolating heavy matrix computations from client API request handlers via Docker.</li>
+        <li><b>Quantum Inference Worker:</b> Embedded ONNX Runtime inside a FastAPI microservice for low-latency batch matrix inference on high-resolution medical scans.</li>
+        <li><b>Diagnostic HUD:</b> Interactive Next.js dashboard featuring secure multi-format DICOM/image uploading and real-time segmentation overlay rendering.</li>
+        <li><b>Decoupled Pods:</b> Architecture isolating heavy neural computations from client-facing API requests via Docker containerization.</li>
       </ul>
       <a href="https://github.com/Cell1991/nu-stroke-scan">
-        <img src="https://img.shields.io/badge/View_Repository-0969DA?style=flat-square&logo=github&logoColor=white" alt="View Repo" />
+        <img src="https://img.shields.io/badge/View_Mission_Source-0969DA?style=flat-square&logo=github&logoColor=white" alt="View Repo" />
       </a>
     </td>
 
-    <!-- PROJECT 3: WELLNESS ENTERPRISE DATA ARCHITECTURE -->
-    <td width="50%" valign="top" style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 8px;">
-      <h3>🩺 03 // WELLNESS PLATFORM & DATA ENGINE</h3>
+    <!-- EXPEDITION 03: WELLNESS ENTERPRISE DATA ARCHITECTURE -->
+    <td width="50%" valign="top" style="background-color: #030712; border: 1px solid #1e293b; border-radius: 10px; padding: 14px;">
+      <h3>🩺 EXPEDITION III // WELLNESS DATA CITADEL</h3>
       <p>
-        <img src="https://img.shields.io/badge/Database-PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
-        <img src="https://img.shields.io/badge/ORM-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
-        <img src="https://img.shields.io/badge/Frontend-Next.js_TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/Core-PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
+        <img src="https://img.shields.io/badge/Engine-Prisma_ORM-2D3748?style=flat-square&logo=prisma&logoColor=white" />
+        <img src="https://img.shields.io/badge/Interface-Next.js_TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
       </p>
       <p>
-        An enterprise health platform engineered with strict relational data modeling, data dictionaries, automated testing, and telemetry monitoring.
+        A mission-grade wellness data platform engineered with strict relational schema design, comprehensive data dictionaries, telemetry monitoring, and automated test suites.
       </p>
-      <h4>🔍 Architectural Pillars:</h4>
+      <h4>🔍 Flight Systems:</h4>
       <ul>
-        <li><b>3NF Database Architecture:</b> Modeled robust entity-relationship schemas in PostgreSQL with Prisma ORM migrations and complete data dictionary documentation.</li>
-        <li><b>DB Telemetry Dashboard:</b> Built dedicated monitoring dashboard tracking query response latency, connection pool status, and database health metrics.</li>
-        <li><b>Comprehensive QA:</b> Integrated automated unit and integration tests across data mutation pipelines and API boundaries.</li>
+        <li><b>3NF Gravity Database Core:</b> Modeled robust entity-relationship architecture with automated Prisma migrations and standardized data dictionaries.</li>
+        <li><b>Telemetry & Health Monitor:</b> Dedicated monitoring cockpit tracking query response latency, connection pools, and database health metrics.</li>
+        <li><b>Quality Assurance Protocol:</b> Comprehensive automated unit and integration tests across data mutation pipelines and API boundaries.</li>
       </ul>
-      <img src="https://img.shields.io/badge/Status-Enterprise_Prototype-success?style=flat-square" />
+      <img src="https://img.shields.io/badge/Status-Enterprise_Prototype-22c55e?style=flat-square" />
     </td>
   </tr>
 </table>
 
 ---
 
-<!-- ======================================================= -->
-<!--                🏆 HONORS & HALL OF FAME                 -->
-<!-- ======================================================= -->
+<!-- ================================================================================= -->
+<!--                🏆 GALACTIC HALL OF FAME & STARFLEET HONORS 🏆                     -->
+<!-- ================================================================================= -->
 
-### `//` 04. HONORS, HACKATHONS & RECOGNITION
+### `✦` `04` // GALACTIC HONORS & STARFLEET ACCOLADES
 
 <table width="100%">
   <thead>
-    <tr style="background-color: #161b22;">
-      <th width="15%" align="center">Award</th>
-      <th width="45%" align="left">Competition & Event</th>
-      <th width="40%" align="left">Core Competency Demonstrated</th>
+    <tr style="background-color: #0b0f19;">
+      <th width="18%" align="center">🎖️ Honor Insignia</th>
+      <th width="42%" align="left">🚀 Galactic Arena & Expedition</th>
+      <th width="40%" align="left">⭐ Tactical Mastery Demonstrated</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="center"><img src="https://img.shields.io/badge/3rd_Place-🥉_BRONZE-CD7F32?style=for-the-badge" /></td>
-      <td><b>LINE Hackathon</b></td>
-      <td>Rapid system prototyping, LINE API ecosystem integration, and cloud deployment under strict time constraints.</td>
+      <td align="center"><img src="https://img.shields.io/badge/Bronze_Star-🥉_3rd_Place-CD7F32?style=for-the-badge" /></td>
+      <td><b>LINE Hackathon Expedition</b></td>
+      <td>Rapid microservice engineering, LINE API ecosystem integration, and cloud deployment under severe mission constraints.</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://img.shields.io/badge/2nd_Place-🥈_SILVER-C0C0C0?style=for-the-badge" /></td>
-      <td><b>Anthropocene Smart Medication Box Project</b></td>
-      <td>IoT-to-Cloud telemetry, backend tracking APIs, and hardware-software system integration.</td>
+      <td align="center"><img src="https://img.shields.io/badge/Silver_Star-🥈_2nd_Place-C0C0C0?style=for-the-badge" /></td>
+      <td><b>Anthropocene Smart Medication Box Competition</b></td>
+      <td>IoT-to-Cloud telemetry, backend telemetry APIs, and hardware-software system integration.</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://img.shields.io/badge/Award-📊_OUTSTANDING-8A2BE2?style=for-the-badge" /></td>
-      <td><b>Data Visualization Challenge</b></td>
+      <td align="center"><img src="https://img.shields.io/badge/Supernova-📊_OUTSTANDING-8A2BE2?style=for-the-badge" /></td>
+      <td><b>Data Visualization Galaxy Challenge</b></td>
       <td>Advanced data extraction, statistical aggregation, storytelling visual metrics, and Power BI dashboards.</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://img.shields.io/badge/Award-💻_HONORABLE-008080?style=for-the-badge" /></td>
-      <td><b>Competitive Programming Contest</b></td>
+      <td align="center"><img src="https://img.shields.io/badge/Quasar-💻_HONORABLE-008080?style=for-the-badge" /></td>
+      <td><b>Competitive Programming Championship</b></td>
       <td>Data structures, algorithmic optimization, time complexity reduction ($O(N \log N)$), and dynamic programming.</td>
     </tr>
     <tr>
-      <td align="center"><img src="https://img.shields.io/badge/Community-🤝_LEADERSHIP-2E8B57?style=for-the-badge" /></td>
-      <td><b>CSIT Teaching Assistant & Technical Outreach</b></td>
-      <td>Mentoring junior undergraduate students in C++/Python fundamentals, Data Structures, and Computer Networking.</td>
+      <td align="center"><img src="https://img.shields.io/badge/Flight_Lead-🤝_MENTORSHIP-2E8B57?style=for-the-badge" /></td>
+      <td><b>CSIT Teaching Assistant & Technical Volunteer</b></td>
+      <td>Mentoring junior starfleet cadets in C++/Python fundamentals, Data Structures, and Computer Networking.</td>
     </tr>
   </tbody>
 </table>
 
 ---
 
-<!-- ======================================================= -->
-<!--             📊 GITHUB ANALYTICS & CODE ACTIVITY         -->
-<!-- ======================================================= -->
+<!-- ================================================================================= -->
+<!--             📊 DEEP-SPACE TELEMETRY & GITHUB ACTIVITY 📊                          -->
+<!-- ================================================================================= -->
 
-### `//` 05. REAL-TIME TELEMETRY & GITHUB ACTIVITY
+### `✦` `05` // DEEP-SPACE TELEMETRY & CODE FREQUENCY
 
 <div align="center">
 
   <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td align="center" valign="middle">
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Cell1991&show_icons=true&theme=radical&border_color=38bdf8&bg_color=0d1117&title_color=38bdf8&icon_color=c084fc&text_color=c9d1d9&count_private=true&include_all_commits=true" height="175" alt="GitHub Stats" />
+        <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Cell1991&show_icons=true&theme=radical&border_color=00f2fe&bg_color=030712&title_color=00f2fe&icon_color=c084fc&text_color=e2e8f0&count_private=true&include_all_commits=true" height="175" alt="Galactic Stats" />
       </td>
       <td align="center" valign="middle">
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Cell1991&layout=compact&theme=radical&border_color=38bdf8&bg_color=0d1117&title_color=38bdf8&text_color=c9d1d9" height="175" alt="Top Languages" />
+        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Cell1991&layout=compact&theme=radical&border_color=00f2fe&bg_color=030712&title_color=00f2fe&text_color=e2e8f0" height="175" alt="Dominant Languages" />
       </td>
     </tr>
     <tr>
       <td colspan="2" align="center" valign="middle">
         <br/>
-        <img src="https://streak-stats.demolab.com?user=Cell1991&theme=radical&hide_border=false&border=38bdf8&background=0d1117&ring=38bdf8&fire=ff4500&currStreakLabel=38bdf8" alt="GitHub Streak" />
+        <img src="https://streak-stats.demolab.com?user=Cell1991&theme=radical&hide_border=false&border=00f2fe&background=030712&ring=00f2fe&fire=f43f5e&currStreakLabel=00f2fe" alt="Supernova Streak" />
       </td>
     </tr>
   </table>
@@ -312,43 +317,43 @@
 
 ---
 
-<!-- ======================================================= -->
-<!--              🧭 ROADMAP & RESEARCH HORIZON              -->
-<!-- ======================================================= -->
+<!-- ================================================================================= -->
+<!--               🧭 SECTORS UNDER EXPLORATION & ROADMAP 🧭                           -->
+<!-- ================================================================================= -->
 
-### `//` 06. ENGINEERING RESEARCH HORIZON
+### `✦` `06` // INTERSTELLAR EXPEDITION ROADMAP
 
 ```
-┌──────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ 🚀 CURRENT ROADMAP & ARCHITECTURAL OBJECTIVES                                                    │
-├──────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ [01] DISTRIBUTED SYSTEMS    : Event-driven microservices, Redis caching layers, message brokers  │
-│ [02] CLOUD INFRASTRUCTURE   : Automated AWS Terraform provisioning & multi-region deployment     │
-│ [03] SYSTEM OBSERVABILITY   : OpenTelemetry tracing, Prometheus scraping & structured logs       │
-│ [04] ENTERPRISE NETWORKING  : Zero-trust network topologies, BGP/OSPF dynamic routing & firewalls│
-└──────────────────────────────────────────────────────────────────────────────────────────────────┘
+╔═══════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ 🌌 SECTORS CURRENTLY UNDER ACTIVE SURVEY & EXPLORATION                                            ║
+╠═══════════════════════════════════════════════════════════════════════════════════════════════════╣
+║ [SECTOR 01] DISTRIBUTED WARP CLUSTERS : Event-driven microservices, Kafka pipelines & Redis mesh  ║
+║ [SECTOR 02] CLOUD CONSTELLATIONS      : Terraform IaC, Multi-tier AWS Cloud & Kubernetes pods     ║
+║ [SECTOR 03] TELEMETRY OBSERVABILITY   : OpenTelemetry tracing, Prometheus scraping & Grafana HUDs ║
+║ [SECTOR 04] ZERO-TRUST DEFENSE MATRIX : Deep packet inspection, BGP/OSPF topologies & firewalls   ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-<!-- ======================================================= -->
-<!--             📬 COMMUNICATIONS & COLLABORATION           -->
-<!-- ======================================================= -->
+<!-- ================================================================================= -->
+<!--             📬 SUBSPACE TRANSMISSION & COMMS LINK 📬                              -->
+<!-- ================================================================================= -->
 
 <div align="center">
 
-### `//` 07. CONNECT & COLLABORATE
+### `✦` `07` // OPEN SUBSPACE FREQUENCIES
 
 <p align="center">
   <a href="https://github.com/Cell1991">
-    <img src="https://img.shields.io/badge/GitHub-Cell1991-0d1117?style=for-the-badge&logo=github&logoColor=38bdf8&labelColor=161b22" alt="GitHub Profile" />
+    <img src="https://img.shields.io/badge/Starfleet_GitHub-Cell1991-030712?style=for-the-badge&logo=github&logoColor=00f2fe&labelColor=0b0f19" alt="GitHub Comms" />
   </a>
   &nbsp;&nbsp;
   <a href="mailto:celleb1991@gmail.com">
-    <img src="https://img.shields.io/badge/Email-celleb1991%40gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=161b22" alt="Direct Email" />
+    <img src="https://img.shields.io/badge/Transmit_Email-celleb1991%40gmail.com-030712?style=for-the-badge&logo=gmail&logoColor=f43f5e&labelColor=0b0f19" alt="Subspace Email Transmission" />
   </a>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,12,20,24&height=110&section=footer" width="100%" alt="Footer Banner" />
+<img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=1,6,12,20,24&height=120&section=footer" width="100%" alt="Cosmic Slice Footer" />
 
 </div>
