@@ -1,24 +1,24 @@
 <!-- ========================================================================================= -->
-<!--                    🌌 AEROSPACE SYSTEMS & FULL STACK DEVELOPER // HERO 🌌                 -->
+<!--                    ⚡ FULL STACK & BACKEND SYSTEMS ARCHITECT // HERO ⚡                   -->
 <!-- ========================================================================================= -->
 
 <div align="center">
 
-  <!-- Deep Space Twinkling Nebula Header -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,12,20,24&height=260&section=header&text=THANAPHAT%20CHICHU&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=%E2%9A%A1%20FULL%20STACK%20DEVELOPER%20%7C%20BACKEND%20%26%20CLOUD%20SYSTEMS%20ARCHITECT%20%E2%9A%A1&descFontSize=15&descColor=38bdf8&descAlignY=58" width="100%" alt="Header Banner" />
+  <!-- Sleek Modern Gradient Header -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,12,20,24&height=220&section=header&text=THANAPHAT%20CHICHU&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=%E2%9A%A1%20FULL%20STACK%20DEVELOPER%20%7C%20BACKEND%20%26%20CLOUD%20SYSTEMS%20ENGINEER%20%E2%9A%A1&descFontSize=15&descColor=38bdf8&descAlignY=60" width="100%" alt="Header Banner" />
 
-  <!-- Sci-Fi Orbitron Terminal Typing Stream -->
+  <!-- Modern Fira Code Terminal Typing Stream -->
   <a href="https://github.com/Cell1991">
-    <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=19&pause=1200&color=38BDF8&center=true&vCenter=true&width=780&height=50&lines=%24+sys.init()+--role+%22Full+Stack+%26+Backend+Engineer%22;%24+docker+compose+up+-d+--build+%22Distributed+Microservices%22;%24+data.model()+--schema+%22PostgreSQL+3NF+%2B+Prisma+ORM%22;%24+ai.inference()+--engine+%22ONNX+Runtime+%2B+FastAPI%22;%24+net.trace()+--protocol+%22TCP%2FIP+%2B+Cisco+%2B+Wireshark%22" alt="Terminal Typing" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1200&color=38BDF8&center=true&vCenter=true&width=780&height=50&lines=%24+sys.init()+--role+%22Full+Stack+%26+Backend+Engineer%22;%24+docker+compose+up+-d+--build+%22Distributed+Microservices%22;%24+data.model()+--schema+%22PostgreSQL+3NF+%2B+Prisma+ORM%22;%24+ai.inference()+--engine+%22ONNX+Runtime+%2B+FastAPI%22;%24+net.trace()+--protocol+%22TCP%2FIP+%2B+Cisco+%2B+Wireshark%22" alt="Terminal Typing" />
   </a>
 
   <br/>
 
-  <!-- AEROSPACE & TECH STATUS PILLS -->
+  <!-- STATUS BADGES -->
   <p align="center">
     <img src="https://komarev.com/ghpvc/?username=Cell1991&style=for-the-badge&color=00f2fe&labelColor=030712&label=SYSTEM+VIEWS" alt="Telemetry Views" />
     <img src="https://img.shields.io/badge/Identity-Cell1991-030712?style=for-the-badge&logo=github&logoColor=00f2fe" alt="GitHub Identity" />
-    <img src="https://img.shields.io/badge/Academy-Naresuan_University-030712?style=for-the-badge&logo=academia&logoColor=a855f7" alt="Academy" />
+    <img src="https://img.shields.io/badge/University-Naresuan_University-030712?style=for-the-badge&logo=academia&logoColor=a855f7" alt="University" />
     <img src="https://img.shields.io/badge/Field-B.Sc._Computer_Science-030712?style=for-the-badge&logo=computermods&logoColor=4ade80" alt="Field" />
     <img src="https://img.shields.io/badge/Focus-Full_Stack_%2F_Backend_%2F_Cloud-030712?style=for-the-badge&logo=docker&logoColor=38bdf8" alt="Core Focus" />
   </p>
@@ -31,11 +31,11 @@
 <!--                    📡 01. SYSTEM SPECIFICATION & CORE TELEMETRY 📡                       -->
 <!-- ========================================================================================= -->
 
-### `✦` `01` // SYSTEM SPECIFICATION & TELEMETRY
+### `✦` `01` // SYSTEM SPECIFICATION & ARCHITECTURE MATRIX
 
 ```bash
 ╔══════════════════════════════════════════════════════════════════════════════════════════════════╗
-║  ⚡ CELL1991 // AEROSPACE SOFTWARE & FULL-STACK SYSTEM SPECIFICATION                             ║
+║  ⚡ CELL1991 // FULL-STACK SOFTWARE & SYSTEM ARCHITECTURE SPECIFICATION                           ║
 ╚══════════════════════════════════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -376,7 +376,7 @@ export class SystemPlatformEngine implements ICloudInfrastructure, INetworkEngin
 ---
 
 <!-- ========================================================================================= -->
-<!--          📊 06. GITHUB ANALYTICS & ACTIVITY MATRIX 📊                                     -->
+<!--          📊 06. GITHUB ANALYTICS & CODE ACTIVITY MATRIX 📊                                -->
 <!-- ========================================================================================= -->
 
 ### `✦` `06` // GITHUB ANALYTICS & CODE ACTIVITY MATRIX
@@ -443,6 +443,6 @@ export class SystemPlatformEngine implements ICloudInfrastructure, INetworkEngin
 
 <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=1,6,12,20,24&height=120&section=footer" width="100%" alt="Footer Banner" />
 
-<sub>Designed with emphasis on clean architecture, high throughput, and modern aerospace engineering aesthetics.</sub>
+<sub>Designed with emphasis on clean architecture, high throughput, and modern developer aesthetics.</sub>
 
 </div>
