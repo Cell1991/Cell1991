@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/badge/Identity-Cell1991-0d1117?style=for-the-badge&logo=github&logoColor=00d2ff" alt="GitHub Identity" />
     <img src="https://img.shields.io/badge/University-Naresuan_University-0d1117?style=for-the-badge&logo=academia&logoColor=a855f7" alt="University" />
     <img src="https://img.shields.io/badge/Degree-B.Sc._Computer_Science-0d1117?style=for-the-badge&logo=computermods&logoColor=22c55e" alt="Degree" />
-    <img src="https://img.shields.io/badge/Graduation-Class_of_2027-0d1117?style=for-the-badge&logo=clockify&logoColor=f59e0b" alt="Class of 2027" />
+    <img src="https://img.shields.io/badge/Status-Building_Production_Apps-0d1117?style=for-the-badge&logo=rocket&logoColor=38bdf8" alt="Status" />
   </p>
 
 </div>
@@ -38,7 +38,7 @@
 
 ```ini
   [>] OPERATOR        : Thanaphat Chichu (Handle: @Cell1991)
-  [>] ACADEMIC STATUS : 4th-Year B.Sc. in Computer Science @ Naresuan University (Expected 2027)
+  [>] ACADEMIC STATUS : 4th-Year B.Sc. in Computer Science @ Naresuan University
   [>] CORE FOCUS      : Full Stack Systems • High-Throughput Backend APIs • Containerization • Cloud
   [>] INFRASTRUCTURE  : Docker Compose Orchestration • AWS EC2 • Linux Kernel • Microservice Design
   [>] NETWORK SPEC    : TCP/IP Stack • Cisco IOS • Static Routing / RIPv2 • Packet Analysis (Wireshark)
