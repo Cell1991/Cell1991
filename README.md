@@ -273,8 +273,8 @@
 
   <br/><br/>
 
-  <!-- Live Supernova Streak -->
-  <img src="https://streak-stats.demolab.com?user=Cell1991&theme=radical&hide_border=false&border=00f2fe&background=030712&ring=00f2fe&fire=f43f5e&currStreakLabel=00f2fe" alt="Commit Streak" />
+  <!-- Self-Hosted Animated Velocity & Streak Hologram -->
+  <img src="./assets/streak_activity_card.svg" width="100%" alt="Activity & Velocity Hologram" />
 
 </div>
 

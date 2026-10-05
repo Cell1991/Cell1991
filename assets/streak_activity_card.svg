@@ -1,0 +1,104 @@
+<svg width="100%" height="100%" viewBox="0 0 860 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="streakBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="50%" stop-color="#0a1024" />
+      <stop offset="100%" stop-color="#0e172e" />
+    </linearGradient>
+
+    <!-- Glowing Outer Frame -->
+    <linearGradient id="streakFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.85" />
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Dial Gradient -->
+    <linearGradient id="dialGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Shimmer Text Gradient -->
+    <linearGradient id="fireShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f43f5e" />
+      <animate attributeName="x1" from="-100%" to="100%" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="200%" dur="3s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="flameGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes rotateRing {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulseFlame {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.15); opacity: 0.8; }
+      }
+      .ring-anim {
+        transform-origin: 430px 85px;
+        animation: rotateRing 8s linear infinite;
+      }
+      .flame-anim {
+        transform-origin: 430px 58px;
+        animation: pulseFlame 1.8s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="860" height="165" rx="14" fill="url(#streakBg)" stroke="url(#streakFrame)" stroke-width="1.5" />
+
+  <!-- Corner Brackets -->
+  <path d="M 10 22 L 10 10 L 22 10" fill="none" stroke="#00f2fe" stroke-width="2" />
+  <path d="M 838 10 L 850 10 L 850 22" fill="none" stroke="#f59e0b" stroke-width="2" />
+  <path d="M 10 143 L 10 155 L 22 155" fill="none" stroke="#00f2fe" stroke-width="2" />
+  <path d="M 838 155 L 850 155 L 850 143" fill="none" stroke="#f59e0b" stroke-width="2" />
+
+  <!-- LEFT CARD: LIFETIME CONTRIBUTIONS -->
+  <g transform="translate(35, 25)">
+    <rect width="230" height="115" rx="10" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
+    <text x="115" y="32" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#94a3b8" letter-spacing="1">LIFETIME COMMITS</text>
+    <text x="115" y="72" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="900" fill="#f43f5e" filter="url(#flameGlow)">550+</text>
+    <text x="115" y="98" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">Continuous Active Cadence</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="290" y1="35" x2="290" y2="130" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4, 4" />
+
+  <!-- CENTER CARD: ACTIVE STREAK HERO WITH ANIMATED DIAL -->
+  <g transform="translate(305, 15)">
+    <!-- Rotating Dash Ring -->
+    <circle cx="125" cy="70" r="46" stroke="#1e293b" stroke-width="6" fill="none" />
+    <circle cx="125" cy="70" r="46" stroke="url(#dialGrad)" stroke-width="6" fill="none" stroke-dasharray="140 180" stroke-linecap="round" class="ring-anim" />
+
+    <!-- Center Flame & Number -->
+    <text x="125" y="52" text-anchor="middle" font-size="18" class="flame-anim">🔥</text>
+    <text x="125" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="900" fill="url(#fireShimmer)">ACTIVE</text>
+    <text x="125" y="94" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#00f2fe" letter-spacing="0.5">DEV STREAK</text>
+    
+    <text x="125" y="132" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#cbd5e1">● 100% REPRODUCIBLE BUILDS</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="570" y1="35" x2="570" y2="130" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4, 4" />
+
+  <!-- RIGHT CARD: VELOCITY & REPOSITORY HEALTH -->
+  <g transform="translate(595, 25)">
+    <rect width="230" height="115" rx="10" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
+    <text x="115" y="32" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#94a3b8" letter-spacing="1">LONGEST STREAK</text>
+    <text x="115" y="72" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="900" fill="#f59e0b" filter="url(#flameGlow)">CONSISTENT</text>
+    <text x="115" y="98" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#22c55e">✓ Zero-Downtime Deployment</text>
+  </g>
+
+</svg>
