@@ -32,7 +32,7 @@
   <text x="33" y="29" text-anchor="middle" class="font-mono" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="0.5">05</text>
 
   <!-- Title -->
-  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">GITHUB ANALYTICS & CODE TELEMETRY</text>
+  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">GITHUB ANALYTICS &amp; CODE TELEMETRY</text>
   
   <!-- Subtitle Tag -->
   <text x="836" y="29" text-anchor="end" class="font-mono" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="0.5">// 365-DAY DEEP SPACE CADENCE</text>

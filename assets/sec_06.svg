@@ -32,7 +32,7 @@
   <text x="33" y="29" text-anchor="middle" class="font-mono" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="0.5">06</text>
 
   <!-- Title -->
-  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">RESEARCH HORIZON & ENGINEERING ROADMAP</text>
+  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">RESEARCH HORIZON &amp; ENGINEERING ROADMAP</text>
   
   <!-- Subtitle Tag -->
   <text x="836" y="29" text-anchor="end" class="font-mono" font-size="10" font-weight="700" fill="#c084fc" letter-spacing="0.5">// 2025–2027 TARGET ARCHITECTURES</text>

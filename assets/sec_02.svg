@@ -32,8 +32,8 @@
   <text x="33" y="29" text-anchor="middle" class="font-mono" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="0.5">02</text>
 
   <!-- Title -->
-  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">DESIGN PATTERNS & ARCHITECTURAL PRINCIPLES</text>
+  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">DESIGN PATTERNS &amp; ARCHITECTURAL PRINCIPLES</text>
   
   <!-- Subtitle Tag -->
-  <text x="836" y="29" text-anchor="end" class="font-mono" font-size="10" font-weight="700" fill="#818cf8" letter-spacing="0.5">// RELIABILITY & SYSTEM DESIGN</text>
+  <text x="836" y="29" text-anchor="end" class="font-mono" font-size="10" font-weight="700" fill="#818cf8" letter-spacing="0.5">// RELIABILITY &amp; SYSTEM DESIGN</text>
 </svg>

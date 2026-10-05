@@ -32,8 +32,8 @@
   <text x="33" y="29" text-anchor="middle" class="font-mono" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="0.5">07</text>
 
   <!-- Title -->
-  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">COMMUNICATIONS & COLLABORATION HUB</text>
+  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">COMMUNICATIONS &amp; COLLABORATION HUB</text>
   
   <!-- Subtitle Tag -->
-  <text x="836" y="29" text-anchor="end" class="font-mono" font-size="10" font-weight="700" fill="#fb7185" letter-spacing="0.5">// CONNECT & ENGAGE</text>
+  <text x="836" y="29" text-anchor="end" class="font-mono" font-size="10" font-weight="700" fill="#fb7185" letter-spacing="0.5">// CONNECT &amp; ENGAGE</text>
 </svg>
