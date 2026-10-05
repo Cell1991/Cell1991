@@ -170,23 +170,25 @@ export class SystemPlatformEngine implements ICloudInfrastructure, INetworkEngin
 
 ### `✦` `03` // ENGINEERING ARCHITECTURES & CASE STUDIES
 
-<!-- PROJECT 1: CROSSWORD GAME -->
-#### 🎮 01 // Real-Time Multiplayer Crossword Engine
-
-<div align="center">
+<!-- CASE 01: CROSSWORD GAME -->
+<div align="left">
+  <h3>🎮 01 // Multiplayer Real-Time Crossword Engine</h3>
   <p>
     <img src="https://img.shields.io/badge/Architecture-Realtime_WebSockets-0284c7?style=for-the-badge&logo=socketdotio&logoColor=white" />
     <img src="https://img.shields.io/badge/Backend-FastAPI_Async-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+    <img src="https://img.shields.io/badge/Client-JavaScript_ES6+-f59e0b?style=for-the-badge&logo=javascript&logoColor=black" />
     <img src="https://img.shields.io/badge/Deployment-Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   </p>
-
-  <!-- Vector Architecture Diagram -->
-  <img src="./assets/crossword_architecture.svg" width="100%" alt="Crossword Game Architecture" />
 </div>
 
-- **Real-Time Room Orchestration:** Low-latency player synchronization, custom room session management, and state broadcasting.
-- **Algorithmic Board Engine:** Dynamic 2D matrix crossword generator validated against curated vocabulary datasets.
-- **Microservice Isolation:** Multi-container deployment managed via Docker Compose.
+<!-- Vector Architecture Diagram -->
+<img src="./assets/crossword_architecture.svg" width="100%" alt="Crossword Game Architecture" />
+
+<ul>
+  <li><b>Real-Time Room Orchestrator:</b> Low-latency player synchronization, custom session manager, and non-blocking game ticks.</li>
+  <li><b>Algorithmic Board Generator:</b> Dynamic 2D matrix crossword solver validated in real-time against curated vocabulary datasets.</li>
+  <li><b>Containerized Deployment:</b> Fully isolated microservices orchestrated using Docker Compose definitions.</li>
+</ul>
 
 <p align="left">
   <a href="https://github.com/Cell1991/crossword-game">
@@ -196,58 +198,52 @@ export class SystemPlatformEngine implements ICloudInfrastructure, INetworkEngin
 
 <br/>
 
-<!-- PROJECT 2 & 3: MERMAID ARCHITECTURES -->
-<table>
-  <tr>
-    <td width="50%" valign="top" style="background-color: #030712; border: 1px solid #1e293b; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #c084fc;">🧠 02 // NU Stroke Scan (Medical AI Pipeline)</h4>
-      <p>
-        <img src="https://img.shields.io/badge/AI_Engine-ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white" />
-        <img src="https://img.shields.io/badge/API-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-        <img src="https://img.shields.io/badge/Frontend-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
-      </p>
+<!-- CASE 02: NU STROKE SCAN -->
+<div align="left">
+  <h3>🧠 02 // NU Stroke Scan (Medical AI Inference Pipeline)</h3>
+  <p>
+    <img src="https://img.shields.io/badge/AI_Engine-ONNX_Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white" />
+    <img src="https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+    <img src="https://img.shields.io/badge/Frontend-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/Deployment-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  </p>
+</div>
 
-```mermaid
-flowchart TD
-  Upload["🖼️ Medical Scans (DICOM/PNG)"] --> Pre["⚙️ Preprocessing Pipeline"]
-  Pre --> Engine["🧠 ONNX Runtime Inference Worker"]
-  Engine --> Output["📊 Segmentation Overlay Mask"]
-  Output --> UI["💻 Next.js Clinical Dashboard"]
-```
+<!-- Vector Architecture Diagram -->
+<img src="./assets/stroke_scan_architecture.svg" width="100%" alt="NU Stroke Scan Architecture" />
 
-      <ul>
-        <li><b>High-Throughput Inference:</b> Embedded ONNX Runtime in FastAPI for rapid batch image segmentation.</li>
-        <li><b>Clinical UI:</b> Secure DICOM upload interface with real-time mask overlay rendering.</li>
-      </ul>
-      <a href="https://github.com/Cell1991/nu-stroke-scan">
-        <img src="https://img.shields.io/badge/View_Repository-0969DA?style=flat-square&logo=github&logoColor=white" alt="View Repo" />
-      </a>
-    </td>
+<ul>
+  <li><b>High-Throughput Inference:</b> Embedded ONNX Runtime in FastAPI for low-latency batch matrix inference on medical scans.</li>
+  <li><b>Clinical UI Layer:</b> Interactive Next.js dashboard featuring secure DICOM/image uploading and real-time segmentation mask rendering.</li>
+  <li><b>Decoupled Architecture:</b> Worker isolation separating heavy matrix computations from client request handlers.</li>
+</ul>
 
-    <td width="50%" valign="top" style="background-color: #030712; border: 1px solid #1e293b; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #38bdf8;">🩺 03 // Wellness Enterprise Data Platform</h4>
-      <p>
-        <img src="https://img.shields.io/badge/Core-PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" />
-        <img src="https://img.shields.io/badge/ORM-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" />
-        <img src="https://img.shields.io/badge/Frontend-Next.js_TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-      </p>
+<p align="left">
+  <a href="https://github.com/Cell1991/nu-stroke-scan">
+    <img src="https://img.shields.io/badge/View_Repository-0969DA?style=for-the-badge&logo=github&logoColor=white" alt="View Repo" />
+  </a>
+</p>
 
-```mermaid
-flowchart TD
-  Client["💻 Next.js / TS UI Layer"] --> API["⚡ API Route Handlers"]
-  API --> Prisma["⚙️ Prisma ORM Engine"]
-  Prisma --> DB[("🗄️ PostgreSQL 3NF Storage")]
-  DB --> Telemetry["📊 Database Telemetry & Health"]
-```
+<br/>
 
-      <ul>
-        <li><b>Relational 3NF Architecture:</b> Strictly normalized entity modeling with Prisma migrations.</li>
-        <li><b>Telemetry Monitoring:</b> Query latency tracking, connection pool diagnostics, and QA tests.</li>
-      </ul>
-      <img src="https://img.shields.io/badge/Status-Enterprise_Prototype-22c55e?style=flat-square" />
-    </td>
-  </tr>
-</table>
+<!-- CASE 03: WELLNESS PLATFORM -->
+<div align="left">
+  <h3>🩺 03 // Wellness Enterprise Data Platform</h3>
+  <p>
+    <img src="https://img.shields.io/badge/Database-PostgreSQL_3NF-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+    <img src="https://img.shields.io/badge/ORM-Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />
+    <img src="https://img.shields.io/badge/Frontend-Next.js_TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/Status-Enterprise_Prototype-22c55e?style=for-the-badge" />
+  </p>
+</div>
+
+<!-- Vector Architecture Diagram -->
+<img src="./assets/wellness_architecture.svg" width="100%" alt="Wellness Platform Architecture" />
+
+<ul>
+  <li><b>3NF Database Architecture:</b> Strictly normalized entity modeling in PostgreSQL with automated Prisma migrations and data dictionaries.</li>
+  <li><b>Telemetry Monitoring:</b> Query latency tracking, connection pool health diagnostics, and automated testing suites.</li>
+</ul>
 
 ---
 
@@ -304,22 +300,13 @@ flowchart TD
 
 <div align="center">
 
-  <table border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td align="center" valign="middle">
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Cell1991&show_icons=true&theme=radical&border_color=00f2fe&bg_color=030712&title_color=00f2fe&icon_color=c084fc&text_color=e2e8f0&count_private=true&include_all_commits=true" height="175" alt="GitHub Overview Stats" />
-      </td>
-      <td align="center" valign="middle">
-        <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Cell1991&layout=compact&theme=radical&border_color=00f2fe&bg_color=030712&title_color=00f2fe&text_color=e2e8f0" height="175" alt="Top Languages Stats" />
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center" valign="middle">
-        <br/>
-        <img src="https://streak-stats.demolab.com?user=Cell1991&theme=radical&hide_border=false&border=00f2fe&background=030712&ring=00f2fe&fire=f43f5e&currStreakLabel=00f2fe" alt="Commit Streak" />
-      </td>
-    </tr>
-  </table>
+  <!-- Self-Hosted Vector Analytics & Metrics Dashboard -->
+  <img src="./assets/github_metrics.svg" width="100%" alt="GitHub Engineering Telemetry Cockpit" />
+
+  <br/><br/>
+
+  <!-- Live Supernova Streak -->
+  <img src="https://streak-stats.demolab.com?user=Cell1991&theme=radical&hide_border=false&border=00f2fe&background=030712&ring=00f2fe&fire=f43f5e&currStreakLabel=00f2fe" alt="Commit Streak" />
 
 </div>
 
@@ -331,12 +318,9 @@ flowchart TD
 
 ### `✦` `06` // RESEARCH HORIZON & ENGINEERING ROADMAP
 
-```mermaid
-flowchart LR
-  R1["🌐 Distributed Systems\n(Kafka / Redis Mesh)"] --> R2["☁️ Cloud Native\n(AWS / Terraform IaC)"]
-  R2 --> R3["📊 Observability\n(OpenTelemetry / Grafana)"]
-  R3 --> R4["🛡️ Network Security\n(Zero-Trust / ACL Topologies)"]
-```
+<div align="center">
+  <img src="./assets/roadmap.svg" width="100%" alt="Engineering Roadmap" />
+</div>
 
 ---
 
