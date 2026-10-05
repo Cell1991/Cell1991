@@ -40,16 +40,13 @@
         0%, 100% { transform: scale(1); opacity: 1; }
         50% { transform: scale(1.08); opacity: 0.8; }
       }
-      @keyframes barGrow {
-        0% { width: 0; }
-      }
       .pulse {
         animation: pulseRing 2s ease-in-out infinite;
       }
     </style>
   </defs>
 
-  <!-- Container -->
+  <!-- Container Box -->
   <rect width="860" height="210" rx="12" fill="url(#dashBg)" stroke="url(#dashBorder)" stroke-width="1.5" />
 
   <!-- Top Title Bar -->
@@ -59,68 +56,75 @@
   <circle cx="52" cy="17" r="4.5" fill="#22c55e" />
   <text x="74" y="21" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#cbd5e1">ENGINEERING METRICS &amp; ACTIVITY TELEMETRY COCKPIT</text>
 
-  <!-- COLUMN 1: REPOSITORY & CODE DISCIPLINE (Width: 260) -->
+  <!-- COLUMN 1: REPOSITORY & CODE DISCIPLINE (Width: 250) -->
   <g transform="translate(25, 52)">
     <rect width="250" height="138" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#00f2fe">✦ REPOSITORY OVERVIEW</text>
+    <text x="16" y="26" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#00f2fe">✦ REPOSITORY OVERVIEW</text>
     
-    <text x="18" y="52" font-family="-apple-system, sans-serif" font-size="12" fill="#e2e8f0">🎮 crossword-game</text>
-    <text x="215" y="52" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#38bdf8">FASTAPI</text>
+    <!-- Row 1: Crossword -->
+    <text x="16" y="52" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="500" fill="#e2e8f0">🎮 crossword-game</text>
+    <rect x="174" y="39" width="60" height="18" rx="4" fill="#0284c7" fill-opacity="0.18" stroke="#38bdf8" stroke-width="0.75" />
+    <text x="204" y="52" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#38bdf8">FASTAPI</text>
 
-    <text x="18" y="78" font-family="-apple-system, sans-serif" font-size="12" fill="#e2e8f0">🧠 nu-stroke-scan</text>
-    <text x="225" y="78" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#c084fc">ONNX</text>
+    <!-- Row 2: Stroke Scan -->
+    <text x="16" y="78" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="500" fill="#e2e8f0">🧠 nu-stroke-scan</text>
+    <rect x="180" y="65" width="54" height="18" rx="4" fill="#a855f7" fill-opacity="0.18" stroke="#c084fc" stroke-width="0.75" />
+    <text x="207" y="78" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#c084fc">ONNX</text>
 
-    <text x="18" y="104" font-family="-apple-system, sans-serif" font-size="12" fill="#e2e8f0">🩺 wellness-platform</text>
-    <text x="210" y="104" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#34d399">PRISMA</text>
+    <!-- Row 3: Wellness Platform -->
+    <text x="16" y="104" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="500" fill="#e2e8f0">🩺 wellness-demo</text>
+    <rect x="176" y="91" width="58" height="18" rx="4" fill="#059669" fill-opacity="0.18" stroke="#34d399" stroke-width="0.75" />
+    <text x="205" y="104" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#34d399">PRISMA</text>
 
-    <text x="18" y="126" font-family="-apple-system, sans-serif" font-size="10.5" fill="#64748b">⚡ Multi-Container Docker Mesh</text>
+    <!-- Row 4: Sub-info -->
+    <text x="16" y="126" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">⚡ Docker Containerized Mesh</text>
   </g>
 
-  <!-- COLUMN 2: LANGUAGE & RUNTIME MATRIX (Width: 290) -->
+  <!-- COLUMN 2: LANGUAGE & RUNTIME MATRIX (Width: 280) -->
   <g transform="translate(290, 52)">
     <rect width="280" height="138" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#818cf8">📊 LANGUAGE DISTRIBUTION</text>
+    <text x="16" y="26" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#818cf8">📊 LANGUAGE DISTRIBUTION</text>
 
     <!-- Python -->
-    <text x="18" y="50" font-family="-apple-system, sans-serif" font-size="11" fill="#cbd5e1">Python / FastAPI</text>
-    <text x="235" y="50" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#00f2fe">42%</text>
-    <rect x="18" y="56" width="245" height="6" rx="3" fill="#1e293b" />
-    <rect x="18" y="56" width="103" height="6" rx="3" fill="url(#pyGrad)" />
+    <text x="16" y="50" font-family="-apple-system, sans-serif" font-size="11" fill="#cbd5e1">Python / FastAPI</text>
+    <text x="264" y="50" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#00f2fe">42%</text>
+    <rect x="16" y="56" width="248" height="6" rx="3" fill="#1e293b" />
+    <rect x="16" y="56" width="104" height="6" rx="3" fill="url(#pyGrad)" />
 
     <!-- TypeScript / React -->
-    <text x="18" y="78" font-family="-apple-system, sans-serif" font-size="11" fill="#cbd5e1">TypeScript / Next.js</text>
-    <text x="235" y="78" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#818cf8">34%</text>
-    <rect x="18" y="84" width="245" height="6" rx="3" fill="#1e293b" />
-    <rect x="18" y="84" width="83" height="6" rx="3" fill="url(#tsGrad)" />
+    <text x="16" y="78" font-family="-apple-system, sans-serif" font-size="11" fill="#cbd5e1">TypeScript / Next.js</text>
+    <text x="264" y="78" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#818cf8">34%</text>
+    <rect x="16" y="84" width="248" height="6" rx="3" fill="#1e293b" />
+    <rect x="16" y="84" width="84" height="6" rx="3" fill="url(#tsGrad)" />
 
     <!-- SQL & PostgreSQL -->
-    <text x="18" y="106" font-family="-apple-system, sans-serif" font-size="11" fill="#cbd5e1">PostgreSQL / Prisma</text>
-    <text x="235" y="106" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#34d399">15%</text>
-    <rect x="18" y="112" width="245" height="6" rx="3" fill="#1e293b" />
-    <rect x="18" y="112" width="37" height="6" rx="3" fill="url(#sqlGrad)" />
+    <text x="16" y="106" font-family="-apple-system, sans-serif" font-size="11" fill="#cbd5e1">PostgreSQL / Prisma</text>
+    <text x="264" y="106" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#34d399">15%</text>
+    <rect x="16" y="112" width="248" height="6" rx="3" fill="#1e293b" />
+    <rect x="16" y="112" width="37" height="6" rx="3" fill="url(#sqlGrad)" />
 
     <!-- Cloud / Docker / Shell -->
-    <text x="18" y="132" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">Docker • Linux • Shell (9%)</text>
+    <text x="16" y="130" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">Docker • Linux • Shell (9%)</text>
   </g>
 
-  <!-- COLUMN 3: ACTIVITY VELOCITY & TELEMETRY (Width: 240) -->
+  <!-- COLUMN 3: ACTIVITY VELOCITY & TELEMETRY (Width: 250) -->
   <g transform="translate(585, 52)">
     <rect width="250" height="138" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#34d399">🔥 COMMIT VELOCITY</text>
+    <text x="16" y="26" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#34d399">🔥 COMMIT VELOCITY</text>
 
     <!-- Dial / Metric -->
-    <circle cx="65" cy="85" r="32" stroke="#1e293b" stroke-width="6" fill="none" />
-    <circle cx="65" cy="85" r="32" stroke="url(#pyGrad)" stroke-width="6" fill="none" stroke-dasharray="160 200" stroke-linecap="round" />
-    <text x="65" y="83" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="800" fill="#f8fafc">550+</text>
-    <text x="65" y="96" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="8.5" fill="#94a3b8">COMMITS</text>
+    <circle cx="58" cy="85" r="30" stroke="#1e293b" stroke-width="5.5" fill="none" />
+    <circle cx="58" cy="85" r="30" stroke="url(#pyGrad)" stroke-width="5.5" fill="none" stroke-dasharray="150 190" stroke-linecap="round" />
+    <text x="58" y="83" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#f8fafc">550+</text>
+    <text x="58" y="96" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="8" fill="#94a3b8">COMMITS</text>
 
     <!-- Stats summary on the right of dial -->
-    <g transform="translate(120, 52)">
+    <g transform="translate(108, 52)">
       <text x="0" y="14" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">Active Cadence</text>
-      <text x="0" y="30" font-family="'JetBrains Mono', monospace" font-size="10" fill="#22c55e">● PRODUCTION READY</text>
+      <text x="0" y="30" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#22c55e">● PRODUCTION READY</text>
       
       <text x="0" y="52" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">Code Quality</text>
-      <text x="0" y="68" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">100% TYPE-SAFE</text>
+      <text x="0" y="68" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#38bdf8">100% TYPE-SAFE</text>
     </g>
   </g>
 
