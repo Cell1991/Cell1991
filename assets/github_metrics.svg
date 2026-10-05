@@ -2,40 +2,126 @@
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="dashBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070b18" />
-      <stop offset="50%" stop-color="#0b1226" />
-      <stop offset="100%" stop-color="#0f172a" />
+      <stop offset="0%" stop-color="#060a17" />
+      <stop offset="50%" stop-color="#0a1126" />
+      <stop offset="100%" stop-color="#0e172e" />
     </linearGradient>
 
     <!-- Glowing Border Gradient -->
     <linearGradient id="dashBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.85" />
       <stop offset="50%" stop-color="#818cf8" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.85" />
     </linearGradient>
 
-    <!-- Language Bar Gradients -->
-    <linearGradient id="pyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Animated Shimmering Liquid Plasma Tube Gradients -->
+    <linearGradient id="pyGradAnim" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="100%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#38bdf8" />
+      <stop offset="65%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#0284c7" />
+      <animate attributeName="x1" from="-100%" to="100%" dur="2.6s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="200%" dur="2.6s" repeatCount="indefinite" />
     </linearGradient>
 
-    <linearGradient id="tsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="tsGradAnim" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#818cf8" />
-      <stop offset="100%" stop-color="#6366f1" />
+      <stop offset="35%" stop-color="#a855f7" />
+      <stop offset="65%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#4f46e5" />
+      <animate attributeName="x1" from="-100%" to="100%" dur="2.9s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="200%" dur="2.9s" repeatCount="indefinite" />
     </linearGradient>
 
-    <linearGradient id="sqlGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="sqlGradAnim" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#34d399" />
-      <stop offset="100%" stop-color="#10b981" />
+      <stop offset="35%" stop-color="#10b981" />
+      <stop offset="65%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#059669" />
+      <animate attributeName="x1" from="-100%" to="100%" dur="2.3s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="200%" dur="2.3s" repeatCount="indefinite" />
     </linearGradient>
+
+    <!-- Velocity Dial Arc Gradient -->
+    <linearGradient id="dialGaugeGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="85%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="tubeGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="dialGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
 
     <style>
       .font-ui {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       }
       .font-mono {
-        font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+        font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+      }
+
+      /* Dial Ring Rotation */
+      @keyframes spinDialCW {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes spinDialCCW {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+
+      /* Tip Spark Pulse */
+      @keyframes sparkPulse {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.6); opacity: 1; }
+      }
+
+      /* Status Beacon Ping */
+      @keyframes beaconPing {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(1.4); }
+      }
+
+      /* Dial Arc Breathing */
+      @keyframes arcBreathe {
+        0%, 100% { opacity: 0.9; stroke-width: 5.5; }
+        50% { opacity: 1; stroke-width: 6.5; }
+      }
+
+      .dial-rot-cw {
+        transform-origin: 58px 85px;
+        animation: spinDialCW 12s linear infinite;
+      }
+      .dial-rot-ccw {
+        transform-origin: 58px 85px;
+        animation: spinDialCCW 8s linear infinite;
+      }
+      .tip-spark-1 {
+        transform-origin: 118px 60px;
+        animation: sparkPulse 1.5s ease-in-out infinite;
+      }
+      .tip-spark-2 {
+        transform-origin: 98px 88px;
+        animation: sparkPulse 1.7s ease-in-out infinite;
+      }
+      .tip-spark-3 {
+        transform-origin: 52px 116px;
+        animation: sparkPulse 1.3s ease-in-out infinite;
+      }
+      .beacon-anim {
+        animation: beaconPing 2s ease-in-out infinite;
+      }
+      .gauge-arc-anim {
+        animation: arcBreathe 3s ease-in-out infinite;
       }
     </style>
   </defs>
@@ -50,7 +136,7 @@
   <circle cx="52" cy="17" r="4.5" fill="#22c55e" />
   <text x="74" y="21" class="font-ui" font-size="12" font-weight="700" fill="#cbd5e1" letter-spacing="0.5">ENGINEERING METRICS &amp; ACTIVITY TELEMETRY COCKPIT</text>
 
-  <!-- COLUMN 1: REPOSITORY & CODE DISCIPLINE (Width: 255) -->
+  <!-- COLUMN 1: REPOSITORY OVERVIEW (Width: 255) -->
   <g transform="translate(25, 50)">
     <rect width="255" height="142" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
     <text x="16" y="25" class="font-ui" font-size="11.5" font-weight="700" fill="#00f2fe" letter-spacing="0.5">✦ REPOSITORY OVERVIEW</text>
@@ -80,51 +166,95 @@
     <text x="16" y="130" class="font-ui" font-size="10.5" fill="#64748b">⚡ Docker Containerized Mesh</text>
   </g>
 
-  <!-- COLUMN 2: LANGUAGE & RUNTIME MATRIX (Width: 275) -->
+  <!-- ========================================================================= -->
+  <!-- COLUMN 2: LANGUAGE & RUNTIME MATRIX WITH ANIMATED LIQUID TUBES (Width: 275) -->
+  <!-- ========================================================================= -->
   <g transform="translate(292, 50)">
     <rect width="275" height="142" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
     <text x="16" y="25" class="font-ui" font-size="11.5" font-weight="700" fill="#818cf8" letter-spacing="0.5">📊 LANGUAGE DISTRIBUTION</text>
 
-    <!-- Python -->
+    <!-- 1. Python / FastAPI (42%) -->
     <text x="16" y="51" class="font-ui" font-size="11.5" font-weight="500" fill="#cbd5e1">Python / FastAPI</text>
     <text x="258" y="51" text-anchor="end" class="font-ui" font-size="11" font-weight="700" fill="#00f2fe">42%</text>
-    <rect x="16" y="57" width="242" height="6" rx="3" fill="#1e293b" />
-    <rect x="16" y="57" width="102" height="6" rx="3" fill="url(#pyGrad)" />
+    
+    <!-- Base Tube Track -->
+    <rect x="16" y="57" width="242" height="7" rx="3.5" fill="#080e1e" stroke="#1e293b" stroke-width="0.8" />
+    <!-- Liquid Plasma Animated Bar -->
+    <rect x="16" y="57" width="102" height="7" rx="3.5" fill="url(#pyGradAnim)" filter="url(#tubeGlow)" />
+    <!-- 3D Glass Specular Highlight -->
+    <rect x="18" y="58" width="98" height="2" rx="1" fill="#ffffff" opacity="0.45" />
+    <!-- Leading Pulse Spark -->
+    <circle cx="118" cy="60.5" r="3" fill="#ffffff" class="tip-spark-1" filter="url(#tubeGlow)" />
+    <circle cx="118" cy="60.5" r="1.5" fill="#00f2fe" />
 
-    <!-- TypeScript / React -->
+    <!-- 2. TypeScript / React (34%) -->
     <text x="16" y="79" class="font-ui" font-size="11.5" font-weight="500" fill="#cbd5e1">TypeScript / Next.js</text>
     <text x="258" y="79" text-anchor="end" class="font-ui" font-size="11" font-weight="700" fill="#818cf8">34%</text>
-    <rect x="16" y="85" width="242" height="6" rx="3" fill="#1e293b" />
-    <rect x="16" y="85" width="82" height="6" rx="3" fill="url(#tsGrad)" />
+    
+    <!-- Base Tube Track -->
+    <rect x="16" y="85" width="242" height="7" rx="3.5" fill="#080e1e" stroke="#1e293b" stroke-width="0.8" />
+    <!-- Liquid Plasma Animated Bar -->
+    <rect x="16" y="85" width="82" height="7" rx="3.5" fill="url(#tsGradAnim)" filter="url(#tubeGlow)" />
+    <!-- 3D Glass Specular Highlight -->
+    <rect x="18" y="86" width="78" height="2" rx="1" fill="#ffffff" opacity="0.45" />
+    <!-- Leading Pulse Spark -->
+    <circle cx="98" cy="88.5" r="3" fill="#ffffff" class="tip-spark-2" filter="url(#tubeGlow)" />
+    <circle cx="98" cy="88.5" r="1.5" fill="#818cf8" />
 
-    <!-- SQL & PostgreSQL -->
+    <!-- 3. SQL & PostgreSQL (15%) -->
     <text x="16" y="107" class="font-ui" font-size="11.5" font-weight="500" fill="#cbd5e1">PostgreSQL / Prisma</text>
     <text x="258" y="107" text-anchor="end" class="font-ui" font-size="11" font-weight="700" fill="#34d399">15%</text>
-    <rect x="16" y="113" width="242" height="6" rx="3" fill="#1e293b" />
-    <rect x="16" y="113" width="36" height="6" rx="3" fill="url(#sqlGrad)" />
+    
+    <!-- Base Tube Track -->
+    <rect x="16" y="113" width="242" height="7" rx="3.5" fill="#080e1e" stroke="#1e293b" stroke-width="0.8" />
+    <!-- Liquid Plasma Animated Bar -->
+    <rect x="16" y="113" width="36" height="7" rx="3.5" fill="url(#sqlGradAnim)" filter="url(#tubeGlow)" />
+    <!-- 3D Glass Specular Highlight -->
+    <rect x="18" y="114" width="32" height="2" rx="1" fill="#ffffff" opacity="0.45" />
+    <!-- Leading Pulse Spark -->
+    <circle cx="52" cy="116.5" r="3" fill="#ffffff" class="tip-spark-3" filter="url(#tubeGlow)" />
+    <circle cx="52" cy="116.5" r="1.5" fill="#34d399" />
 
     <!-- Cloud / Docker / Shell -->
     <text x="16" y="132" class="font-ui" font-size="10.5" fill="#64748b">Docker • Linux • Shell (9%)</text>
   </g>
 
-  <!-- COLUMN 3: ACTIVITY VELOCITY & TELEMETRY (Width: 255) -->
+  <!-- ========================================================================= -->
+  <!-- COLUMN 3: COMMIT VELOCITY WITH ROTATING GAUGE DIAL (Width: 255)           -->
+  <!-- ========================================================================= -->
   <g transform="translate(580, 50)">
     <rect width="255" height="142" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
     <text x="16" y="25" class="font-ui" font-size="11.5" font-weight="700" fill="#34d399" letter-spacing="0.5">🔥 COMMIT VELOCITY</text>
 
-    <!-- Dial / Metric -->
-    <circle cx="58" cy="85" r="30" stroke="#1e293b" stroke-width="5.5" fill="none" />
-    <circle cx="58" cy="85" r="30" stroke="url(#pyGrad)" stroke-width="5.5" fill="none" stroke-dasharray="150 190" stroke-linecap="round" />
-    <text x="58" y="81" text-anchor="middle" class="font-ui" font-size="13.5" font-weight="800" fill="#f8fafc">550+</text>
-    <text x="58" y="96" text-anchor="middle" class="font-ui" font-size="8.5" font-weight="600" fill="#94a3b8">COMMITS</text>
+    <!-- 1. Outer Rotating Dashed Tech Ring (Clockwise) -->
+    <circle cx="58" cy="85" r="35" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="4 6" fill="none" class="dial-rot-cw" opacity="0.5" />
 
-    <!-- Stats summary on the right of dial -->
+    <!-- 2. Inner Rotating Tech Ticks (Counter-Clockwise) -->
+    <circle cx="58" cy="85" r="25" stroke="#1e293b" stroke-width="1" stroke-dasharray="2 4" fill="none" class="dial-rot-ccw" />
+
+    <!-- 3. Base Gauge Track Ring -->
+    <circle cx="58" cy="85" r="30" stroke="#111c35" stroke-width="6" fill="none" />
+
+    <!-- 4. Dynamic Velocity Gauge Arc with Glow & Breathing -->
+    <circle cx="58" cy="85" r="30" stroke="url(#dialGaugeGrad)" stroke-width="6" fill="none" stroke-dasharray="145 190" stroke-linecap="round" class="gauge-arc-anim" filter="url(#dialGlow)" />
+    
+    <!-- Center Metric Numbers -->
+    <text x="58" y="81" text-anchor="middle" class="font-ui" font-size="13.5" font-weight="800" fill="#ffffff" filter="url(#tubeGlow)">550+</text>
+    <text x="58" y="96" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#94a3b8" letter-spacing="0.5">COMMITS</text>
+
+    <!-- Stats Summary on the right of dial -->
     <g transform="translate(106, 50)">
       <text x="0" y="14" class="font-ui" font-size="11.5" font-weight="600" fill="#e2e8f0">Active Cadence</text>
-      <text x="0" y="30" class="font-ui" font-size="9.5" font-weight="700" fill="#22c55e">● PRODUCTION READY</text>
+      <g transform="translate(0, 24)">
+        <circle cx="4" cy="4" r="3.5" fill="#22c55e" class="beacon-anim" filter="url(#tubeGlow)" />
+        <text x="14" y="7" class="font-ui" font-size="9.5" font-weight="700" fill="#22c55e">PRODUCTION READY</text>
+      </g>
       
       <text x="0" y="56" class="font-ui" font-size="11.5" font-weight="600" fill="#e2e8f0">Code Quality</text>
-      <text x="0" y="72" class="font-ui" font-size="9.5" font-weight="700" fill="#38bdf8">100% TYPE-SAFE</text>
+      <g transform="translate(0, 66)">
+        <circle cx="4" cy="4" r="3.5" fill="#38bdf8" class="beacon-anim" filter="url(#tubeGlow)" />
+        <text x="14" y="7" class="font-ui" font-size="9.5" font-weight="700" fill="#38bdf8">100% TYPE-SAFE</text>
+      </g>
     </g>
   </g>
 
