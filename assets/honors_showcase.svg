@@ -1,0 +1,142 @@
+<svg width="100%" height="100%" viewBox="0 0 860 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="honorsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060914" />
+      <stop offset="50%" stop-color="#080e22" />
+      <stop offset="100%" stop-color="#0b132a" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="honorsBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Card Backgrounds -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d142b" />
+      <stop offset="100%" stop-color="#080c1b" />
+    </linearGradient>
+
+    <!-- Glowing Effects -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .font-ui { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      
+      @keyframes badgePulse {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.6)); }
+      }
+      .pulse-gold { animation: badgePulse 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="860" height="300" rx="14" fill="url(#honorsBg)" stroke="url(#honorsBorder)" stroke-width="1.5" />
+
+  <!-- Window Header Bar -->
+  <rect x="0" y="0" width="860" height="32" rx="14" fill="#0f172a" />
+  <circle cx="20" cy="16" r="4.5" fill="#ef4444" />
+  <circle cx="36" cy="16" r="4.5" fill="#f59e0b" />
+  <circle cx="52" cy="16" r="4.5" fill="#22c55e" />
+  <text x="74" y="20" class="font-ui" font-size="11.5" font-weight="700" fill="#cbd5e1" letter-spacing="0.5">COMPETITIVE RECOGNITION &amp; AWARDS SHOWCASE</text>
+  <text x="836" y="20" text-anchor="end" class="font-mono" font-size="10.5" font-weight="700" fill="#fbbf24">🏆 5 KEY RECOGNITIONS</text>
+
+  <!-- ======================================================== -->
+  <!-- GRID LAYOUT: 2 COLUMNS (TOP) + FULL BANNER (BOTTOM)      -->
+  <!-- ======================================================== -->
+
+  <!-- CARD 1: LINE HACKATHON (Top Left: x=24, y=46, w=398, h=108) -->
+  <g transform="translate(24, 46)">
+    <rect width="398" height="108" rx="8" fill="url(#cardBg)" stroke="#cd7f32" stroke-opacity="0.4" stroke-width="1" />
+    <rect x="0" y="0" width="4" height="108" rx="2" fill="#cd7f32" />
+    
+    <!-- Medal Icon & Title -->
+    <circle cx="32" cy="30" r="14" fill="#1e293b" stroke="#cd7f32" stroke-width="1.2" />
+    <text x="32" y="35" text-anchor="middle" font-size="14">🥉</text>
+    <text x="56" y="26" class="font-ui" font-size="13" font-weight="800" fill="#f8fafc">LINE Hackathon</text>
+    
+    <!-- Award Badge Pill -->
+    <rect x="56" y="32" width="138" height="18" rx="4" fill="#451a03" stroke="#cd7f32" stroke-width="0.8" />
+    <text x="125" y="44" text-anchor="middle" class="font-mono" font-size="9.5" font-weight="700" fill="#fdba74">3RD PLACE // BRONZE</text>
+
+    <!-- Description -->
+    <text x="16" y="70" class="font-ui" font-size="10.5" fill="#cbd5e1">Rapid microservices engineering &amp; LINE API integration</text>
+    <text x="16" y="86" class="font-ui" font-size="10" fill="#94a3b8">Built robust async webhook ingestion under strict 24h sprint.</text>
+    
+    <!-- Tech Tag -->
+    <text x="382" y="98" text-anchor="end" class="font-mono" font-size="9" font-weight="600" fill="#00f2fe">FastAPI • Webhooks • Docker</text>
+  </g>
+
+  <!-- CARD 2: SMART MEDICATION BOX (Top Right: x=438, y=46, w=398, h=108) -->
+  <g transform="translate(438, 46)">
+    <rect width="398" height="108" rx="8" fill="url(#cardBg)" stroke="#94a3b8" stroke-opacity="0.4" stroke-width="1" />
+    <rect x="0" y="0" width="4" height="108" rx="2" fill="#94a3b8" />
+    
+    <!-- Medal Icon & Title -->
+    <circle cx="32" cy="30" r="14" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2" />
+    <text x="32" y="35" text-anchor="middle" font-size="14">🥈</text>
+    <text x="56" y="26" class="font-ui" font-size="13" font-weight="800" fill="#f8fafc">Smart Medication Box</text>
+    
+    <!-- Award Badge Pill -->
+    <rect x="56" y="32" width="138" height="18" rx="4" fill="#0f172a" stroke="#94a3b8" stroke-width="0.8" />
+    <text x="125" y="44" text-anchor="middle" class="font-mono" font-size="9.5" font-weight="700" fill="#e2e8f0">2ND PLACE // SILVER</text>
+
+    <!-- Description -->
+    <text x="16" y="70" class="font-ui" font-size="10.5" fill="#cbd5e1">IoT-to-Cloud telemetry &amp; patient medication tracking APIs</text>
+    <text x="16" y="86" class="font-ui" font-size="10" fill="#94a3b8">Real-time sensor telemetry and automated scheduled reminders.</text>
+    
+    <!-- Tech Tag -->
+    <text x="382" y="98" text-anchor="end" class="font-mono" font-size="9" font-weight="600" fill="#38bdf8">ESP32 • Cloud Telemetry • REST</text>
+  </g>
+
+  <!-- CARD 3: DATA VIZ CHALLENGE (Bottom Left: x=24, y=164, w=260, h=118) -->
+  <g transform="translate(24, 164)">
+    <rect width="260" height="118" rx="8" fill="url(#cardBg)" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1" />
+    <rect x="0" y="0" width="4" height="118" rx="2" fill="#38bdf8" />
+    
+    <text x="14" y="24" class="font-ui" font-size="12" font-weight="800" fill="#f8fafc">📊 Data Visualization</text>
+    <rect x="14" y="32" width="130" height="17" rx="3" fill="#082f49" stroke="#38bdf8" stroke-width="0.7" />
+    <text x="79" y="44" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#7dd3fc">OUTSTANDING AWARD</text>
+
+    <text x="14" y="68" class="font-ui" font-size="10" fill="#cbd5e1">Statistical ETL pipelines &amp;</text>
+    <text x="14" y="82" class="font-ui" font-size="10" fill="#cbd5e1">Power BI interactive dashboards.</text>
+    <text x="14" y="104" class="font-mono" font-size="8.5" font-weight="600" fill="#38bdf8">Python • Pandas • Power BI</text>
+  </g>
+
+  <!-- CARD 4: COMPETITIVE PROGRAMMING (Bottom Middle: x=294, y=164, w=265, h=118) -->
+  <g transform="translate(294, 164)">
+    <rect width="265" height="118" rx="8" fill="url(#cardBg)" stroke="#a855f7" stroke-opacity="0.3" stroke-width="1" />
+    <rect x="0" y="0" width="4" height="118" rx="2" fill="#a855f7" />
+    
+    <text x="14" y="24" class="font-ui" font-size="12" font-weight="800" fill="#f8fafc">💻 Competitive Coding</text>
+    <rect x="14" y="32" width="140" height="17" rx="3" fill="#3b0764" stroke="#a855f7" stroke-width="0.7" />
+    <text x="84" y="44" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#d8b4fe">HONORABLE MENTION</text>
+
+    <text x="14" y="68" class="font-ui" font-size="10" fill="#cbd5e1">Algorithmic problem solving,</text>
+    <text x="14" y="82" class="font-ui" font-size="10" fill="#cbd5e1">Graph routing &amp; Dynamic Prog.</text>
+    <text x="14" y="104" class="font-mono" font-size="8.5" font-weight="600" fill="#c084fc">C++ • Data Structures • STL</text>
+  </g>
+
+  <!-- CARD 5: CSIT TA & MENTOR (Bottom Right: x=569, y=164, w=267, h=118) -->
+  <g transform="translate(569, 164)">
+    <rect width="267" height="118" rx="8" fill="url(#cardBg)" stroke="#22c55e" stroke-opacity="0.3" stroke-width="1" />
+    <rect x="0" y="0" width="4" height="118" rx="2" fill="#22c55e" />
+    
+    <text x="14" y="24" class="font-ui" font-size="12" font-weight="800" fill="#f8fafc">🤝 CSIT Teaching Assistant</text>
+    <rect x="14" y="32" width="145" height="17" rx="3" fill="#052e16" stroke="#22c55e" stroke-width="0.7" />
+    <text x="86" y="44" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#86efac">ACADEMIC MENTORSHIP</text>
+
+    <text x="14" y="68" class="font-ui" font-size="10" fill="#cbd5e1">Mentored 60+ undergraduates</text>
+    <text x="14" y="82" class="font-ui" font-size="10" fill="#cbd5e1">in C++, Python &amp; Networking.</text>
+    <text x="14" y="104" class="font-mono" font-size="8.5" font-weight="600" fill="#4ade80">C++ • Networking • Mentoring</text>
+  </g>
+
+</svg>

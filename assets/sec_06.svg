@@ -1,0 +1,39 @@
+<svg width="100%" height="100%" viewBox="0 0 860 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="secBg_06" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060914" />
+      <stop offset="50%" stop-color="#0a1024" />
+      <stop offset="100%" stop-color="#060914" />
+    </linearGradient>
+    <linearGradient id="secBorder_06" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.85" />
+      <stop offset="40%" stop-color="#c084fc" stop-opacity="0.3" />
+      <stop offset="80%" stop-color="#a855f7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.85" />
+    </linearGradient>
+    <linearGradient id="badgeGrad_06" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7e22ce" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <style>
+      .font-title { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="860" height="48" rx="8" fill="url(#secBg_06)" stroke="url(#secBorder_06)" stroke-width="1.2" />
+
+  <!-- Left Cyber Neon Pill -->
+  <rect x="0" y="8" width="4" height="32" rx="2" fill="#a855f7" />
+
+  <!-- Section Number Hex Badge -->
+  <rect x="14" y="9" width="38" height="30" rx="6" fill="url(#badgeGrad_06)" stroke="#a855f7" stroke-width="1" />
+  <text x="33" y="29" text-anchor="middle" class="font-mono" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="0.5">06</text>
+
+  <!-- Title -->
+  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">RESEARCH HORIZON & ENGINEERING ROADMAP</text>
+  
+  <!-- Subtitle Tag -->
+  <text x="836" y="29" text-anchor="end" class="font-mono" font-size="10" font-weight="700" fill="#c084fc" letter-spacing="0.5">// 2025–2027 TARGET ARCHITECTURES</text>
+</svg>
