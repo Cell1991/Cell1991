@@ -273,6 +273,11 @@
 
   <br/><br/>
 
+  <!-- Self-Hosted Animated Contribution Snake Radar -->
+  <img src="./assets/snake_matrix.svg" width="100%" alt="GitHub Contribution Snake Radar" />
+
+  <br/><br/>
+
   <!-- Self-Hosted Animated Velocity & Streak Hologram -->
   <img src="./assets/streak_activity_card.svg" width="100%" alt="Activity & Velocity Hologram" />
 
