@@ -10,48 +10,148 @@
     <!-- Glowing Outer Frame -->
     <linearGradient id="streakFrame" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.85" />
-      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#f43f5e" stop-opacity="0.6" />
       <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.85" />
     </linearGradient>
 
-    <!-- Dial Gradient -->
-    <linearGradient id="dialGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="50%" stop-color="#ec4899" />
-      <stop offset="100%" stop-color="#f59e0b" />
+    <!-- Primary Burning Ring of Fire Gradient -->
+    <linearGradient id="fireRing1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055" />
+      <stop offset="25%" stop-color="#ff5722" />
+      <stop offset="50%" stop-color="#ffb703" />
+      <stop offset="75%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#ff0055" />
     </linearGradient>
 
-    <!-- Shimmer Text Gradient -->
-    <linearGradient id="fireShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f43f5e" />
-      <stop offset="50%" stop-color="#fbbf24" />
-      <stop offset="100%" stop-color="#f43f5e" />
-      <animate attributeName="x1" from="-100%" to="100%" dur="3s" repeatCount="indefinite" />
-      <animate attributeName="x2" from="0%" to="200%" dur="3s" repeatCount="indefinite" />
+    <!-- Counter Flame Flare Gradient -->
+    <linearGradient id="fireRing2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb703" />
+      <stop offset="30%" stop-color="#ff0055" />
+      <stop offset="70%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ff3300" />
     </linearGradient>
 
-    <!-- Glow Filter -->
-    <filter id="flameGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <!-- Fiery Heat Aura Radial Gradient -->
+    <radialGradient id="fireAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffea00" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#ff5722" stop-opacity="0.25" />
+      <stop offset="85%" stop-color="#f43f5e" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Flame Tongue Gradient -->
+    <linearGradient id="flameTongue" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff0055" />
+      <stop offset="40%" stop-color="#ff7700" />
+      <stop offset="80%" stop-color="#ffdd00" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Shimmering Fire Text Gradient -->
+    <linearGradient id="fireTextGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#ffea00" />
+      <stop offset="70%" stop-color="#ff6b00" />
+      <stop offset="100%" stop-color="#ffffff" />
+      <animate attributeName="x1" from="-100%" to="100%" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="200%" dur="2.5s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- Heavy Fire Glow Filter -->
+    <filter id="fireGlowHeavy" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Intense Ember Glow Filter -->
+    <filter id="emberGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
     <style>
-      @keyframes rotateRing {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+      .font-ui {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       }
-      @keyframes pulseFlame {
-        0%, 100% { transform: scale(1); opacity: 1; }
-        50% { transform: scale(1.15); opacity: 0.8; }
+      .font-mono {
+        font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
       }
-      .ring-anim {
-        transform-origin: 430px 85px;
-        animation: rotateRing 8s linear infinite;
+
+      /* Fire Ring Rotations */
+      @keyframes spinClockwise {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
       }
-      .flame-anim {
-        transform-origin: 430px 58px;
-        animation: pulseFlame 1.8s ease-in-out infinite;
+      @keyframes spinCounter {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+
+      /* Heat Pulse */
+      @keyframes heatPulse {
+        0%, 100% { transform: scale(1); opacity: 0.85; }
+        50% { transform: scale(1.12); opacity: 1; }
+      }
+
+      /* Flame Tongues Dancing */
+      @keyframes flameDance1 {
+        0%, 100% { transform: scale(1, 1); opacity: 0.9; }
+        50% { transform: scale(1.18, 1.25); opacity: 1; }
+      }
+      @keyframes flameDance2 {
+        0%, 100% { transform: scale(1.1, 1.2); opacity: 0.85; }
+        50% { transform: scale(0.95, 0.9); opacity: 1; }
+      }
+
+      /* Floating Embers */
+      @keyframes emberFly1 {
+        0% { transform: translate(0, 0) scale(1); opacity: 0.2; }
+        50% { transform: translate(-6px, -15px) scale(1.3); opacity: 1; }
+        100% { transform: translate(-12px, -30px) scale(0.4); opacity: 0; }
+      }
+      @keyframes emberFly2 {
+        0% { transform: translate(0, 0) scale(1); opacity: 0.2; }
+        50% { transform: translate(6px, -18px) scale(1.4); opacity: 1; }
+        100% { transform: translate(14px, -34px) scale(0.3); opacity: 0; }
+      }
+      @keyframes emberFly3 {
+        0% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+        50% { transform: translate(2px, -14px) scale(1.2); opacity: 0.9; }
+        100% { transform: translate(5px, -26px) scale(0.2); opacity: 0; }
+      }
+
+      .fire-spin-cw {
+        transform-origin: 125px 68px;
+        animation: spinClockwise 4.5s linear infinite;
+      }
+      .fire-spin-ccw {
+        transform-origin: 125px 68px;
+        animation: spinCounter 3.2s linear infinite;
+      }
+      .fire-spin-fast {
+        transform-origin: 125px 68px;
+        animation: spinClockwise 2.4s linear infinite;
+      }
+      .heat-aura-anim {
+        transform-origin: 125px 68px;
+        animation: heatPulse 1.8s ease-in-out infinite;
+      }
+      .flame-tongue-1 {
+        transform-origin: 125px 68px;
+        animation: flameDance1 0.45s ease-in-out infinite alternate;
+      }
+      .flame-tongue-2 {
+        transform-origin: 125px 68px;
+        animation: flameDance2 0.38s ease-in-out infinite alternate;
+      }
+      .ember-1 {
+        animation: emberFly1 2s ease-out infinite;
+      }
+      .ember-2 {
+        animation: emberFly2 2.4s ease-out infinite;
+      }
+      .ember-3 {
+        animation: emberFly3 1.8s ease-out infinite;
       }
     </style>
   </defs>
@@ -68,26 +168,87 @@
   <!-- LEFT CARD: LIFETIME CONTRIBUTIONS -->
   <g transform="translate(35, 25)">
     <rect width="230" height="115" rx="10" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    <text x="115" y="32" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#94a3b8" letter-spacing="1">LIFETIME COMMITS</text>
-    <text x="115" y="72" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="900" fill="#f43f5e" filter="url(#flameGlow)">550+</text>
-    <text x="115" y="98" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748b">Continuous Active Cadence</text>
+    <text x="115" y="32" text-anchor="middle" class="font-mono" font-size="11.5" font-weight="700" fill="#94a3b8" letter-spacing="1">LIFETIME COMMITS</text>
+    <text x="115" y="74" text-anchor="middle" class="font-ui" font-size="34" font-weight="900" fill="#f43f5e" filter="url(#fireGlowHeavy)">550+</text>
+    <text x="115" y="98" text-anchor="middle" class="font-mono" font-size="10" fill="#64748b">Continuous Active Cadence</text>
   </g>
 
   <!-- Divider 1 -->
   <line x1="290" y1="35" x2="290" y2="130" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4, 4" />
 
-  <!-- CENTER CARD: ACTIVE STREAK HERO WITH ANIMATED DIAL -->
+  <!-- ========================================================================= -->
+  <!-- CENTER CARD: BLAZING BURNING RING OF FIRE (วงแหวนไฟลุก)                   -->
+  <!-- ========================================================================= -->
   <g transform="translate(305, 15)">
-    <!-- Rotating Dash Ring -->
-    <circle cx="125" cy="70" r="46" stroke="#1e293b" stroke-width="6" fill="none" />
-    <circle cx="125" cy="70" r="46" stroke="url(#dialGrad)" stroke-width="6" fill="none" stroke-dasharray="140 180" stroke-linecap="round" class="ring-anim" />
-
-    <!-- Center Flame & Number -->
-    <text x="125" y="52" text-anchor="middle" font-size="18" class="flame-anim">🔥</text>
-    <text x="125" y="78" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="26" font-weight="900" fill="url(#fireShimmer)">ACTIVE</text>
-    <text x="125" y="94" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#00f2fe" letter-spacing="0.5">DEV STREAK</text>
     
-    <text x="125" y="132" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#cbd5e1">● 100% REPRODUCIBLE BUILDS</text>
+    <!-- 1. Background Volcanic Heat Wave Aura -->
+    <circle cx="125" cy="68" r="54" fill="url(#fireAura)" class="heat-aura-anim" />
+
+    <!-- 2. Outer Solar Corona & Dancing Flame Spikes -->
+    <g class="flame-tongue-1" filter="url(#fireGlowHeavy)">
+      <!-- Top Flame Tongues -->
+      <path d="M 125 14 Q 120 2 125 -4 Q 130 2 125 14 Z" fill="url(#flameTongue)" />
+      <path d="M 116 18 Q 106 8 108 0 Q 118 10 120 20 Z" fill="url(#flameTongue)" />
+      <path d="M 134 18 Q 144 8 142 0 Q 132 10 130 20 Z" fill="url(#flameTongue)" />
+      
+      <!-- Right Flame Tongues -->
+      <path d="M 179 68 Q 191 63 197 68 Q 191 73 179 68 Z" fill="url(#flameTongue)" />
+      <path d="M 175 59 Q 185 49 193 51 Q 183 61 173 63 Z" fill="url(#flameTongue)" />
+      <path d="M 175 77 Q 185 87 193 85 Q 183 75 173 73 Z" fill="url(#flameTongue)" />
+
+      <!-- Bottom Flame Tongues -->
+      <path d="M 125 122 Q 130 134 125 140 Q 120 134 125 122 Z" fill="url(#flameTongue)" />
+      
+      <!-- Left Flame Tongues -->
+      <path d="M 71 68 Q 59 73 53 68 Q 59 63 71 68 Z" fill="url(#flameTongue)" />
+    </g>
+
+    <g class="flame-tongue-2" filter="url(#emberGlow)">
+      <!-- Diagonal Secondary Flame Spikes -->
+      <path d="M 91 34 Q 81 22 79 16 Q 89 28 97 38 Z" fill="url(#flameTongue)" />
+      <path d="M 159 34 Q 169 22 171 16 Q 161 28 153 38 Z" fill="url(#flameTongue)" />
+      <path d="M 91 102 Q 81 114 79 120 Q 89 108 97 98 Z" fill="url(#flameTongue)" />
+      <path d="M 159 102 Q 169 114 171 120 Q 161 108 153 98 Z" fill="url(#flameTongue)" />
+    </g>
+
+    <!-- 3. Dynamic Rotating Fire Rings (Multi-Layer Solar Vortex) -->
+    <!-- Outer Blazing Ring (Clockwise) -->
+    <circle cx="125" cy="68" r="48" stroke="url(#fireRing1)" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="35 15 50 20 25 15" class="fire-spin-cw" filter="url(#fireGlowHeavy)" />
+    
+    <!-- Middle Fiery Corona (Counter-Clockwise) -->
+    <circle cx="125" cy="68" r="45" stroke="url(#fireRing2)" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-dasharray="20 30 45 15 30 25" class="fire-spin-ccw" />
+
+    <!-- Inner High-Heat Core Ring (Fast Spin) -->
+    <circle cx="125" cy="68" r="41" stroke="#ffffff" stroke-width="2" fill="none" stroke-dasharray="60 30 25 35" stroke-linecap="round" class="fire-spin-fast" filter="url(#emberGlow)" />
+
+    <!-- 4. Floating Embers & Fire Sparks (สะเก็ดไฟลอยละล่อง) -->
+    <g filter="url(#emberGlow)">
+      <!-- Left Embers -->
+      <circle cx="108" cy="38" r="1.8" fill="#ffffff" class="ember-1" />
+      <circle cx="94" cy="55" r="1.4" fill="#ffea00" class="ember-2" />
+      <circle cx="102" cy="28" r="1.2" fill="#ff5722" class="ember-3" />
+
+      <!-- Right Embers -->
+      <circle cx="142" cy="36" r="1.8" fill="#ffffff" class="ember-2" />
+      <circle cx="156" cy="52" r="1.5" fill="#ffea00" class="ember-1" />
+      <circle cx="148" cy="26" r="1.3" fill="#ff5722" class="ember-3" />
+
+      <!-- Top Center Embers -->
+      <circle cx="125" cy="18" r="2" fill="#ffffff" class="ember-1" />
+      <circle cx="120" cy="10" r="1.3" fill="#ffdd00" class="ember-2" />
+    </g>
+
+    <!-- 5. Dark Volcanic Core Shield (So text stays ultra-crisp & legible) -->
+    <circle cx="125" cy="68" r="35" fill="#080c1a" stroke="#ff5722" stroke-width="1.2" stroke-opacity="0.8" />
+    <circle cx="125" cy="68" r="35" fill="url(#fireAura)" opacity="0.3" />
+
+    <!-- 6. Fire Emblem & Center Typography -->
+    <text x="125" y="52" text-anchor="middle" font-size="14" class="flame-tongue-1">🔥</text>
+    <text x="125" y="73" text-anchor="middle" class="font-ui" font-size="20" font-weight="900" fill="url(#fireTextGrad)" letter-spacing="1">ACTIVE</text>
+    <text x="125" y="88" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="800" fill="#fbbf24" letter-spacing="1.5">DEV STREAK</text>
+    
+    <!-- Bottom Sub-Indicator -->
+    <text x="125" y="132" text-anchor="middle" class="font-mono" font-size="10.5" font-weight="600" fill="#cbd5e1">🔥 100% CONTINUOUS CADENCE</text>
   </g>
 
   <!-- Divider 2 -->
@@ -96,9 +257,9 @@
   <!-- RIGHT CARD: VELOCITY & REPOSITORY HEALTH -->
   <g transform="translate(595, 25)">
     <rect width="230" height="115" rx="10" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    <text x="115" y="32" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#94a3b8" letter-spacing="1">LONGEST STREAK</text>
-    <text x="115" y="72" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="34" font-weight="900" fill="#f59e0b" filter="url(#flameGlow)">CONSISTENT</text>
-    <text x="115" y="98" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#22c55e">✓ Zero-Downtime Deployment</text>
+    <text x="115" y="32" text-anchor="middle" class="font-mono" font-size="11.5" font-weight="700" fill="#94a3b8" letter-spacing="1">LONGEST STREAK</text>
+    <text x="115" y="74" text-anchor="middle" class="font-ui" font-size="34" font-weight="900" fill="#f59e0b" filter="url(#fireGlowHeavy)">CONSISTENT</text>
+    <text x="115" y="98" text-anchor="middle" class="font-mono" font-size="10" fill="#22c55e">✓ Zero-Downtime Deployment</text>
   </g>
 
 </svg>
