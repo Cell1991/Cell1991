@@ -180,12 +180,9 @@
     <!-- Base Tube Track -->
     <rect x="16" y="57" width="242" height="7" rx="3.5" fill="#080e1e" stroke="#1e293b" stroke-width="0.8" />
     <!-- Liquid Plasma Animated Bar -->
-    <rect x="16" y="57" width="102" height="7" rx="3.5" fill="url(#pyGradAnim)" filter="url(#tubeGlow)" />
+    <rect x="16" y="57" width="102" height="7" rx="3.5" fill="url(#pyGradAnim)" />
     <!-- 3D Glass Specular Highlight -->
-    <rect x="18" y="58" width="98" height="2" rx="1" fill="#ffffff" opacity="0.45" />
-    <!-- Leading Pulse Spark -->
-    <circle cx="118" cy="60.5" r="3" fill="#ffffff" class="tip-spark-1" filter="url(#tubeGlow)" />
-    <circle cx="118" cy="60.5" r="1.5" fill="#00f2fe" />
+    <rect x="18" y="58" width="98" height="2" rx="1" fill="#ffffff" opacity="0.4" />
 
     <!-- 2. TypeScript / React (34%) -->
     <text x="16" y="79" class="font-ui" font-size="11.5" font-weight="500" fill="#cbd5e1">TypeScript / Next.js</text>
@@ -194,12 +191,9 @@
     <!-- Base Tube Track -->
     <rect x="16" y="85" width="242" height="7" rx="3.5" fill="#080e1e" stroke="#1e293b" stroke-width="0.8" />
     <!-- Liquid Plasma Animated Bar -->
-    <rect x="16" y="85" width="82" height="7" rx="3.5" fill="url(#tsGradAnim)" filter="url(#tubeGlow)" />
+    <rect x="16" y="85" width="82" height="7" rx="3.5" fill="url(#tsGradAnim)" />
     <!-- 3D Glass Specular Highlight -->
-    <rect x="18" y="86" width="78" height="2" rx="1" fill="#ffffff" opacity="0.45" />
-    <!-- Leading Pulse Spark -->
-    <circle cx="98" cy="88.5" r="3" fill="#ffffff" class="tip-spark-2" filter="url(#tubeGlow)" />
-    <circle cx="98" cy="88.5" r="1.5" fill="#818cf8" />
+    <rect x="18" y="86" width="78" height="2" rx="1" fill="#ffffff" opacity="0.4" />
 
     <!-- 3. SQL & PostgreSQL (15%) -->
     <text x="16" y="107" class="font-ui" font-size="11.5" font-weight="500" fill="#cbd5e1">PostgreSQL / Prisma</text>
@@ -208,12 +202,9 @@
     <!-- Base Tube Track -->
     <rect x="16" y="113" width="242" height="7" rx="3.5" fill="#080e1e" stroke="#1e293b" stroke-width="0.8" />
     <!-- Liquid Plasma Animated Bar -->
-    <rect x="16" y="113" width="36" height="7" rx="3.5" fill="url(#sqlGradAnim)" filter="url(#tubeGlow)" />
+    <rect x="16" y="113" width="36" height="7" rx="3.5" fill="url(#sqlGradAnim)" />
     <!-- 3D Glass Specular Highlight -->
-    <rect x="18" y="114" width="32" height="2" rx="1" fill="#ffffff" opacity="0.45" />
-    <!-- Leading Pulse Spark -->
-    <circle cx="52" cy="116.5" r="3" fill="#ffffff" class="tip-spark-3" filter="url(#tubeGlow)" />
-    <circle cx="52" cy="116.5" r="1.5" fill="#34d399" />
+    <rect x="18" y="114" width="32" height="2" rx="1" fill="#ffffff" opacity="0.4" />
 
     <!-- Cloud / Docker / Shell -->
     <text x="16" y="132" class="font-ui" font-size="10.5" fill="#64748b">Docker • Linux • Shell (9%)</text>
@@ -239,20 +230,20 @@
     <circle cx="58" cy="85" r="30" stroke="url(#dialGaugeGrad)" stroke-width="6" fill="none" stroke-dasharray="145 190" stroke-linecap="round" class="gauge-arc-anim" filter="url(#dialGlow)" />
     
     <!-- Center Metric Numbers -->
-    <text x="58" y="81" text-anchor="middle" class="font-ui" font-size="13.5" font-weight="800" fill="#ffffff" filter="url(#tubeGlow)">550+</text>
+    <text x="58" y="81" text-anchor="middle" class="font-ui" font-size="13.5" font-weight="800" fill="#ffffff">550+</text>
     <text x="58" y="96" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#94a3b8" letter-spacing="0.5">COMMITS</text>
 
     <!-- Stats Summary on the right of dial -->
     <g transform="translate(106, 50)">
       <text x="0" y="14" class="font-ui" font-size="11.5" font-weight="600" fill="#e2e8f0">Active Cadence</text>
       <g transform="translate(0, 24)">
-        <circle cx="4" cy="4" r="3.5" fill="#22c55e" class="beacon-anim" filter="url(#tubeGlow)" />
+        <circle cx="4" cy="4" r="3" fill="#22c55e" class="beacon-anim" />
         <text x="14" y="7" class="font-ui" font-size="9.5" font-weight="700" fill="#22c55e">PRODUCTION READY</text>
       </g>
       
       <text x="0" y="56" class="font-ui" font-size="11.5" font-weight="600" fill="#e2e8f0">Code Quality</text>
       <g transform="translate(0, 66)">
-        <circle cx="4" cy="4" r="3.5" fill="#38bdf8" class="beacon-anim" filter="url(#tubeGlow)" />
+        <circle cx="4" cy="4" r="3" fill="#38bdf8" class="beacon-anim" />
         <text x="14" y="7" class="font-ui" font-size="9.5" font-weight="700" fill="#38bdf8">100% TYPE-SAFE</text>
       </g>
     </g>
