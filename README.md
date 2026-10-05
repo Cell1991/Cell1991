@@ -120,47 +120,15 @@
 ---
 
 <!-- ========================================================================================= -->
-<!--            🧬 02. OBJECT-ORIENTED SYSTEM ARCHITECTURE (ENTERPRISE TS) 🧬                  -->
+<!--            🧬 02. DESIGN PATTERNS & ARCHITECTURAL PRINCIPLES 🧬                           -->
 <!-- ========================================================================================= -->
 
-### `✦` `02` // OBJECT-ORIENTED SYSTEM ARCHITECTURE (`SYSTEM.CORE.TS`)
+### `✦` `02` // DESIGN PATTERNS & ARCHITECTURAL PRINCIPLES
 
-```typescript
-/**
- * @module Architecture/CorePlatform
- * @description Enterprise OOP controller modeling developer stack capabilities
- */
-
-export interface ICloudInfrastructure {
-  provisionContainers(): Promise<"Docker Compose Multi-Service Mesh">;
-  deployToCluster(environment: "AWS_EC2" | "Linux_Host"): Promise<boolean>;
-}
-
-export interface INetworkEngineering {
-  analyzeTraffic(tool: "Wireshark" | "Nmap"): Observable<"Packet Inspection">;
-  configureRoutingTopology(protocol: "Static" | "RIPv2", aclSecurity: boolean): void;
-}
-
-export interface IRelationalDataArchitecture {
-  migrateSchema(orm: "Prisma"): Promise<"3NF Relational Schemas">;
-  getTelemetry(): { queryLatency: "< 5ms"; poolState: "Optimal" };
-}
-
-export class SystemPlatformEngine implements ICloudInfrastructure, INetworkEngineering, IRelationalDataArchitecture {
-  private static instance: SystemPlatformEngine;
-
-  public static getInstance(): SystemPlatformEngine {
-    return (this.instance ??= new SystemPlatformEngine());
-  }
-
-  public async provisionContainers() { return "Docker Compose Multi-Service Mesh" as const; }
-  public async deployToCluster(env: "AWS_EC2" | "Linux_Host") { return true; }
-  public analyzeTraffic(tool: "Wireshark" | "Nmap") { return of("Packet Inspection"); }
-  public configureRoutingTopology(protocol: "Static" | "RIPv2", acl: boolean) {}
-  public async migrateSchema(orm: "Prisma") { return "3NF Relational Schemas" as const; }
-  public getTelemetry() { return { queryLatency: "< 5ms", poolState: "Optimal" }; }
-}
-```
+<div align="center">
+  <!-- Self-Hosted Vector Architectural Principles Card -->
+  <img src="./assets/system_architecture_core.svg" width="100%" alt="Design Patterns & Architecture Principles" />
+</div>
 
 ---
 
