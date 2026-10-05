@@ -226,14 +226,28 @@
   <br/>
 
   <p align="center">
-    <a href="https://github.com/Cell1991">
+    <a href="https://github.com/Cell1991" target="_blank">
       <img src="https://img.shields.io/badge/GitHub-Cell1991-030712?style=for-the-badge&logo=github&logoColor=00f2fe&labelColor=0b0f19" alt="GitHub Profile" />
     </a>
-    &nbsp;&nbsp;
+    &nbsp;
     <a href="mailto:celleb1991@gmail.com">
-      <img src="https://img.shields.io/badge/Email-celleb1991%40gmail.com-030712?style=for-the-badge&logo=gmail&logoColor=f43f5e&labelColor=0b0f19" alt="Direct Email" />
+      <img src="https://img.shields.io/badge/Email-celleb1991%40gmail.com-030712?style=for-the-badge&logo=gmail&logoColor=ea4335&labelColor=0b0f19" alt="Direct Email" />
+    </a>
+    &nbsp;
+    <a href="https://www.facebook.com/cellz2505" target="_blank">
+      <img src="https://img.shields.io/badge/Facebook-Thanaphat_Chichu-030712?style=for-the-badge&logo=facebook&logoColor=1877f2&labelColor=0b0f19" alt="Facebook" />
+    </a>
+    &nbsp;
+    <a href="https://www.instagram.com/cell.tnp" target="_blank">
+      <img src="https://img.shields.io/badge/Instagram-cell.tnp-030712?style=for-the-badge&logo=instagram&logoColor=e4405f&labelColor=0b0f19" alt="Instagram" />
+    </a>
+    &nbsp;
+    <a href="https://line.me/ti/p/~cellz05" target="_blank">
+      <img src="https://img.shields.io/badge/LINE-cellz05-030712?style=for-the-badge&logo=line&logoColor=06c755&labelColor=0b0f19" alt="LINE" />
     </a>
   </p>
+
+  <br/>
 
   <!-- Self-Hosted High-Resolution SVG Footer -->
   <img src="./assets/footer.svg" width="100%" alt="Footer Banner" />
