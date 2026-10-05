@@ -46,7 +46,7 @@
   <!-- Node 1: Client Application -->
   <g transform="translate(30, 60)">
     <rect width="180" height="115" rx="8" fill="#0b1329" stroke="url(#nodeBorderCyan)" stroke-width="1.5" />
-    <text x="90" y="32" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#00f2fe">🎮 Client UI</text>
+    <text x="90" y="32" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#00f2fe">✦ Client UI</text>
     <text x="90" y="56" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Next.js / JavaScript ES6+</text>
     <text x="90" y="76" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">• Real-time Board Canvas</text>
     <text x="90" y="94" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">• Session State Sync</text>
@@ -61,7 +61,7 @@
   <!-- Node 2: FastAPI Gateway Engine -->
   <g transform="translate(320, 60)">
     <rect width="210" height="115" rx="8" fill="#0b1329" stroke="url(#nodeBorderGreen)" stroke-width="1.5" />
-    <text x="105" y="32" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#22c55e">⚡ FastAPI Engine</text>
+    <text x="105" y="32" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#22c55e">◈ FastAPI Engine</text>
     <text x="105" y="56" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Async ASGI Microservice</text>
     <text x="105" y="76" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">• Non-blocking Event Bus</text>
     <text x="105" y="94" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#64748b">• Docker Compose Mesh</text>
@@ -78,14 +78,14 @@
   <!-- Node 3A: In-Memory Room Core -->
   <g transform="translate(620, 52)">
     <rect width="205" height="58" rx="6" fill="#0b1329" stroke="url(#nodeBorderPurple)" stroke-width="1.2" />
-    <text x="102.5" y="24" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#c084fc">🪐 In-Memory Room Core</text>
+    <text x="102.5" y="24" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#c084fc">⬡ In-Memory Room Core</text>
     <text x="102.5" y="44" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#94a3b8">Lobbies • Nicknames • State Sync</text>
   </g>
 
   <!-- Node 3B: Lexicon & Board Solver -->
   <g transform="translate(620, 126)">
     <rect width="205" height="58" rx="6" fill="#0b1329" stroke="url(#nodeBorderPurple)" stroke-width="1.2" />
-    <text x="102.5" y="24" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#c084fc">🧩 2D Board Generator</text>
+    <text x="102.5" y="24" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#c084fc">⬢ 2D Board Generator</text>
     <text x="102.5" y="44" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#94a3b8">Lexicon Matrix • Word Validation</text>
   </g>
 

@@ -243,12 +243,12 @@
     <circle cx="125" cy="68" r="35" fill="url(#fireAura)" opacity="0.3" />
 
     <!-- 6. Fire Emblem & Center Typography -->
-    <text x="125" y="52" text-anchor="middle" font-size="14" class="flame-tongue-1">🔥</text>
+    <polygon points="125,40 128,47 135,47 130,52 132,59 125,55 118,59 120,52 115,47 122,47" fill="url(#fireTextGrad)" filter="url(#emberGlow)" />
     <text x="125" y="73" text-anchor="middle" class="font-ui" font-size="20" font-weight="900" fill="url(#fireTextGrad)" letter-spacing="1">ACTIVE</text>
     <text x="125" y="88" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="800" fill="#fbbf24" letter-spacing="1.5">DEV STREAK</text>
     
     <!-- Bottom Sub-Indicator -->
-    <text x="125" y="132" text-anchor="middle" class="font-mono" font-size="10.5" font-weight="600" fill="#cbd5e1">🔥 100% CONTINUOUS CADENCE</text>
+    <text x="125" y="132" text-anchor="middle" class="font-mono" font-size="10.5" font-weight="600" fill="#cbd5e1">◈ 100% CONTINUOUS CADENCE</text>
   </g>
 
   <!-- Divider 2 -->
@@ -259,7 +259,7 @@
     <rect width="230" height="115" rx="10" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
     <text x="115" y="32" text-anchor="middle" class="font-mono" font-size="11.5" font-weight="700" fill="#94a3b8" letter-spacing="1">LONGEST STREAK</text>
     <text x="115" y="74" text-anchor="middle" class="font-ui" font-size="34" font-weight="900" fill="#f59e0b" filter="url(#fireGlowHeavy)">CONSISTENT</text>
-    <text x="115" y="98" text-anchor="middle" class="font-mono" font-size="10" fill="#22c55e">✓ Zero-Downtime Deployment</text>
+    <text x="115" y="98" text-anchor="middle" class="font-mono" font-size="10" fill="#22c55e">● Zero-Downtime Deployment</text>
   </g>
 
 </svg>

@@ -1,5 +1,5 @@
 <!-- ========================================================================================= -->
-<!--                    ⚡ FULL STACK & BACKEND SYSTEMS ARCHITECT // HERO ⚡                   -->
+<!--                    FULL STACK & BACKEND SYSTEMS ARCHITECT // HERO                         -->
 <!-- ========================================================================================= -->
 
 <div align="center">
@@ -30,7 +30,7 @@
 ---
 
 <!-- ========================================================================================= -->
-<!--                    🍱 01. BENTO PROFILE & TECHNICAL ARSENAL 🍱                            -->
+<!--                    01. BENTO PROFILE & TECHNICAL ARSENAL                                  -->
 <!-- ========================================================================================= -->
 
 <img src="./assets/sec_01.svg" width="100%" alt="01 // Bento Matrix & Technical Arsenal" />
@@ -55,17 +55,17 @@
 
 | Technical Domain | Technologies & Frameworks |
 | :--- | :--- |
-| **🌐 Frontend & UI** | ![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React.js-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
-| **⚙️ Backend & APIs** | ![Python](https://img.shields.io/badge/Python_3.x-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![REST](https://img.shields.io/badge/RESTful_APIs-02569B?style=flat-square) ![AsyncIO](https://img.shields.io/badge/Async_I/O-FF6F00?style=flat-square) |
-| **🗄️ Database & ORM** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma_ORM-2D3748?style=flat-square&logo=prisma&logoColor=white) ![SQL](https://img.shields.io/badge/SQL_3NF-4479A1?style=flat-square) |
-| **☁️ DevOps & Infrastructure** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Compose](https://img.shields.io/badge/Compose-2496ED?style=flat-square&logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS_EC2-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Git](https://img.shields.io/badge/Git_&_GitHub-F05032?style=flat-square&logo=git&logoColor=white) |
-| **📡 Networking & Security** | ![Cisco](https://img.shields.io/badge/Cisco_IOS-1BA0D7?style=flat-square&logo=cisco&logoColor=white) ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white) ![TCP/IP](https://img.shields.io/badge/TCP/IP_Stack-0052CC?style=flat-square) ![Nmap](https://img.shields.io/badge/Nmap_Audit-4A90E2?style=flat-square) |
-| **📊 Data & Analytics** | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) ![Excel](https://img.shields.io/badge/MS_Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white) |
+| **Frontend & UI** | ![Next.js](https://img.shields.io/badge/Next.js_14-000000?style=flat-square&logo=nextdotjs&logoColor=white) ![React](https://img.shields.io/badge/React.js-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript_ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
+| **Backend & APIs** | ![Python](https://img.shields.io/badge/Python_3.x-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![REST](https://img.shields.io/badge/RESTful_APIs-02569B?style=flat-square) ![AsyncIO](https://img.shields.io/badge/Async_I/O-FF6F00?style=flat-square) |
+| **Database & ORM** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma_ORM-2D3748?style=flat-square&logo=prisma&logoColor=white) ![SQL](https://img.shields.io/badge/SQL_3NF-4479A1?style=flat-square) |
+| **DevOps & Infrastructure** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Docker Compose](https://img.shields.io/badge/Compose-2496ED?style=flat-square&logo=docker&logoColor=white) ![AWS](https://img.shields.io/badge/AWS_EC2-232F3E?style=flat-square&logo=amazonaws&logoColor=FF9900) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Git](https://img.shields.io/badge/Git_&_GitHub-F05032?style=flat-square&logo=git&logoColor=white) |
+| **Networking & Security** | ![Cisco](https://img.shields.io/badge/Cisco_IOS-1BA0D7?style=flat-square&logo=cisco&logoColor=white) ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white) ![TCP/IP](https://img.shields.io/badge/TCP/IP_Stack-0052CC?style=flat-square) ![Nmap](https://img.shields.io/badge/Nmap_Audit-4A90E2?style=flat-square) |
+| **Data & Analytics** | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) ![Excel](https://img.shields.io/badge/MS_Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white) |
 
 ---
 
 <!-- ========================================================================================= -->
-<!--            🧬 02. DESIGN PATTERNS & ARCHITECTURAL PRINCIPLES 🧬                           -->
+<!--            02. DESIGN PATTERNS & ARCHITECTURAL PRINCIPLES                                 -->
 <!-- ========================================================================================= -->
 
 <img src="./assets/sec_02.svg" width="100%" alt="02 // Design Patterns & Architectural Principles" />
@@ -79,7 +79,7 @@
 ---
 
 <!-- ========================================================================================= -->
-<!--            📐 03. ENGINEERING ARCHITECTURES & CASE STUDIES 📐                             -->
+<!--            03. ENGINEERING ARCHITECTURES & CASE STUDIES                                   -->
 <!-- ========================================================================================= -->
 
 <img src="./assets/sec_03.svg" width="100%" alt="03 // Engineering Architectures & Case Studies" />
@@ -100,10 +100,10 @@
 <!-- Vector Architecture Diagram -->
 <img src="./assets/crossword_architecture.svg" width="100%" alt="Crossword Game Architecture" />
 
-> **🎯 Key Architectural Highlights & Engineering Innovations:**
-> - ⚡ **Low-Latency Room Orchestration:** Non-blocking WebSocket server built on FastAPI & AsyncIO, maintaining sub-50ms synchronized game tick states across multi-client rooms.
-> - 🧩 **Heuristic Board Generation:** Algorithmic 2D crossword placement engine with backtracking validation against 10,000+ curated word corpora.
-> - 🐳 **Microservice Isolation:** Containerized execution environment managed via Docker Compose with automated service discovery and health check hooks.
+> **KEY ARCHITECTURAL HIGHLIGHTS & ENGINEERING INNOVATIONS:**
+> - **Low-Latency Room Orchestration:** Non-blocking WebSocket server built on FastAPI & AsyncIO, maintaining sub-50ms synchronized game tick states across multi-client rooms.
+> - **Heuristic Board Generation:** Algorithmic 2D crossword placement engine with backtracking validation against 10,000+ curated word corpora.
+> - **Microservice Isolation:** Containerized execution environment managed via Docker Compose with automated service discovery and health check hooks.
 
 <p align="left">
   <a href="https://github.com/Cell1991/crossword-game">
@@ -127,10 +127,10 @@
 <!-- Vector Architecture Diagram -->
 <img src="./assets/stroke_scan_architecture.svg" width="100%" alt="NU Stroke Scan Architecture" />
 
-> **🎯 Key Architectural Highlights & Engineering Innovations:**
-> - ⚡ **High-Throughput Inference Engine:** Optimized ONNX Runtime embedded directly into FastAPI services, delivering batch segmentation inference on CT/MRI scans in <120ms.
-> - 🔬 **Interactive Diagnostic UI:** Next.js dashboard featuring secure DICOM/PNG ingestion, dynamic canvas segmentation mask overlays, and automated confidence scoring.
-> - 🛡️ **Compute Decoupling:** Heavy matrix operations isolated from core HTTP request workers to guarantee zero-latency clinical triage workflows.
+> **KEY ARCHITECTURAL HIGHLIGHTS & ENGINEERING INNOVATIONS:**
+> - **High-Throughput Inference Engine:** Optimized ONNX Runtime embedded directly into FastAPI services, delivering batch segmentation inference on CT/MRI scans in <120ms.
+> - **Interactive Diagnostic UI:** Next.js dashboard featuring secure DICOM/PNG ingestion, dynamic canvas segmentation mask overlays, and automated confidence scoring.
+> - **Compute Decoupling:** Heavy matrix operations isolated from core HTTP request workers to guarantee zero-latency clinical triage workflows.
 
 <p align="left">
   <a href="https://github.com/Cell1991/nu-stroke-scan">
@@ -154,15 +154,15 @@
 <!-- Vector Architecture Diagram -->
 <img src="./assets/wellness_architecture.svg" width="100%" alt="Wellness Platform Architecture" />
 
-> **🎯 Key Architectural Highlights & Engineering Innovations:**
-> - 🗄️ **Strict 3NF Relational Architecture:** Fully normalized entity-relationship schemas in PostgreSQL with zero data redundancy and strict foreign key referential integrity.
-> - 🔄 **Automated Schema Lifecycle:** Prisma ORM migrations with automated TypeScript type generation and structured audit log triggers.
-> - 📈 **Database Diagnostics & Observability:** Real-time query execution monitoring, connection pool load balancing, and automated regression testing suites.
+> **KEY ARCHITECTURAL HIGHLIGHTS & ENGINEERING INNOVATIONS:**
+> - **Strict 3NF Relational Architecture:** Fully normalized entity-relationship schemas in PostgreSQL with zero data redundancy and strict foreign key referential integrity.
+> - **Automated Schema Lifecycle:** Prisma ORM migrations with automated TypeScript type generation and structured audit log triggers.
+> - **Database Diagnostics & Observability:** Real-time query execution monitoring, connection pool load balancing, and automated regression testing suites.
 
 ---
 
 <!-- ========================================================================================= -->
-<!--             🏆 04. HONORS, HACKATHONS & RECOGNITION 🏆                                    -->
+<!--             04. HONORS, HACKATHONS & RECOGNITION                                          -->
 <!-- ========================================================================================= -->
 
 <img src="./assets/sec_04.svg" width="100%" alt="04 // Honors, Hackathons & Key Recognition" />
@@ -176,7 +176,7 @@
 ---
 
 <!-- ========================================================================================= -->
-<!--          📊 05. GITHUB ANALYTICS & CODE ACTIVITY MATRIX 📊                                -->
+<!--          05. GITHUB ANALYTICS & CODE ACTIVITY MATRIX                                      -->
 <!-- ========================================================================================= -->
 
 <img src="./assets/sec_05.svg" width="100%" alt="05 // GitHub Analytics & Code Activity Matrix" />
@@ -203,7 +203,7 @@
 ---
 
 <!-- ========================================================================================= -->
-<!--              🧭 06. RESEARCH HORIZON & ENGINEERING ROADMAP 🧭                             -->
+<!--              06. RESEARCH HORIZON & ENGINEERING ROADMAP                                   -->
 <!-- ========================================================================================= -->
 
 <img src="./assets/sec_06.svg" width="100%" alt="06 // Research Horizon & Engineering Roadmap" />
@@ -216,7 +216,7 @@
 ---
 
 <!-- ========================================================================================= -->
-<!--             📬 07. COMMUNICATIONS & COLLABORATION HUB 📬                                  -->
+<!--             07. COMMUNICATIONS & COLLABORATION HUB                                        -->
 <!-- ========================================================================================= -->
 
 <img src="./assets/sec_07.svg" width="100%" alt="07 // Communications & Collaboration Hub" />

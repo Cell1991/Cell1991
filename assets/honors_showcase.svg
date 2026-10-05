@@ -20,6 +20,28 @@
       <stop offset="100%" stop-color="#080c1b" />
     </linearGradient>
 
+    <!-- Medal Fill Gradients -->
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdba74" />
+      <stop offset="100%" stop-color="#9a3412" />
+    </linearGradient>
+
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="softBadgeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
     <style>
       .font-ui { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
       .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
@@ -41,10 +63,10 @@
   <circle cx="36" cy="16" r="4.5" fill="#f59e0b" />
   <circle cx="52" cy="16" r="4.5" fill="#22c55e" />
   <text x="74" y="20" class="font-ui" font-size="11.5" font-weight="700" fill="#cbd5e1" letter-spacing="0.5">COMPETITIVE RECOGNITION &amp; AWARDS SHOWCASE</text>
-  <text x="836" y="20" text-anchor="end" class="font-mono" font-size="10.5" font-weight="700" fill="#fbbf24">🏆 5 KEY RECOGNITIONS</text>
+  <text x="836" y="20" text-anchor="end" class="font-mono" font-size="10.5" font-weight="700" fill="#fbbf24">◈ 5 KEY RECOGNITIONS</text>
 
   <!-- ======================================================== -->
-  <!-- GRID LAYOUT: 2 COLUMNS (TOP) + FULL BANNER (BOTTOM)      -->
+  <!-- GRID LAYOUT: 2 COLUMNS (TOP) + 3 COLUMNS (BOTTOM)        -->
   <!-- ======================================================== -->
 
   <!-- CARD 1: LINE HACKATHON (Top Left: x=24, y=46, w=398, h=108) -->
@@ -52,9 +74,12 @@
     <rect width="398" height="108" rx="8" fill="url(#cardBg)" stroke="#cd7f32" stroke-opacity="0.4" stroke-width="1" />
     <rect x="0" y="0" width="4" height="108" rx="2" fill="#cd7f32" />
     
-    <!-- Medal Icon & Title -->
-    <circle cx="32" cy="30" r="14" fill="#1e293b" stroke="#cd7f32" stroke-width="1.2" />
-    <text x="32" y="35" text-anchor="middle" font-size="14">🥉</text>
+    <!-- Vector Bronze Trophy / Shield Icon -->
+    <g transform="translate(20, 16)">
+      <circle cx="12" cy="14" r="14" fill="#1e293b" stroke="#cd7f32" stroke-width="1.2" />
+      <polygon points="12,5 15,11 21,11 16,15 18,21 12,17 6,21 8,15 3,11 9,11" fill="url(#bronzeGrad)" />
+    </g>
+    
     <text x="56" y="26" class="font-ui" font-size="13" font-weight="800" fill="#f8fafc">LINE Hackathon</text>
     
     <!-- Award Badge Pill -->
@@ -74,9 +99,12 @@
     <rect width="398" height="108" rx="8" fill="url(#cardBg)" stroke="#94a3b8" stroke-opacity="0.4" stroke-width="1" />
     <rect x="0" y="0" width="4" height="108" rx="2" fill="#94a3b8" />
     
-    <!-- Medal Icon & Title -->
-    <circle cx="32" cy="30" r="14" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2" />
-    <text x="32" y="35" text-anchor="middle" font-size="14">🥈</text>
+    <!-- Vector Silver Trophy / Shield Icon -->
+    <g transform="translate(20, 16)">
+      <circle cx="12" cy="14" r="14" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2" />
+      <polygon points="12,5 15,11 21,11 16,15 18,21 12,17 6,21 8,15 3,11 9,11" fill="url(#silverGrad)" />
+    </g>
+    
     <text x="56" y="26" class="font-ui" font-size="13" font-weight="800" fill="#f8fafc">Smart Medication Box</text>
     
     <!-- Award Badge Pill -->
@@ -96,7 +124,7 @@
     <rect width="260" height="118" rx="8" fill="url(#cardBg)" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1" />
     <rect x="0" y="0" width="4" height="118" rx="2" fill="#38bdf8" />
     
-    <text x="14" y="24" class="font-ui" font-size="12" font-weight="800" fill="#f8fafc">📊 Data Visualization</text>
+    <text x="14" y="24" class="font-ui" font-size="12" font-weight="800" fill="#f8fafc">◈ Data Visualization</text>
     <rect x="14" y="32" width="130" height="17" rx="3" fill="#082f49" stroke="#38bdf8" stroke-width="0.7" />
     <text x="79" y="44" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#7dd3fc">OUTSTANDING AWARD</text>
 
@@ -110,7 +138,7 @@
     <rect width="265" height="118" rx="8" fill="url(#cardBg)" stroke="#a855f7" stroke-opacity="0.3" stroke-width="1" />
     <rect x="0" y="0" width="4" height="118" rx="2" fill="#a855f7" />
     
-    <text x="14" y="24" class="font-ui" font-size="12" font-weight="800" fill="#f8fafc">💻 Competitive Coding</text>
+    <text x="14" y="24" class="font-ui" font-size="12" font-weight="800" fill="#f8fafc">◈ Competitive Coding</text>
     <rect x="14" y="32" width="140" height="17" rx="3" fill="#3b0764" stroke="#a855f7" stroke-width="0.7" />
     <text x="84" y="44" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#d8b4fe">HONORABLE MENTION</text>
 
@@ -124,7 +152,7 @@
     <rect width="267" height="118" rx="8" fill="url(#cardBg)" stroke="#22c55e" stroke-opacity="0.3" stroke-width="1" />
     <rect x="0" y="0" width="4" height="118" rx="2" fill="#22c55e" />
     
-    <text x="14" y="24" class="font-ui" font-size="12" font-weight="800" fill="#f8fafc">🤝 CSIT Teaching Assistant</text>
+    <text x="14" y="24" class="font-ui" font-size="12" font-weight="800" fill="#f8fafc">◈ CSIT Teaching Assistant</text>
     <rect x="14" y="32" width="145" height="17" rx="3" fill="#052e16" stroke="#22c55e" stroke-width="0.7" />
     <text x="86" y="44" text-anchor="middle" class="font-mono" font-size="8.5" font-weight="700" fill="#86efac">ACADEMIC MENTORSHIP</text>
 

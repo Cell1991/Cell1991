@@ -24,14 +24,14 @@
     
     <rect x="20" y="100" width="230" height="1" fill="#1e293b" />
     
-    <text x="20" y="125" font-family="-apple-system, sans-serif" font-size="11" fill="#cbd5e1">🏛️ Naresuan University</text>
-    <text x="20" y="148" font-family="-apple-system, sans-serif" font-size="11" fill="#4ade80">🟢 Status: Active Engineering</text>
+    <text x="20" y="125" font-family="-apple-system, sans-serif" font-size="11" fill="#cbd5e1">◈ Naresuan University</text>
+    <text x="20" y="148" font-family="-apple-system, sans-serif" font-size="11" fill="#4ade80">● Status: Active Engineering</text>
   </g>
 
   <!-- Bento Box 2: Architecture & Focus (Width: 300) -->
   <g transform="translate(280, 0)">
     <rect width="290" height="170" rx="10" fill="url(#bentoCardBg)" stroke="url(#bentoBorder)" stroke-width="1.2" />
-    <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38bdf8">⚡ CORE ARCHITECTURES</text>
+    <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38bdf8">◈ CORE ARCHITECTURES</text>
     
     <text x="20" y="62" font-family="-apple-system, sans-serif" font-size="11.5" fill="#e2e8f0">• Full-Stack Microservices</text>
     <text x="20" y="86" font-family="-apple-system, sans-serif" font-size="11.5" fill="#e2e8f0">• High-Throughput REST APIs</text>
@@ -42,7 +42,7 @@
   <!-- Bento Box 3: Infrastructure & Systems (Width: 270) -->
   <g transform="translate(580, 0)">
     <rect width="280" height="170" rx="10" fill="url(#bentoCardBg)" stroke="url(#bentoBorder)" stroke-width="1.2" />
-    <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#a855f7">🛸 INFRASTRUCTURE &amp; NET</text>
+    <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#a855f7">⬢ INFRASTRUCTURE &amp; NET</text>
     
     <text x="20" y="62" font-family="-apple-system, sans-serif" font-size="11.5" fill="#e2e8f0">• Docker Compose &amp; AWS EC2</text>
     <text x="20" y="86" font-family="-apple-system, sans-serif" font-size="11.5" fill="#e2e8f0">• TCP/IP &amp; Cisco IOS Routing</text>

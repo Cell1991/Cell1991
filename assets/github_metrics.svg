@@ -142,28 +142,28 @@
     <text x="16" y="25" class="font-ui" font-size="11.5" font-weight="700" fill="#00f2fe" letter-spacing="0.5">✦ REPOSITORY OVERVIEW</text>
     
     <!-- Row 1: Crossword -->
-    <text x="16" y="53" class="font-ui" font-size="12" font-weight="600" fill="#e2e8f0">🎮 crossword-game</text>
+    <text x="16" y="53" class="font-ui" font-size="12" font-weight="600" fill="#e2e8f0">◈ crossword-game</text>
     <g transform="translate(174, 40)">
       <rect width="66" height="18" rx="4" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="0.8" />
       <text x="33" y="13" text-anchor="middle" class="font-ui" font-size="9" font-weight="700" fill="#38bdf8" letter-spacing="0.5">FASTAPI</text>
     </g>
 
     <!-- Row 2: Stroke Scan -->
-    <text x="16" y="80" class="font-ui" font-size="12" font-weight="600" fill="#e2e8f0">🧠 nu-stroke-scan</text>
+    <text x="16" y="80" class="font-ui" font-size="12" font-weight="600" fill="#e2e8f0">◈ nu-stroke-scan</text>
     <g transform="translate(182, 67)">
       <rect width="58" height="18" rx="4" fill="#a855f7" fill-opacity="0.2" stroke="#c084fc" stroke-width="0.8" />
       <text x="29" y="13" text-anchor="middle" class="font-ui" font-size="9" font-weight="700" fill="#c084fc" letter-spacing="0.5">ONNX</text>
     </g>
 
     <!-- Row 3: Wellness Platform -->
-    <text x="16" y="107" class="font-ui" font-size="12" font-weight="600" fill="#e2e8f0">🩺 wellness-demo</text>
+    <text x="16" y="107" class="font-ui" font-size="12" font-weight="600" fill="#e2e8f0">◈ wellness-demo</text>
     <g transform="translate(176, 94)">
       <rect width="64" height="18" rx="4" fill="#059669" fill-opacity="0.2" stroke="#34d399" stroke-width="0.8" />
       <text x="32" y="13" text-anchor="middle" class="font-ui" font-size="9" font-weight="700" fill="#34d399" letter-spacing="0.5">PRISMA</text>
     </g>
 
     <!-- Row 4: Sub-info -->
-    <text x="16" y="130" class="font-ui" font-size="10.5" fill="#64748b">⚡ Docker Containerized Mesh</text>
+    <text x="16" y="130" class="font-ui" font-size="10.5" fill="#64748b">◈ Docker Containerized Mesh</text>
   </g>
 
   <!-- ========================================================================= -->
@@ -171,7 +171,7 @@
   <!-- ========================================================================= -->
   <g transform="translate(292, 50)">
     <rect width="275" height="142" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    <text x="16" y="25" class="font-ui" font-size="11.5" font-weight="700" fill="#818cf8" letter-spacing="0.5">📊 LANGUAGE DISTRIBUTION</text>
+    <text x="16" y="25" class="font-ui" font-size="11.5" font-weight="700" fill="#818cf8" letter-spacing="0.5">✦ LANGUAGE DISTRIBUTION</text>
 
     <!-- 1. Python / FastAPI (42%) -->
     <text x="16" y="51" class="font-ui" font-size="11.5" font-weight="500" fill="#cbd5e1">Python / FastAPI</text>
@@ -215,7 +215,7 @@
   <!-- ========================================================================= -->
   <g transform="translate(580, 50)">
     <rect width="255" height="142" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    <text x="16" y="25" class="font-ui" font-size="11.5" font-weight="700" fill="#34d399" letter-spacing="0.5">🔥 COMMIT VELOCITY</text>
+    <text x="16" y="25" class="font-ui" font-size="11.5" font-weight="700" fill="#34d399" letter-spacing="0.5">◈ COMMIT VELOCITY</text>
 
     <!-- 1. Outer Rotating Dashed Tech Ring (Clockwise) -->
     <circle cx="58" cy="85" r="35" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="4 6" fill="none" class="dial-rot-cw" opacity="0.5" />

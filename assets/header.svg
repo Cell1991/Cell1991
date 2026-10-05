@@ -112,22 +112,22 @@
     <!-- Pill 1 -->
     <g transform="translate(0, 0)">
       <rect width="185" height="32" rx="6" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-      <text x="92.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#f8fafc">⚡ Next.js • React • TS</text>
+      <text x="92.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#f8fafc">✦ Next.js • React • TS</text>
     </g>
     <!-- Pill 2 -->
     <g transform="translate(195, 0)">
       <rect width="195" height="32" rx="6" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-      <text x="97.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#38bdf8">⚙️ FastAPI • Python Async</text>
+      <text x="97.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#38bdf8">◈ FastAPI • Python Async</text>
     </g>
     <!-- Pill 3 -->
     <g transform="translate(400, 0)">
       <rect width="200" height="32" rx="6" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-      <text x="100" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#a855f7">🗄️ PostgreSQL • Prisma</text>
+      <text x="100" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#a855f7">⬡ PostgreSQL • Prisma</text>
     </g>
     <!-- Pill 4 -->
     <g transform="translate(610, 0)">
       <rect width="200" height="32" rx="6" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-      <text x="100" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#4ade80">☁️ Docker • AWS • Linux</text>
+      <text x="100" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#4ade80">⬢ Docker • AWS • Linux</text>
     </g>
   </g>
 </svg>
