@@ -2,16 +2,31 @@
   <defs>
     <!-- Card Background -->
     <linearGradient id="sprintBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060914" />
-      <stop offset="50%" stop-color="#090f22" />
-      <stop offset="100%" stop-color="#0d162d" />
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#080e22" />
+      <stop offset="100%" stop-color="#0c152c" />
     </linearGradient>
 
     <!-- Outer Cyber Border -->
     <linearGradient id="sprintBorder" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#22c55e" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Plasma Thruster Flame Gradient -->
+    <linearGradient id="thrustGrad" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#00f2fe" />
+      <stop offset="60%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Ship Hull Gradient -->
+    <linearGradient id="shipHull" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0284c7" />
     </linearGradient>
 
     <!-- Glowing Node Gradients -->
@@ -20,9 +35,20 @@
       <stop offset="100%" stop-color="#39d353" />
     </linearGradient>
 
+    <!-- Radar Cone Gradient -->
+    <radialGradient id="radarCone" cx="0" cy="0" r="100%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+    </radialGradient>
+
     <!-- Soft Glow Filter -->
-    <filter id="nodeGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.5" result="blur" />
+    <filter id="nodeGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="laserGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
@@ -33,22 +59,75 @@
       .font-mono {
         font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
       }
-      @keyframes snakeGlider {
-        0% { transform: translate(0, 0); }
-        25% { transform: translate(80px, 0); }
-        50% { transform: translate(80px, 34px); }
-        75% { transform: translate(160px, 34px); }
-        100% { transform: translate(160px, 68px); }
+
+      /* Starship Orbital Cruise Animation */
+      @keyframes rocketFlight {
+        0% { transform: translate(0px, 0px) rotate(0deg); }
+        22% { transform: translate(90px, 34px) rotate(12deg); }
+        48% { transform: translate(180px, 17px) rotate(-8deg); }
+        72% { transform: translate(270px, 51px) rotate(10deg); }
+        90% { transform: translate(355px, 34px) rotate(0deg); }
+        100% { transform: translate(0px, 0px) rotate(0deg); }
       }
-      @keyframes radarPulse {
-        0%, 100% { opacity: 0.95; transform: scale(1); }
-        50% { opacity: 0.45; transform: scale(1.04); }
+
+      /* Thruster Flame Flicker */
+      @keyframes flameFlicker {
+        0%, 100% { transform: scaleX(1); opacity: 0.9; }
+        50% { transform: scaleX(1.35) scaleY(1.1); opacity: 1; }
       }
-      .snake-crawl {
-        animation: snakeGlider 5s ease-in-out infinite alternate;
+
+      /* Laser Cannons Firing */
+      @keyframes laserPulse {
+        0%, 100% { opacity: 0; transform: translateX(0); }
+        15%, 35% { opacity: 1; transform: translateX(25px); }
+        55% { opacity: 0; transform: translateX(45px); }
       }
-      .radar-line {
-        animation: radarPulse 2.5s ease-in-out infinite;
+
+      /* Starfield Twinkle */
+      @keyframes starTwinkle1 {
+        0%, 100% { opacity: 0.2; transform: scale(0.8); }
+        50% { opacity: 0.95; transform: scale(1.3); }
+      }
+      @keyframes starTwinkle2 {
+        0%, 100% { opacity: 0.8; transform: scale(1.2); }
+        50% { opacity: 0.15; transform: scale(0.7); }
+      }
+
+      /* Target Lock Reticle Pulse */
+      @keyframes lockPulse {
+        0%, 100% { transform: scale(1); opacity: 0.9; }
+        50% { transform: scale(1.08); opacity: 0.5; }
+      }
+
+      /* Radar Sweep Rotation */
+      @keyframes radarSweep {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      .ship-flight {
+        animation: rocketFlight 7.5s ease-in-out infinite;
+      }
+      .flame-anim {
+        transform-origin: 0px 7px;
+        animation: flameFlicker 0.18s ease-in-out infinite alternate;
+      }
+      .laser-fire {
+        animation: laserPulse 1.8s ease-in-out infinite;
+      }
+      .star-1 {
+        animation: starTwinkle1 3s ease-in-out infinite;
+      }
+      .star-2 {
+        animation: starTwinkle2 2.4s ease-in-out infinite;
+      }
+      .target-lock {
+        transform-origin: 405px 78px;
+        animation: lockPulse 2s ease-in-out infinite;
+      }
+      .sweep-beam {
+        transform-origin: 0px 0px;
+        animation: radarSweep 4s linear infinite;
       }
     </style>
   </defs>
@@ -61,15 +140,31 @@
   <circle cx="20" cy="17" r="4.5" fill="#ef4444" />
   <circle cx="36" cy="17" r="4.5" fill="#f59e0b" />
   <circle cx="52" cy="17" r="4.5" fill="#22c55e" />
-  <text x="74" y="21" class="font-ui" font-size="12" font-weight="700" fill="#cbd5e1" letter-spacing="0.5">ACTIVE ENGINEERING SPRINT // RECENT 60-DAY RADAR</text>
-  <text x="836" y="21" text-anchor="end" class="font-ui" font-size="11" font-weight="700" fill="#00f2fe">505+ CONTRIBUTIONS</text>
+  <text x="74" y="21" class="font-ui" font-size="12" font-weight="700" fill="#cbd5e1" letter-spacing="0.5">STARSHIP FLIGHT TELEMETRY // 60-DAY ORBITAL SPRINT</text>
+  <text x="836" y="21" text-anchor="end" class="font-ui" font-size="11" font-weight="700" fill="#00f2fe">🚀 505+ WARP COMMITS</text>
 
-  <!-- LEFT PANEL: 60-DAY HIGH-DENSITY CONTRIBUTION GRID (Width: 490) -->
+  <!-- LEFT PANEL: DEEP SPACE CONTRIBUTION MATRIX (Width: 490) -->
   <g transform="translate(25, 48)">
-    <rect width="490" height="154" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    
+    <rect width="490" height="154" rx="8" fill="#090e1f" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Distant Cosmic Starfield -->
+    <g class="star-1" fill="#38bdf8">
+      <circle cx="30" cy="20" r="1" />
+      <circle cx="120" cy="80" r="1.2" />
+      <circle cx="210" cy="30" r="0.8" />
+      <circle cx="340" cy="130" r="1" />
+      <circle cx="460" cy="60" r="1.2" />
+    </g>
+    <g class="star-2" fill="#a855f7">
+      <circle cx="75" cy="120" r="1" />
+      <circle cx="165" cy="15" r="1.2" />
+      <circle cx="285" cy="95" r="0.8" />
+      <circle cx="395" cy="25" r="1.3" />
+      <circle cx="475" cy="140" r="1" />
+    </g>
+
     <!-- Header Inside Left Panel -->
-    <text x="16" y="22" class="font-ui" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="0.5">✦ LAST 60 DAYS ACTIVITY MATRIX</text>
+    <text x="16" y="22" class="font-ui" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="0.5">✦ STARFLEET CONTRIBUTION MATRIX</text>
     <text x="474" y="22" text-anchor="end" class="font-ui" font-size="10" fill="#94a3b8">Aug ➔ Present</text>
 
     <!-- Week Labels (Centered above columns) -->
@@ -82,10 +177,10 @@
       <text x="277" y="38" text-anchor="middle">W6</text>
       <text x="322" y="38" text-anchor="middle">W7</text>
       <text x="367" y="38" text-anchor="middle">W8</text>
-      <text x="412" y="38" text-anchor="middle" fill="#00f2fe">Active</text>
+      <text x="412" y="38" text-anchor="middle" fill="#00f2fe" font-weight="700">W9 [Active]</text>
     </g>
 
-    <!-- Day Labels (Left, vertically aligned to node rows) -->
+    <!-- Day Labels -->
     <g class="font-ui" font-size="9" fill="#64748b" font-weight="600">
       <text x="16" y="58">Mon</text>
       <text x="16" y="92">Wed</text>
@@ -159,28 +254,69 @@
         <rect x="360" width="14" height="14" rx="3" fill="url(#glowMax)" filter="url(#nodeGlow)" />
       </g>
 
-      <!-- ANIMATED CYBER SNAKE GLIDING -->
-      <g class="snake-crawl" filter="url(#nodeGlow)">
-        <rect x="180" y="0" width="14" height="14" rx="3" fill="#00f2fe" opacity="0.3" />
-        <rect x="225" y="0" width="14" height="14" rx="3" fill="#00f2fe" opacity="0.7" />
-        <rect x="270" y="0" width="14" height="14" rx="4" fill="#38bdf8" />
-        <!-- Head -->
-        <rect x="315" y="0" width="15" height="15" rx="4" fill="#ffffff" stroke="#00f2fe" stroke-width="1.5" />
-        <circle cx="320" cy="5" r="1.5" fill="#030712" />
-        <circle cx="320" cy="10" r="1.5" fill="#030712" />
+      <!-- Target Lock Reticle over W9 Active Sprint -->
+      <g class="target-lock" stroke="#00f2fe" stroke-width="1.2" fill="none">
+        <path d="M 356 -2 L 356 -8 L 362 -8" />
+        <path d="M 378 -8 L 384 -8 L 384 -2" />
+        <path d="M 356 84 L 356 90 L 362 90" />
+        <path d="M 378 90 L 384 90 L 384 84" />
+      </g>
+
+      <!-- ======================================================== -->
+      <!-- 🛸 HIGH-TECH CYBER STARSHIP / ROCKET FIGHTER 🛸         -->
+      <!-- ======================================================== -->
+      <g class="ship-flight">
+        <!-- Glowing Plasma Thruster Flame (Left) -->
+        <g class="flame-anim" filter="url(#laserGlow)">
+          <path d="M 0 5 L -24 7 L 0 9 Z" fill="url(#thrustGrad)" />
+          <path d="M 0 5.8 L -14 7 L 0 8.2 Z" fill="#ffffff" />
+          <!-- Stardust exhaust particles -->
+          <circle cx="-28" cy="7" r="1.5" fill="#f59e0b" opacity="0.8" />
+          <circle cx="-35" cy="6" r="1.2" fill="#00f2fe" opacity="0.6" />
+        </g>
+
+        <!-- Starship Delta Wings -->
+        <path d="M 6 7 L -4 -1 L 2 7 L -4 15 L 6 7 Z" fill="#0369a1" stroke="#38bdf8" stroke-width="0.8" />
+        
+        <!-- Starship Main Fuselage -->
+        <path d="M 2 3 L 26 7 L 2 11 Z" fill="url(#shipHull)" stroke="#00f2fe" stroke-width="1" />
+        
+        <!-- High-Tech Cockpit Canopy -->
+        <path d="M 12 7 L 21 7 L 15 5.5 Z" fill="#00f2fe" filter="url(#laserGlow)" />
+        
+        <!-- Wingtip Navigation Beacons -->
+        <circle cx="-3" cy="-1" r="1.2" fill="#ef4444" />
+        <circle cx="-3" cy="15" r="1.2" fill="#22c55e" />
+
+        <!-- Twin High-Energy Laser Cannons -->
+        <line x1="8" y1="2" x2="16" y2="2" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round" />
+        <line x1="8" y1="12" x2="16" y2="12" stroke="#38bdf8" stroke-width="1.2" stroke-linecap="round" />
+
+        <!-- Animated Laser Blast Pulse Firing Forward -->
+        <g class="laser-fire" filter="url(#laserGlow)">
+          <line x1="28" y1="2" x2="42" y2="2" stroke="#00f2fe" stroke-width="1.8" stroke-linecap="round" />
+          <line x1="28" y1="12" x2="42" y2="12" stroke="#00f2fe" stroke-width="1.8" stroke-linecap="round" />
+        </g>
       </g>
     </g>
   </g>
 
-  <!-- RIGHT PANEL: ACTIVITY RADAR & CODEBASE TELEMETRY (Width: 305) -->
+  <!-- RIGHT PANEL: ORBITAL HUD & TARGET RADAR (Width: 305) -->
   <g transform="translate(530, 48)">
-    <rect width="305" height="154" rx="8" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
+    <rect width="305" height="154" rx="8" fill="#090e1f" stroke="#1e293b" stroke-width="1" />
     
-    <text x="16" y="22" class="font-ui" font-size="11" font-weight="700" fill="#22c55e" letter-spacing="0.5">✦ ACTIVITY OVERVIEW RADAR</text>
+    <text x="16" y="22" class="font-ui" font-size="11" font-weight="700" fill="#22c55e" letter-spacing="0.5">✦ STARSHIP RADAR LOCK // TELEMETRY</text>
 
     <!-- Crosshair Quadrant from Real GitHub Profile -->
     <g transform="translate(150, 85)">
-      <!-- Axes -->
+      <!-- Radar Sweep Beam -->
+      <g class="sweep-beam">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.8" />
+        <path d="M 0 0 L 56 -24 A 62 62 0 0 1 60 0 Z" fill="url(#radarCone)" />
+      </g>
+
+      <!-- Outer Radar Ring & Crosshair Axes -->
+      <circle cx="0" cy="0" r="62" stroke="#1e293b" stroke-width="1.2" stroke-dasharray="3, 3" fill="none" />
       <line x1="-70" y1="0" x2="70" y2="0" stroke="#1e293b" stroke-width="1.5" />
       <line x1="0" y1="-45" x2="0" y2="45" stroke="#1e293b" stroke-width="1.5" />
 
@@ -189,8 +325,8 @@
       <text x="76" y="3" text-anchor="start" class="font-ui" font-size="8.5" fill="#64748b">Issues</text>
       <text x="0" y="56" text-anchor="middle" class="font-ui" font-size="8.5" fill="#64748b">Pull requests (1%)</text>
       
-      <!-- Commits Line (99%) Glowing -->
-      <line x1="0" y1="0" x2="-62" y2="0" stroke="#22c55e" stroke-width="2.5" class="radar-line" />
+      <!-- Commits Line (99%) Glowing & Target Locked -->
+      <line x1="0" y1="0" x2="-62" y2="0" stroke="#22c55e" stroke-width="2.5" />
       <circle cx="-62" cy="0" r="4" fill="#39d353" filter="url(#nodeGlow)" />
       <text x="-68" y="-5" text-anchor="end" class="font-ui" font-size="10" font-weight="700" fill="#22c55e">99% Commits</text>
       <circle cx="0" cy="0" r="3" fill="#00f2fe" />
@@ -198,7 +334,7 @@
 
     <!-- Sub-info -->
     <g transform="translate(16, 140)" class="font-ui" font-size="10">
-      <text fill="#94a3b8">Primary: <tspan fill="#38bdf8">crossword</tspan> • <tspan fill="#c084fc">nu-stroke</tspan> • <tspan fill="#34d399">wellness</tspan></text>
+      <text fill="#94a3b8">Mode: <tspan fill="#00f2fe" font-weight="600">WARP SPEED</tspan> • <tspan fill="#38bdf8">crossword</tspan> • <tspan fill="#c084fc">nu-stroke</tspan></text>
     </g>
   </g>
 
