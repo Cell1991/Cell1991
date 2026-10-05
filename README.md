@@ -309,9 +309,21 @@
   <a href="https://github.com/Cell1991">
     <img src="https://img.shields.io/badge/GitHub-Cell1991-030712?style=for-the-badge&logo=github&logoColor=00f2fe&labelColor=0b0f19" alt="GitHub Profile" />
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="mailto:celleb1991@gmail.com">
     <img src="https://img.shields.io/badge/Email-celleb1991%40gmail.com-030712?style=for-the-badge&logo=gmail&logoColor=f43f5e&labelColor=0b0f19" alt="Direct Email" />
+  </a>
+  &nbsp;
+  <a href="https://line.me/ti/p/~cellz05">
+    <img src="https://img.shields.io/badge/LINE-cellz05-06C755?style=for-the-badge&logo=line&logoColor=white&labelColor=030712" alt="LINE Connect" />
+  </a>
+  &nbsp;
+  <a href="https://instagram.com/cell.tnp">
+    <img src="https://img.shields.io/badge/Instagram-cell.tnp-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=030712" alt="Instagram Profile" />
+  </a>
+  &nbsp;
+  <a href="https://facebook.com/cellz2505">
+    <img src="https://img.shields.io/badge/Facebook-cellz2505-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=030712" alt="Facebook Profile" />
   </a>
 </p>
 
