@@ -4,8 +4,10 @@
 
 <div align="center">
 
-  <!-- Sleek Modern Gradient Header -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,6,12,20,24&height=220&section=header&text=THANAPHAT%20CHICHU&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=%E2%9A%A1%20FULL%20STACK%20DEVELOPER%20%7C%20BACKEND%20%26%20CLOUD%20SYSTEMS%20ENGINEER%20%E2%9A%A1&descFontSize=15&descColor=38bdf8&descAlignY=60" width="100%" alt="Header Banner" />
+  <!-- Self-Hosted High-Resolution Animated SVG Banner -->
+  <img src="./assets/header.svg" width="100%" alt="Thanaphat Chichu - Full Stack & Backend Systems Architect" />
+
+  <br/><br/>
 
   <!-- Modern Fira Code Terminal Typing Stream -->
   <a href="https://github.com/Cell1991">
@@ -14,7 +16,7 @@
 
   <br/>
 
-  <!-- STATUS BADGES -->
+  <!-- SYSTEM STATUS BADGES -->
   <p align="center">
     <img src="https://komarev.com/ghpvc/?username=Cell1991&style=for-the-badge&color=00f2fe&labelColor=030712&label=SYSTEM+VIEWS" alt="Telemetry Views" />
     <img src="https://img.shields.io/badge/Identity-Cell1991-030712?style=for-the-badge&logo=github&logoColor=00f2fe" alt="GitHub Identity" />
@@ -253,20 +255,8 @@ export class SystemPlatformEngine implements ICloudInfrastructure, INetworkEngin
         </p>
       </div>
 
-```
-╔═════════════════════════════════════════════════════════════════════════════════════════════════════╗
-║                      ⚡ REAL-TIME MULTIPLAYER WEBSOCKET DATA FLOW TOPOLOGY                          ║
-╚═════════════════════════════════════════════════════════════════════════════════════════════════════╝
-
-   [ 👾 Client Players ] ──( WebSocket Events )──► [ 🛰️ FastAPI Gateway Node ]
-                                                             │
-                                           ┌─────────────────┴─────────────────┐
-                                           ▼                                   ▼
-                              [ 🪐 In-Memory Room Core ]             [ 🧩 Lexicon Word Solver ]
-                                           │                                   │
-                                           ▼                                   ▼
-                              [ 🌌 State Broadcast Mesh ]            [ 🛡️ Matrix Grid Validator ]
-```
+  <!-- Embedded Vector Architecture SVG -->
+  <img src="./assets/crossword_architecture.svg" width="100%" alt="Crossword Game System Architecture" />
 
   <h4>⚡ Key Engineering Innovations & Mechanics:</h4>
   <ul>
@@ -306,7 +296,7 @@ export class SystemPlatformEngine implements ICloudInfrastructure, INetworkEngin
       </a>
     </td>
 
-    <!-- PROJECT 03: WELLNESS DATA CITADEL -->
+    <!-- PROJECT 03: WELLNESS DATA PLATFORM -->
     <td width="50%" valign="top" style="background-color: #030712; border: 1px solid #1e293b; border-radius: 10px; padding: 16px;">
       <h3 style="color: #38bdf8;">🩺 03 // WELLNESS DATA PLATFORM</h3>
       <p>
@@ -441,8 +431,7 @@ export class SystemPlatformEngine implements ICloudInfrastructure, INetworkEngin
   </a>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=1,6,12,20,24&height=120&section=footer" width="100%" alt="Footer Banner" />
-
-<sub>Designed with emphasis on clean architecture, high throughput, and modern developer aesthetics.</sub>
+<!-- Self-Hosted High-Resolution SVG Footer -->
+<img src="./assets/footer.svg" width="100%" alt="Footer Banner" />
 
 </div>
