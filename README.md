@@ -30,17 +30,17 @@
 ---
 
 <!-- ========================================================================================= -->
-<!--                    01. BENTO PROFILE & TECHNICAL ARSENAL                                  -->
+<!--                    01. ENGINEERING PROFILE & TECHNICAL ARSENAL                            -->
 <!-- ========================================================================================= -->
 
-<img src="./assets/sec_01.svg" width="100%" alt="01 // Bento Matrix & Technical Arsenal" />
+<img src="./assets/sec_01.svg" width="100%" alt="01 // Engineering Profile & Technical Arsenal" />
 
 <div align="center">
 
   <br/>
 
-  <!-- Self-Hosted Vector Bento Matrix -->
-  <img src="./assets/bento_system.svg" width="100%" alt="Bento System Matrix" />
+  <!-- Self-Hosted Vector Engineering Profile Matrix -->
+  <img src="./assets/bento_system.svg" width="100%" alt="Engineering Profile & Specializations Overview" />
 
   <br/><br/>
 

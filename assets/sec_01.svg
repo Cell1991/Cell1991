@@ -32,8 +32,8 @@
   <text x="33" y="29" text-anchor="middle" class="font-mono" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="0.5">01</text>
 
   <!-- Title -->
-  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">BENTO MATRIX &amp; TECHNICAL ARSENAL</text>
+  <text x="64" y="29" class="font-title" font-size="13" font-weight="800" fill="#f8fafc" letter-spacing="0.6">ENGINEERING PROFILE &amp; TECHNICAL ARSENAL</text>
   
   <!-- Subtitle Tag -->
-  <text x="836" y="29" text-anchor="end" class="font-mono" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="0.5">// CORE COMPETENCIES &amp; TECH STACK</text>
+  <text x="836" y="29" text-anchor="end" class="font-mono" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="0.5">// CORE SPECIALIZATIONS &amp; TECH STACK</text>
 </svg>
