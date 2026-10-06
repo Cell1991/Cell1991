@@ -53,10 +53,10 @@
   </g>
 
   <!-- Connection 1: Client <-> Gateway -->
-  <path d="M 210 117 L 310 117" stroke="#38bdf8" stroke-width="2" class="stream-line" />
+  <path d="M 223 117 L 307 117" stroke="#38bdf8" stroke-width="2" class="stream-line" />
   <polygon points="315,117 305,112 305,122" fill="#38bdf8" />
-  <polygon points="205,117 215,112 215,122" fill="#38bdf8" />
-  <text x="260" y="106" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#38bdf8">WebSocket</text>
+  <polygon points="215,117 225,112 225,122" fill="#38bdf8" />
+  <text x="265" y="106" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#38bdf8">WebSocket</text>
 
   <!-- Node 2: FastAPI Gateway Engine -->
   <g transform="translate(320, 60)">
