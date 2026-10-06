@@ -62,11 +62,7 @@
 | **Networking & Security** | ![Cisco](https://img.shields.io/badge/Cisco_IOS-1BA0D7?style=flat-square&logo=cisco&logoColor=white) ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white) ![TCP/IP](https://img.shields.io/badge/TCP/IP_Stack-0052CC?style=flat-square) ![Nmap](https://img.shields.io/badge/Nmap_Audit-4A90E2?style=flat-square) |
 | **Data & Analytics** | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![PowerBI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) ![Excel](https://img.shields.io/badge/MS_Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white) |
 
-<br/>
-
-<img src="./assets/dragon_flight_01.svg" width="100%" alt="Cyber Astral Dragon Flight // Phase 01" />
-
-<br/>
+---
 
 <!-- ========================================================================================= -->
 <!--            02. DESIGN PATTERNS & ARCHITECTURAL PRINCIPLES                                 -->
@@ -163,11 +159,7 @@
 > - **Automated Schema Lifecycle:** Prisma ORM migrations with automated TypeScript type generation and structured audit log triggers.
 > - **Database Diagnostics & Observability:** Real-time query execution monitoring, connection pool load balancing, and automated regression testing suites.
 
-<br/>
-
-<img src="./assets/dragon_flight_02.svg" width="100%" alt="Cyber Astral Dragon Flight // Phase 02" />
-
-<br/>
+---
 
 <!-- ========================================================================================= -->
 <!--             04. HONORS, HACKATHONS & RECOGNITION                                          -->
@@ -208,11 +200,7 @@
 
 </div>
 
-<br/>
-
-<img src="./assets/dragon_flight_03.svg" width="100%" alt="Cyber Astral Dragon Flight // Phase 03" />
-
-<br/>
+---
 
 <!-- ========================================================================================= -->
 <!--              06. RESEARCH HORIZON & ENGINEERING ROADMAP                                   -->
