@@ -18,7 +18,7 @@
 
   <!-- SYSTEM STATUS BADGES (Mobile Responsive) -->
   <p align="center">
-    <img src="https://komarev.com/ghpvc/?username=Cell1991&style=flat-square&color=00f2fe&labelColor=030712&label=SYSTEM+VIEWS" alt="Telemetry Views" />
+    <img src="https://api.visitorbadge.io/api/visitors?path=Cell1991.Cell1991&label=SYSTEM%20VIEWS&labelColor=030712&countColor=00f2fe&style=flat-square" alt="Telemetry Views" />
     <img src="https://img.shields.io/badge/Identity-Cell1991-030712?style=flat-square&logo=github&logoColor=00f2fe" alt="GitHub Identity" />
     <img src="https://img.shields.io/badge/University-Naresuan_University-030712?style=flat-square&logo=academia&logoColor=a855f7" alt="University" />
     <img src="https://img.shields.io/badge/Field-B.Sc._Computer_Science-030712?style=flat-square&logo=computermods&logoColor=4ade80" alt="Field" />
