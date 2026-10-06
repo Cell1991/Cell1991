@@ -1,4 +1,4 @@
-<svg width="100%" height="100%" viewBox="0 0 1000 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100%" viewBox="0 0 1060 310" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Obsidian Gradient -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -36,36 +36,45 @@
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0.9" />
     </linearGradient>
 
-    <!-- Dragon Pearlescent Body Gradient -->
-    <linearGradient id="dragonSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- ======================================================== -->
+    <!-- 🐉 DRAGON PEARLESCENT SKIN & SCALE GRADIENTS             -->
+    <!-- ======================================================== -->
+    <linearGradient id="dragonDorsal" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="40%" stop-color="#f8fafc" />
-      <stop offset="80%" stop-color="#e0f2fe" />
-      <stop offset="100%" stop-color="#cbd5e1" />
+      <stop offset="30%" stop-color="#f0f9ff" />
+      <stop offset="70%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#bae6fd" />
     </linearGradient>
 
-    <!-- Dragon Underbelly Scales (Celestial Turquoise / Lavender) -->
-    <linearGradient id="dragonBelly" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.9" />
+    <!-- Dragon Underbelly Scales (Luminous Aqua-Lavender) -->
+    <linearGradient id="dragonVentral" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.95" />
     </linearGradient>
 
-    <!-- Dragon Emerald Mane (Signature Spirited Away Teal/Emerald) -->
-    <linearGradient id="dragonMane" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6ee7b7" />
-      <stop offset="35%" stop-color="#10b981" />
-      <stop offset="70%" stop-color="#059669" />
+    <!-- Dragon Emerald Mane (Spirited Away Signature Royal Emerald) -->
+    <linearGradient id="dragonManeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7f3d0" />
+      <stop offset="25%" stop-color="#34d399" />
+      <stop offset="60%" stop-color="#059669" />
       <stop offset="100%" stop-color="#064e3b" />
     </linearGradient>
 
-    <!-- Dragon Crystal Antler Horns -->
-    <linearGradient id="antlerGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#e2e8f0" />
-      <stop offset="40%" stop-color="#38bdf8" />
-      <stop offset="80%" stop-color="#00f2fe" />
+    <!-- Dragon Antler Horns (Crystal Pearl to Cyan Glow) -->
+    <linearGradient id="antlerHornGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="35%" stop-color="#bae6fd" />
+      <stop offset="75%" stop-color="#38bdf8" />
       <stop offset="100%" stop-color="#ffffff" />
     </linearGradient>
+
+    <!-- Dragon Iridescent Scale Pattern -->
+    <pattern id="dragonScalePattern" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <path d="M 0 8 Q 4 0 8 8 Q 12 16 16 8" fill="none" stroke="#38bdf8" stroke-width="0.75" stroke-opacity="0.45" />
+      <path d="M 8 0 Q 12 8 16 0" fill="none" stroke="#a855f7" stroke-width="0.6" stroke-opacity="0.35" />
+      <circle cx="8" cy="8" r="1" fill="#ffffff" fill-opacity="0.5" />
+    </pattern>
 
     <!-- Glow Filters -->
     <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
@@ -73,13 +82,18 @@
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <filter id="dragonGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <filter id="dragonAura" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="maneGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
     <filter id="orbGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feGaussianBlur stdDeviation="6" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
@@ -92,48 +106,54 @@
       .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
       .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, Menlo, Consolas, monospace; }
 
-      /* Animated Laser Scan */
+      /* Laser Scan */
       @keyframes laserScan {
         0% { transform: translateY(0); opacity: 0; }
         50% { opacity: 0.6; }
-        100% { transform: translateY(225px); opacity: 0; }
+        100% { transform: translateY(230px); opacity: 0; }
       }
       @keyframes pulseDot {
         0%, 100% { opacity: 1; transform: scale(1); }
         50% { opacity: 0.3; transform: scale(0.85); }
       }
 
-      /* Dragon Ethereal Floating Motion */
+      /* Dragon Breathing Serpentine Float */
       @keyframes dragonHover {
         0%, 100% { transform: translateY(0px) rotate(0deg); }
-        35% { transform: translateY(-5px) rotate(0.4deg); }
-        70% { transform: translateY(4px) rotate(-0.3deg); }
+        35% { transform: translateY(-6px) rotate(0.4deg); }
+        70% { transform: translateY(5px) rotate(-0.3deg); }
       }
 
-      /* Dragon Whisker Wave */
-      @keyframes whiskerTopFlow {
-        0%, 100% { transform: rotate(0deg) skewX(0deg); }
-        50% { transform: rotate(5deg) skewX(3deg); }
-      }
-      @keyframes whiskerBotFlow {
-        0%, 100% { transform: rotate(0deg) skewX(0deg); }
-        50% { transform: rotate(-5deg) skewX(-3deg); }
+      /* Dragon Head Subtle Majestic Nod */
+      @keyframes dragonHeadFloat {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-4px) rotate(-0.8deg); }
       }
 
-      /* Dragon Mane Ripple */
-      @keyframes maneBreeze {
+      /* Flowing Silk Whisker Waves */
+      @keyframes whiskerUpperWave {
+        0%, 100% { transform: rotate(0deg) skewX(0deg); }
+        50% { transform: rotate(6deg) skewX(4deg); }
+      }
+      @keyframes whiskerLowerWave {
+        0%, 100% { transform: rotate(0deg) skewX(0deg); }
+        50% { transform: rotate(-6deg) skewX(-4deg); }
+      }
+
+      /* Emerald Dorsal Mane Ripple */
+      @keyframes maneRippleAnim {
         0%, 100% { transform: scale(1, 1); }
         50% { transform: scale(1.05, 1.08); }
       }
 
-      /* Orb Pulse */
-      @keyframes orbPulseAnim {
+      /* Celestial Pearl Pulse */
+      @keyframes pearlPulse {
         0%, 100% { transform: scale(1); opacity: 0.9; }
-        50% { transform: scale(1.15); opacity: 1; }
+        50% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 10px #00f2fe); }
       }
 
-      /* Twinkling Stardust */
-      @keyframes starTwinkle {
+      /* Stardust Twinkle */
+      @keyframes stardustTwinkle {
         0%, 100% { opacity: 0.2; transform: scale(0.8); }
         50% { opacity: 1; transform: scale(1.3); }
       }
@@ -141,251 +161,301 @@
       .laser { animation: laserScan 4s linear infinite; }
       .live-pulse { animation: pulseDot 2s ease-in-out infinite; }
       
-      .dragon-anim { animation: dragonHover 6.5s ease-in-out infinite; }
-      .whisker-top-anim { transform-origin: 235px 58px; animation: whiskerTopFlow 3.8s ease-in-out infinite; }
-      .whisker-bot-anim { transform-origin: 232px 66px; animation: whiskerBotFlow 4.2s ease-in-out infinite; }
-      .mane-anim { transform-origin: 150px 50px; animation: maneBreeze 3.2s ease-in-out infinite; }
-      .orb-anim { transform-origin: 270px 65px; animation: orbPulseAnim 2.5s ease-in-out infinite; }
-      .star-1 { animation: starTwinkle 2.8s ease-in-out infinite; }
-      .star-2 { animation: starTwinkle 3.5s ease-in-out infinite; }
+      .dragon-body-anim { animation: dragonHover 7s ease-in-out infinite; }
+      .dragon-head-anim { transform-origin: 190px 65px; animation: dragonHeadFloat 5s ease-in-out infinite; }
+      .whisker-top { transform-origin: 250px 75px; animation: whiskerUpperWave 3.6s ease-in-out infinite; }
+      .whisker-bot { transform-origin: 245px 84px; animation: whiskerLowerWave 4.2s ease-in-out infinite; }
+      .mane-ripple { transform-origin: 160px 60px; animation: maneRippleAnim 3.4s ease-in-out infinite; }
+      .pearl-anim { transform-origin: 290px 78px; animation: pearlPulse 2.6s ease-in-out infinite; }
+      .star-1 { animation: stardustTwinkle 2.8s ease-in-out infinite; }
+      .star-2 { animation: stardustTwinkle 3.5s ease-in-out infinite; }
     </style>
   </defs>
 
   <!-- ======================================================== -->
-  <!-- 01. MAIN CYBER CONTAINER BOX (x=50, y=30, w=900, h=225)   -->
+  <!-- 01. MAIN CYBER CONTAINER BOX (x=80, y=40, w=900, h=230)   -->
   <!-- ======================================================== -->
-  <g transform="translate(50, 30)">
-    <rect width="900" height="225" rx="16" fill="url(#bgGradient)" />
-    <rect width="900" height="225" rx="16" fill="url(#glowCyan)" />
-    <rect width="900" height="225" rx="16" fill="url(#glowPurple)" />
-    <rect width="900" height="225" rx="16" fill="url(#cyberGrid)" />
+  <g transform="translate(80, 40)">
+    <rect width="900" height="230" rx="16" fill="url(#bgGradient)" />
+    <rect width="900" height="230" rx="16" fill="url(#glowCyan)" />
+    <rect width="900" height="230" rx="16" fill="url(#glowPurple)" />
+    <rect width="900" height="230" rx="16" fill="url(#cyberGrid)" />
 
     <!-- Outer Neon Border Frame -->
-    <rect x="1" y="1" width="898" height="223" rx="15" fill="none" stroke="url(#borderGlow)" stroke-width="1.5" />
+    <rect x="1" y="1" width="898" height="228" rx="15" fill="none" stroke="url(#borderGlow)" stroke-width="1.5" />
 
     <!-- Corner Tech Geometry -->
     <path d="M 12 26 L 12 12 L 26 12" fill="none" stroke="#00f2fe" stroke-width="2.5" />
     <path d="M 874 12 L 888 12 L 888 26" fill="none" stroke="#a855f7" stroke-width="2.5" />
-    <path d="M 12 199 L 12 213 L 26 213" fill="none" stroke="#00f2fe" stroke-width="2.5" />
-    <path d="M 874 213 L 888 213 L 888 199" fill="none" stroke="#a855f7" stroke-width="2.5" />
+    <path d="M 12 204 L 12 218 L 26 218" fill="none" stroke="#00f2fe" stroke-width="2.5" />
+    <path d="M 874 218 L 888 218 L 888 204" fill="none" stroke="#a855f7" stroke-width="2.5" />
 
     <!-- Animated Laser Scanline -->
     <line x1="20" y1="0" x2="880" y2="0" stroke="#00f2fe" stroke-width="1.5" opacity="0.4" class="laser" />
   </g>
 
   <!-- ======================================================== -->
-  <!-- 02. CELESTIAL ASTRAL DRAGON (HAKU) - 100% UNCLIPPED      -->
+  <!-- 02. GRAND CELESTIAL ASTRAL DRAGON (MAJESTIC COILING)      -->
   <!-- ======================================================== -->
-  <g class="dragon-anim">
+  <g class="dragon-body-anim">
 
-    <!-- Soft Cloud Mists (Behind Dragon) -->
-    <g opacity="0.22" fill="#38bdf8" filter="url(#dragonGlow)">
-      <ellipse cx="90" cy="180" rx="45" ry="16" />
-      <ellipse cx="910" cy="210" rx="55" ry="18" />
-      <ellipse cx="530" cy="35" rx="75" ry="14" />
+    <!-- Ethereal Celestial Wind Mists & Cloud Vortex -->
+    <g opacity="0.25" fill="#38bdf8" filter="url(#dragonAura)">
+      <ellipse cx="120" cy="180" rx="55" ry="20" />
+      <ellipse cx="960" cy="210" rx="65" ry="22" />
+      <ellipse cx="560" cy="40" rx="90" ry="16" />
+      <ellipse cx="380" cy="275" rx="70" ry="15" />
     </g>
 
     <!-- ======================================================== -->
-    <!-- DRAGON BODY: ELEGANT ORGANIC SERPENTINE COIL             -->
-    <!-- Loop 1: Emerging from lower-left around corner to top    -->
-    <!-- Loop 2: Soaring across top header bar to right corner   -->
+    <!-- DRAGON BODY: DRAMATIC 3D SERPENTINE COILING (S-CURVES)   -->
+    <!-- Loop 1: Coiling from bottom-left corner up & around      -->
+    <!-- Loop 2: Majestic S-Wave across top header deck          -->
+    <!-- Loop 3: Sweeping spiral down right side & under card    -->
     <!-- ======================================================== -->
-    
-    <!-- Dragon Shadow Layer -->
-    <path d="M 68 235 C 30 175 35 105 75 60 C 105 28 155 35 190 52 C 280 85 410 40 540 32 C 670 24 810 18 890 50 C 955 78 970 145 940 210 C 920 250 865 260 815 248" fill="none" stroke="#040712" stroke-width="20" stroke-linecap="round" />
-    
-    <!-- Dragon Main Pearlescent Body Tube -->
-    <path d="M 68 235 C 30 175 35 105 75 60 C 105 28 155 35 190 52 C 280 85 410 40 540 32 C 670 24 810 18 890 50 C 955 78 970 145 940 210 C 920 250 865 260 815 248" fill="none" stroke="url(#dragonSkin)" stroke-width="16" stroke-linecap="round" filter="url(#dragonGlow)" />
-    
-    <!-- Dragon Underbelly Scales (Glowing Celestial Strip) -->
-    <path d="M 66 235 C 27 175 32 105 72 62 C 102 30 152 37 188 54 C 278 87 408 42 538 34 C 668 26 808 20 888 52 C 952 80 966 145 936 208 C 916 248 863 258 815 248" fill="none" stroke="url(#dragonBelly)" stroke-width="5" stroke-linecap="round" stroke-dasharray="6 3" />
+
+    <!-- [LAYER 1]: Deep Dragon Drop-Shadow for 3D Relief Depth -->
+    <path d="M 95 250 C 45 190 40 100 90 45 C 130 10 185 20 225 45 C 320 85 450 35 580 25 C 710 15 840 10 930 45 C 1005 75 1025 155 990 225 C 960 275 895 285 835 270 C 730 245 610 275 480 275 C 360 275 250 260 160 275 C 120 282 85 270 95 250 Z" fill="none" stroke="#04060f" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- [LAYER 2]: Dragon Muscular Serpentine Torso (White Pearlescent) -->
+    <!-- Segment A: Left Ascension & Top Wave -->
+    <path d="M 95 250 C 45 190 40 100 90 45 C 130 10 185 20 225 45 C 320 85 450 35 580 25 C 710 15 840 10 930 45 C 1005 75 1025 155 990 225 C 960 275 895 285 835 270 C 730 245 610 275 480 275 C 360 275 250 260 160 275 C 120 282 85 270 95 250 Z" fill="none" stroke="url(#dragonDorsal)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" filter="url(#dragonAura)" />
+
+    <!-- [LAYER 3]: Dragon Scale Texture Overlay (เกล็ดมังกรประกายคริสตัล) -->
+    <path d="M 95 250 C 45 190 40 100 90 45 C 130 10 185 20 225 45 C 320 85 450 35 580 25 C 710 15 840 10 930 45 C 1005 75 1025 155 990 225 C 960 275 895 285 835 270 C 730 245 610 275 480 275 C 360 275 250 260 160 275 C 120 282 85 270 95 250 Z" fill="none" stroke="url(#dragonScalePattern)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- [LAYER 4]: Dragon Underbelly Ventral Scales (Luminous Cyan/Lavender Grooves) -->
+    <path d="M 92 250 C 42 190 37 100 87 47 C 127 12 182 22 222 47 C 317 87 447 37 577 27 C 707 17 837 12 927 47 C 1001 77 1021 155 986 223 C 956 273 892 283 833 268 C 728 243 608 273 478 273 C 358 273 248 258 158 273 C 118 280 83 268 92 250 Z" fill="none" stroke="url(#dragonVentral)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 5" />
+
+    <!-- [LAYER 5]: Continuous Dorsal Ridge Spine Trim (เส้นสันหลังมังกร) -->
+    <path d="M 98 250 C 48 190 43 100 93 43 C 133 8 188 18 228 43 C 323 83 453 33 583 23 C 713 13 843 8 933 43 C 1009 73 1029 155 994 227 C 964 277 898 287 837 272 C 732 247 612 277 482 277 C 362 277 252 262 162 277 C 122 284 87 272 98 250 Z" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
 
     <!-- ======================================================== -->
-    <!-- DRAGON MANE & SILKY FINS ALONG SPINE                     -->
+    <!-- 🌿 LAYERED EMERALD DORSAL MANE FINS & CREST SPINES       -->
     <!-- ======================================================== -->
-    <g class="mane-anim">
-      <!-- Left Spine Mane -->
-      <path d="M 62 215 Q 38 185 46 165 Q 26 135 42 110 Q 28 80 55 58 Q 45 35 78 28 Q 115 22 152 38 Q 172 45 192 50" fill="none" stroke="url(#dragonMane)" stroke-width="10" stroke-linecap="round" filter="url(#dragonGlow)" />
-      <!-- Left Mane Flame Strands (Stylized Feathers) -->
-      <polygon points="40,165 25,148 44,152" fill="#10b981" />
-      <polygon points="36,120 20,105 38,108" fill="#6ee7b7" />
-      <polygon points="45,78 28,62 48,68" fill="#10b981" />
-      <polygon points="68,42 52,24 74,32" fill="#6ee7b7" />
-      <polygon points="105,28 96,10 118,22" fill="#10b981" />
-      <polygon points="145,32 142,12 160,28" fill="#6ee7b7" />
+    <g class="mane-ripple">
+      <!-- Left Ascension Spine Fins -->
+      <path d="M 85 225 Q 52 190 62 165 Q 36 130 55 100 Q 38 65 72 40 Q 58 15 95 8 Q 138 2 182 22 Q 206 32 230 42" fill="none" stroke="url(#dragonManeGrad)" stroke-width="14" stroke-linecap="round" filter="url(#maneGlow)" />
+      <!-- Sharp Multi-Layered Mane Feather Points (Left) -->
+      <polygon points="56,165 35,145 60,150" fill="#10b981" />
+      <polygon points="48,115 26,96 52,102" fill="#34d399" />
+      <polygon points="62,68 40,48 68,56" fill="#10b981" />
+      <polygon points="90,30 70,8 98,18" fill="#a7f3d0" />
+      <polygon points="135,14 122,-8 148,6" fill="#10b981" />
+      <polygon points="180,18 175,-5 198,14" fill="#34d399" />
 
-      <!-- Right Spine Mane -->
-      <path d="M 875 42 Q 915 32 930 55 Q 965 80 950 115 Q 975 155 945 185 Q 960 218 920 240 Q 880 265 825 252" fill="none" stroke="url(#dragonMane)" stroke-width="9" stroke-linecap="round" filter="url(#dragonGlow)" />
-      <!-- Right Mane Strands -->
-      <polygon points="915,42 938,28 928,52" fill="#10b981" />
-      <polygon points="948,95 972,88 952,110" fill="#6ee7b7" />
-      <polygon points="950,158 976,162 945,178" fill="#10b981" />
-      <polygon points="925,220 948,238 915,235" fill="#6ee7b7" />
+      <!-- Top Mid-Body Dorsal Crest Points -->
+      <polygon points="340,55 355,30 365,58" fill="#10b981" />
+      <polygon points="450,22 470,-2 480,26" fill="#34d399" />
+      <polygon points="580,14 602,-10 610,18" fill="#10b981" />
+      <polygon points="700,10 724,-12 732,14" fill="#a7f3d0" />
+      <polygon points="820,12 845,-8 852,18" fill="#34d399" />
+
+      <!-- Right Descent Spine Fins -->
+      <path d="M 915 35 Q 960 20 980 48 Q 1025 80 1005 125 Q 1035 170 998 208 Q 1018 245 968 272 Q 918 298 850 280" fill="none" stroke="url(#dragonManeGrad)" stroke-width="12" stroke-linecap="round" filter="url(#maneGlow)" />
+      <!-- Sharp Mane Points (Right) -->
+      <polygon points="965,35 992,18 978,48" fill="#10b981" />
+      <polygon points="1005,98 1036,90 1010,116" fill="#34d399" />
+      <polygon points="1008,168 1038,172 1000,192" fill="#10b981" />
+      <polygon points="975,238 1002,260 962,254" fill="#a7f3d0" />
+
+      <!-- Bottom Underside Spine Fins -->
+      <polygon points="780,262 765,290 750,265" fill="#10b981" />
+      <polygon points="630,268 612,298 598,270" fill="#34d399" />
+      <polygon points="490,268 472,298 458,272" fill="#10b981" />
+      <polygon points="330,265 310,292 298,265" fill="#a7f3d0" />
+      <polygon points="200,262 180,288 170,265" fill="#34d399" />
     </g>
 
     <!-- ======================================================== -->
-    <!-- 🐾 FRONT CLAW (Gripping Upper-Left Cyber Frame)          -->
+    <!-- 🐾 FOUR POWERFUL DRAGON LEGS & CLAWS (4-TALON GRIP)     -->
     <!-- ======================================================== -->
-    <g transform="translate(105, 38)">
-      <!-- Foreleg -->
-      <path d="M -18 22 Q -4 12 10 8" stroke="url(#dragonSkin)" stroke-width="9" stroke-linecap="round" />
-      <!-- Sharp Talons clutching the edge -->
-      <path d="M 8 5 Q 16 -1 20 6" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
-      <path d="M 12 8 Q 22 4 24 12" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
-      <path d="M 10 12 Q 18 12 21 20" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
-      <path d="M 0 10 Q 2 18 10 20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
-      <circle cx="10" cy="8" r="2.8" fill="#00f2fe" filter="url(#dragonGlow)" />
+
+    <!-- CLAW 1: FRONT-LEFT FORELEG (Gripping Top-Left Cyber Corner) -->
+    <g transform="translate(138, 48)">
+      <path d="M -22 28 Q -6 15 12 10" stroke="url(#dragonDorsal)" stroke-width="11" stroke-linecap="round" />
+      <!-- 4 Sharp Pearlescent Talons -->
+      <path d="M 10 7 Q 20 -2 26 8" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <path d="M 15 11 Q 28 6 31 16" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <path d="M 12 16 Q 22 18 26 26" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <path d="M 0 14 Q 4 24 14 26" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <!-- Luminous Knuckle Core -->
+      <circle cx="12" cy="11" r="3.5" fill="#00f2fe" filter="url(#dragonAura)" />
+    </g>
+
+    <!-- CLAW 2: FRONT-RIGHT FORELEG (Descending over Top-Right Deck) -->
+    <g transform="translate(860, 36)">
+      <path d="M -15 -18 Q -2 0 10 14" stroke="url(#dragonDorsal)" stroke-width="10" stroke-linecap="round" />
+      <path d="M 10 14 Q 18 24 14 32" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <path d="M 12 11 Q 25 18 22 28" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <path d="M 7 8 Q 18 10 20 20" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <circle cx="10" cy="14" r="3" fill="#38bdf8" filter="url(#dragonAura)" />
+    </g>
+
+    <!-- CLAW 3: REAR-RIGHT HIND LEG (Gripping Lower-Right Corner) -->
+    <g transform="translate(950, 245)">
+      <path d="M 22 -15 Q 10 2 -6 12" stroke="url(#dragonDorsal)" stroke-width="11" stroke-linecap="round" />
+      <path d="M -6 12 Q -16 22 -24 16" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <path d="M -6 8 Q -18 26 -28 23" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <path d="M 0 14 Q -8 30 -18 32" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+      <circle cx="-6" cy="11" r="3.5" fill="#a855f7" filter="url(#dragonAura)" />
+    </g>
+
+    <!-- CLAW 4: REAR-LEFT HIND LEG (Guiding Tail Underside) -->
+    <g transform="translate(190, 268)">
+      <path d="M 18 -10 Q 4 2 -10 8" stroke="url(#dragonDorsal)" stroke-width="9" stroke-linecap="round" />
+      <path d="M -10 8 Q -18 16 -24 12" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M -8 6 Q -18 22 -26 19" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="-8" cy="8" r="2.8" fill="#34d399" filter="url(#dragonAura)" />
     </g>
 
     <!-- ======================================================== -->
-    <!-- 🐾 HIND CLAW (Gripping Lower-Right Cyber Frame)          -->
+    <!-- 🪶 LUXURIOUS CELESTIAL LOTUS TAIL PLUMES                -->
     <!-- ======================================================== -->
-    <g transform="translate(900, 222)">
-      <path d="M 18 -12 Q 8 2 -4 10" stroke="url(#dragonSkin)" stroke-width="9" stroke-linecap="round" />
-      <path d="M -4 10 Q -12 18 -19 14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
-      <path d="M -4 7 Q -14 22 -23 20" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
-      <path d="M 0 11 Q -6 25 -15 27" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
-      <circle cx="-4" cy="9" r="2.8" fill="#a855f7" filter="url(#dragonGlow)" />
+    <g transform="translate(95, 250)">
+      <!-- Multi-Layered Koi/Dragon Silk Tail Fins -->
+      <path d="M 0 0 Q -32 12 -54 -8 Q -26 -22 0 0 Z" fill="url(#dragonManeGrad)" filter="url(#dragonAura)" />
+      <path d="M 0 0 Q -40 30 -68 22 Q -38 4 0 0 Z" fill="#6ee7b7" opacity="0.95" />
+      <path d="M 0 0 Q -22 42 -44 46 Q -26 24 0 0 Z" fill="#00f2fe" opacity="0.85" />
+      <path d="M 0 0 Q -10 52 -24 58 Q -16 32 0 0 Z" fill="#a855f7" opacity="0.75" />
+      <!-- Trailing Tail Stardust -->
+      <circle cx="-62" cy="15" r="2" fill="#00f2fe" class="star-1" />
+      <circle cx="-45" cy="36" r="2.2" fill="#ffffff" class="star-2" />
+      <circle cx="-75" cy="-2" r="1.5" fill="#6ee7b7" class="star-1" />
     </g>
 
     <!-- ======================================================== -->
-    <!-- 🪶 DRAGON TAIL (Lotus Plume Feathers at Lower-Left)      -->
+    <!-- 🐉 MAJESTIC DRAGON HEAD, CROWN & CELESTIAL PEARL        -->
     <!-- ======================================================== -->
-    <g transform="translate(68, 235)">
-      <path d="M 0 0 Q -24 8 -38 -6 Q -18 -15 0 0 Z" fill="url(#dragonMane)" filter="url(#dragonGlow)" />
-      <path d="M 0 0 Q -28 22 -46 16 Q -28 4 0 0 Z" fill="#6ee7b7" opacity="0.9" />
-      <path d="M 0 0 Q -14 30 -28 32 Q -18 18 0 0 Z" fill="#00f2fe" opacity="0.8" />
-      <circle cx="-42" cy="10" r="1.5" fill="#00f2fe" class="star-1" />
-      <circle cx="-30" cy="24" r="1.8" fill="#ffffff" class="star-2" />
-    </g>
-
-    <!-- ======================================================== -->
-    <!-- 🐉 MAJESTIC DRAGON HEAD & FACIAL FEATURES (Top-Left)     -->
-    <!-- ======================================================== -->
-    <g transform="translate(170, 28)">
+    <g class="dragon-head-anim" transform="translate(195, 36)">
       
-      <!-- Crystalline Branching Antlers (เขามังกรคริสตัลคู่) -->
+      <!-- Crystalline Deer-Style Branching Antler Horns (เขามังกรคู่สง่างาม) -->
       <!-- Main Upper Horn -->
-      <path d="M 12 14 Q 8 -12 24 -24 Q 28 -14 18 5 Z" fill="url(#antlerGrad)" filter="url(#dragonGlow)" />
-      <path d="M 18 -10 Q 32 -18 38 -12 Q 28 -4 16 -2 Z" fill="url(#antlerGrad)" />
+      <path d="M 16 18 Q 10 -18 32 -36 Q 38 -20 24 6 Z" fill="url(#antlerHornGrad)" filter="url(#dragonAura)" />
+      <path d="M 24 -14 Q 44 -26 54 -18 Q 38 -6 20 -3 Z" fill="url(#antlerHornGrad)" />
+      <path d="M 18 2 Q 36 -2 46 8 Q 32 10 18 8 Z" fill="#bae6fd" />
       <!-- Secondary Horn -->
-      <path d="M 2 10 Q -6 -4 4 -14 Q 7 -4 5 7 Z" fill="#bae6fd" />
+      <path d="M 2 12 Q -10 -8 5 -24 Q 9 -8 6 10 Z" fill="#bae6fd" />
 
-      <!-- Forehead Crown Mane -->
-      <path d="M -4 15 Q 12 -2 30 6 Q 15 10 4 18 Z" fill="url(#dragonMane)" filter="url(#dragonGlow)" />
-      <path d="M -12 18 Q 0 8 18 14 Q 4 18 -6 24 Z" fill="#6ee7b7" />
+      <!-- Crown Forehead Emerald Mane Tuft -->
+      <path d="M -6 20 Q 18 -4 42 6 Q 20 12 5 25 Z" fill="url(#dragonManeGrad)" filter="url(#maneGlow)" />
+      <path d="M -18 24 Q 0 10 24 18 Q 6 24 -10 32 Z" fill="#6ee7b7" />
 
-      <!-- Dragon Ear -->
-      <polygon points="4,12 -15,6 2,20" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
-      <polygon points="2,13 -10,9 0,18" fill="#f43f5e" opacity="0.4" />
+      <!-- Dragon Pearlescent Ear (หูมังกรพริ้ว) -->
+      <polygon points="6,16 -20,8 3,28" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+      <polygon points="3,17 -14,12 1,25" fill="#f43f5e" opacity="0.45" />
 
-      <!-- Dragon Elegant Head & Snout Profile (Spirited Away Haku) -->
-      <path d="M 4 18 C 22 12 45 15 62 24 C 75 30 86 38 80 44 C 68 47 52 42 38 39 C 22 36 6 40 -2 33 Z" fill="url(#dragonSkin)" stroke="#ffffff" stroke-width="1.2" filter="url(#dragonGlow)" />
+      <!-- Dragon Main Skull & Regal Snout Profile (Haku Majestic Head) -->
+      <path d="M 6 24 C 30 15 62 18 86 30 C 105 38 120 50 110 58 C 94 62 72 55 52 51 C 30 47 8 52 -3 42 Z" fill="url(#dragonDorsal)" stroke="#ffffff" stroke-width="1.5" filter="url(#dragonAura)" />
       
-      <!-- Snout Gradient Shade -->
-      <path d="M 40 18 C 54 22 70 29 76 39 C 68 39 54 33 38 27 Z" fill="#38bdf8" opacity="0.35" />
+      <!-- Snout Shading (Celestial Aqua Bridge) -->
+      <path d="M 55 24 C 75 30 98 38 106 52 C 95 52 75 44 52 36 Z" fill="#38bdf8" opacity="0.4" />
 
       <!-- Nostril -->
-      <ellipse cx="72" cy="38" rx="2.2" ry="1.4" fill="#334155" />
+      <ellipse cx="100" cy="50" rx="3" ry="1.8" fill="#1e293b" />
 
-      <!-- Dragon Eye (Luminous Amber / Crimson Eyeliner) -->
-      <g filter="url(#dragonGlow)">
-        <!-- Almond Eye Shape -->
-        <polygon points="32,24 44,20 41,28 31,28" fill="#fbbf24" />
-        <ellipse cx="38" cy="24.5" rx="2.8" ry="2.2" fill="#d97706" />
-        <circle cx="39" cy="23.5" r="1" fill="#ffffff" />
+      <!-- Dragon Eye (Almond Celestial Amber with Ruby Core & Eyeliner) -->
+      <g filter="url(#dragonAura)">
+        <!-- Eyeliner & Outer Brow -->
+        <path d="M 38 28 Q 54 22 68 28" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" />
+        <!-- Sclera / Iris Shape -->
+        <polygon points="44,32 60,26 56,38 42,38" fill="#fbbf24" />
+        <ellipse cx="51" cy="33" rx="3.8" ry="3" fill="#d97706" />
+        <ellipse cx="51" cy="33" rx="2" ry="2.8" fill="#78350f" />
+        <circle cx="52.5" cy="31.5" r="1.5" fill="#ffffff" />
       </g>
-      <!-- Sleek Eyeliner & Brow -->
-      <path d="M 28 22 Q 38 18 48 22" fill="none" stroke="#059669" stroke-width="1.6" stroke-linecap="round" />
 
-      <!-- Mouth Line -->
-      <path d="M 46 38 Q 62 40 76 42" fill="none" stroke="#64748b" stroke-width="1" />
-      <!-- Lower Jaw -->
-      <path d="M 44 40 C 55 45 68 45 74 43 C 67 49 52 49 38 44 Z" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.8" />
-      <!-- Chin Beard Whisker -->
-      <path d="M 62 47 Q 68 55 75 64 Q 67 58 59 49" fill="none" stroke="url(#dragonMane)" stroke-width="1.8" stroke-linecap="round" />
+      <!-- Mouth Line & Gentle Noble Expression -->
+      <path d="M 62 50 Q 84 53 104 56" fill="none" stroke="#475569" stroke-width="1.2" />
+      <!-- Lower Jaw & Chin -->
+      <path d="M 60 53 C 75 60 94 60 102 57 C 92 65 72 65 52 58 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+      <!-- Chin Beard Tufts (เครามังกรพริ้ว) -->
+      <path d="M 85 62 Q 95 74 105 86 Q 94 77 82 65" fill="none" stroke="url(#dragonManeGrad)" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M 72 60 Q 78 70 85 80 Q 76 72 68 62" fill="none" stroke="#6ee7b7" stroke-width="1.8" stroke-linecap="round" />
 
       <!-- ====================================================== -->
-      <!-- 🌊 FLOWING CELESTIAL WHISKERS                          -->
+      <!-- 🌊 FLOWING CELESTIAL TWIN WHISKERS                     -->
       <!-- ====================================================== -->
-      <!-- Upper Whisker -->
-      <g class="whisker-top-anim">
-        <path d="M 68 37 C 98 26 142 34 186 20 C 212 11 248 18 275 9 Q 230 20 186 27 C 142 37 98 31 68 39" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" filter="url(#dragonGlow)" />
-        <path d="M 68 37 C 98 26 142 34 186 20 C 212 11 248 18 275 9" fill="none" stroke="#38bdf8" stroke-width="0.8" />
+      <!-- Upper Long Whisker -->
+      <g class="whisker-top">
+        <path d="M 94 48 C 138 32 198 42 258 24 C 295 12 345 22 385 10 Q 320 24 258 34 C 198 48 138 40 94 51" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" filter="url(#dragonAura)" />
+        <path d="M 94 48 C 138 32 198 42 258 24 C 295 12 345 22 385 10" fill="none" stroke="#38bdf8" stroke-width="1" />
       </g>
 
-      <!-- Lower Whisker -->
-      <g class="whisker-bot-anim">
-        <path d="M 66 42 C 94 45 130 61 170 54 C 205 48 240 65 268 60 Q 228 62 192 54 C 152 47 112 43 66 43" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" filter="url(#dragonGlow)" />
-        <path d="M 66 42 C 94 45 130 61 170 54 C 205 48 240 65 268 60" fill="none" stroke="#00f2fe" stroke-width="0.8" />
+      <!-- Lower Flowing Whisker -->
+      <g class="whisker-bot">
+        <path d="M 90 56 C 132 60 182 82 238 72 C 286 64 336 88 375 80 Q 320 84 270 72 C 214 62 158 56 90 57" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" filter="url(#dragonAura)" />
+        <path d="M 90 56 C 132 60 182 82 238 72 C 286 64 336 88 375 80" fill="none" stroke="#00f2fe" stroke-width="1" />
       </g>
 
-      <!-- Floating Dragon Pearl (Celestial Energy Orb) -->
-      <g transform="translate(100, 42)" class="orb-anim">
-        <circle cx="0" cy="0" r="8" fill="#00f2fe" fill-opacity="0.3" filter="url(#orbGlow)" />
-        <circle cx="0" cy="0" r="4.5" fill="#ffffff" />
-        <circle cx="0" cy="0" r="10" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="2 3" />
+      <!-- Floating Dragon Pearl (Celestial Energy Orb at Snout) -->
+      <g transform="translate(138, 55)" class="pearl-anim">
+        <circle cx="0" cy="0" r="10" fill="#00f2fe" fill-opacity="0.35" filter="url(#orbGlow)" />
+        <circle cx="0" cy="0" r="6" fill="#ffffff" />
+        <circle cx="0" cy="0" r="13" stroke="#38bdf8" stroke-width="1" stroke-dasharray="3 4" />
       </g>
     </g>
 
-    <!-- Floating Stardust Particles -->
+    <!-- Floating Stardust Particles & Astral Orbs -->
     <g fill="#00f2fe">
-      <circle cx="120" cy="85" r="1.5" class="star-1" />
-      <circle cx="320" cy="28" r="1.8" class="star-2" fill="#ffffff" />
-      <circle cx="520" cy="18" r="1.2" class="star-1" />
-      <circle cx="720" cy="22" r="1.5" class="star-2" />
-      <circle cx="920" cy="95" r="1.8" class="star-1" fill="#ffffff" />
-      <circle cx="890" cy="175" r="1.3" class="star-2" />
+      <circle cx="150" cy="95" r="2" class="star-1" />
+      <circle cx="400" cy="35" r="2.2" class="star-2" fill="#ffffff" />
+      <circle cx="650" cy="22" r="1.6" class="star-1" />
+      <circle cx="880" cy="28" r="2" class="star-2" />
+      <circle cx="1020" cy="115" r="2.2" class="star-1" fill="#ffffff" />
+      <circle cx="980" cy="205" r="1.6" class="star-2" />
+      <circle cx="500" cy="285" r="1.8" class="star-1" fill="#ffffff" />
+      <circle cx="280" cy="280" r="1.5" class="star-2" />
     </g>
   </g>
 
   <!-- ======================================================== -->
   <!-- 03. FOREGROUND UI CONTENT: STATUS, IDENTITY & TECH PILLS -->
   <!-- ======================================================== -->
-  <g transform="translate(50, 30)">
+  <g transform="translate(80, 40)">
     <!-- Top Badges Row -->
     <g transform="translate(250, 28)">
-      <rect width="128" height="24" rx="5" fill="#0b1329" fill-opacity="0.92" stroke="#1e293b" stroke-width="1" />
+      <rect width="128" height="24" rx="5" fill="#0b1329" fill-opacity="0.94" stroke="#1e293b" stroke-width="1" />
       <circle cx="14" cy="12" r="4" fill="#22c55e" class="live-pulse" />
       <text x="26" y="16" class="font-mono" font-size="10.5" font-weight="700" fill="#94a3b8" letter-spacing="1">SYSTEM.ONLINE</text>
     </g>
 
     <g transform="translate(640, 28)">
-      <rect width="215" height="24" rx="5" fill="#0b1329" fill-opacity="0.92" stroke="#1e293b" stroke-width="1" />
+      <rect width="215" height="24" rx="5" fill="#0b1329" fill-opacity="0.94" stroke="#1e293b" stroke-width="1" />
       <circle cx="14" cy="12" r="3.5" fill="#a855f7" />
       <text x="25" y="16" class="font-mono" font-size="10.5" font-weight="600" fill="#cbd5e1" letter-spacing="0.5">NARESUAN UNIVERSITY // CS</text>
     </g>
 
     <!-- Hero Name Display -->
-    <text x="450" y="108" text-anchor="middle" class="font-title" font-size="38" font-weight="900" fill="url(#textShimmer)" letter-spacing="3" filter="url(#softGlow)">
+    <text x="450" y="110" text-anchor="middle" class="font-title" font-size="38" font-weight="900" fill="url(#textShimmer)" letter-spacing="3" filter="url(#softGlow)">
       THANAPHAT CHICHU
     </text>
 
     <!-- Role Subtitle -->
-    <text x="450" y="140" text-anchor="middle" class="font-mono" font-size="13.5" font-weight="600" fill="#38bdf8" letter-spacing="1.5">
+    <text x="450" y="142" text-anchor="middle" class="font-mono" font-size="13.5" font-weight="600" fill="#38bdf8" letter-spacing="1.5">
       FULL STACK DEVELOPER // BACKEND &amp; CLOUD SYSTEMS ENGINEER
     </text>
 
     <!-- Interactive Stack Quick Bar (Bottom) -->
-    <g transform="translate(45, 168)">
+    <g transform="translate(45, 172)">
       <!-- Pill 1 -->
       <g transform="translate(0, 0)">
-        <rect width="185" height="32" rx="6" fill="#0b1329" fill-opacity="0.92" stroke="#1e293b" stroke-width="1" />
+        <rect width="185" height="32" rx="6" fill="#0b1329" fill-opacity="0.94" stroke="#1e293b" stroke-width="1" />
         <text x="92.5" y="20" text-anchor="middle" class="font-mono" font-size="11" font-weight="600" fill="#f8fafc">✦ Next.js • React • TS</text>
       </g>
       <!-- Pill 2 -->
       <g transform="translate(195, 0)">
-        <rect width="195" height="32" rx="6" fill="#0b1329" fill-opacity="0.92" stroke="#1e293b" stroke-width="1" />
+        <rect width="195" height="32" rx="6" fill="#0b1329" fill-opacity="0.94" stroke="#1e293b" stroke-width="1" />
         <text x="97.5" y="20" text-anchor="middle" class="font-mono" font-size="11" font-weight="600" fill="#38bdf8">◈ FastAPI • Python Async</text>
       </g>
       <!-- Pill 3 -->
       <g transform="translate(400, 0)">
-        <rect width="200" height="32" rx="6" fill="#0b1329" fill-opacity="0.92" stroke="#1e293b" stroke-width="1" />
+        <rect width="200" height="32" rx="6" fill="#0b1329" fill-opacity="0.94" stroke="#1e293b" stroke-width="1" />
         <text x="100" y="20" text-anchor="middle" class="font-mono" font-size="11" font-weight="600" fill="#a855f7">⬡ PostgreSQL • Prisma</text>
       </g>
       <!-- Pill 4 -->
       <g transform="translate(610, 0)">
-        <rect width="200" height="32" rx="6" fill="#0b1329" fill-opacity="0.92" stroke="#1e293b" stroke-width="1" />
+        <rect width="200" height="32" rx="6" fill="#0b1329" fill-opacity="0.94" stroke="#1e293b" stroke-width="1" />
         <text x="100" y="20" text-anchor="middle" class="font-mono" font-size="11" font-weight="600" fill="#4ade80">⬢ Docker • AWS • Linux</text>
       </g>
     </g>
