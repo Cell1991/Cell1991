@@ -1,6 +1,6 @@
-<svg width="100%" height="100%" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100%" viewBox="0 0 920 250" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Dark Obsidian & Cosmic Gradients -->
+    <!-- Background Gradients -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#050814" />
       <stop offset="50%" stop-color="#090e1d" />
@@ -9,12 +9,12 @@
 
     <!-- Radial Nebula Glows -->
     <radialGradient id="glowCyan" cx="20%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.25" />
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.22" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="glowPurple" cx="80%" cy="70%" r="55%">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.22" />
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.2" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0" />
     </radialGradient>
 
@@ -29,105 +29,390 @@
       <animate attributeName="x2" from="0%" to="200%" dur="6s" repeatCount="indefinite" />
     </linearGradient>
 
-    <!-- Border Glow Gradient -->
+    <!-- Cyber Border Gradient -->
     <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.9" />
       <stop offset="50%" stop-color="#6366f1" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0.9" />
     </linearGradient>
 
-    <!-- Grid Matrix Pattern -->
-    <pattern id="cyberGrid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.35" />
-    </pattern>
+    <!-- ======================================================== -->
+    <!-- 🐉 HAKU DRAGON COLOR GRADIENTS & SHADERS                 -->
+    <!-- ======================================================== -->
 
-    <!-- Glow Filter -->
+    <!-- Dragon White/Pearl Body Gradient -->
+    <linearGradient id="hakuBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f1f5f9" />
+      <stop offset="85%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <!-- Dragon Underbelly Scales (Soft Celestial Lavender/Cyan) -->
+    <linearGradient id="hakuBellyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="50%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Dragon Emerald Mane Gradient (Spirited Away Signature) -->
+    <linearGradient id="hakuManeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" />
+      <stop offset="40%" stop-color="#10b981" />
+      <stop offset="80%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <!-- Dragon Antler Horn Gradient -->
+    <linearGradient id="hakuHornGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="60%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Dragon Aura Soft Glow -->
+    <filter id="hakuAura" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="hakuSparkle" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
     <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
+    <!-- Grid Matrix Pattern -->
+    <pattern id="cyberGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.35" />
+    </pattern>
+
     <style>
+      .font-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, Menlo, Consolas, monospace; }
+
+      /* Laser Scan */
       @keyframes laserScan {
         0% { transform: translateY(0); opacity: 0; }
-        50% { opacity: 0.7; }
-        100% { transform: translateY(240px); opacity: 0; }
+        50% { opacity: 0.6; }
+        100% { transform: translateY(250px); opacity: 0; }
       }
       @keyframes pulseDot {
         0%, 100% { opacity: 1; transform: scale(1); }
         50% { opacity: 0.3; transform: scale(0.85); }
       }
-      .laser {
-        animation: laserScan 4s linear infinite;
+
+      /* ====================================================== */
+      /* 🐉 HAKU DRAGON ORGANIC UNDULATING ANIMATIONS           */
+      /* ====================================================== */
+
+      /* Dragon Breathing / Hovering Floating Physics */
+      @keyframes hakuHoverAnim {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        35% { transform: translateY(-4px) rotate(0.4deg); }
+        70% { transform: translateY(3px) rotate(-0.3deg); }
       }
-      .live-pulse {
-        animation: pulseDot 2s ease-in-out infinite;
+
+      /* Dragon Head Gentle Nodding */
+      @keyframes hakuHeadAnim {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-3px) rotate(-1deg); }
       }
+
+      /* Long Whiskers Flowing in Astral Wind */
+      @keyframes whiskerWaveUpper {
+        0%, 100% { transform: rotate(0deg) skewX(0deg); }
+        50% { transform: rotate(4.5deg) skewX(3deg); }
+      }
+      @keyframes whiskerWaveLower {
+        0%, 100% { transform: rotate(0deg) skewX(0deg); }
+        50% { transform: rotate(-4deg) skewX(-2deg); }
+      }
+
+      /* Emerald Mane Breeze Fur Ripple */
+      @keyframes maneBreezeAnim {
+        0%, 100% { transform: scaleX(1) scaleY(1); }
+        50% { transform: scaleX(1.04) scaleY(1.08); }
+      }
+
+      /* Claw Grip Breathing Pulse */
+      @keyframes clawGripPulse {
+        0%, 100% { filter: drop-shadow(0 0 2px #00f2fe); }
+        50% { filter: drop-shadow(0 0 8px #00f2fe); }
+      }
+
+      /* Stardust Embers Twinkling */
+      @keyframes stardustTwinkle {
+        0%, 100% { opacity: 0.2; transform: scale(0.8); }
+        50% { opacity: 0.95; transform: scale(1.3); }
+      }
+
+      .laser { animation: laserScan 4s linear infinite; }
+      .live-pulse { animation: pulseDot 2s ease-in-out infinite; }
+      
+      .haku-body-float { animation: hakuHoverAnim 7s ease-in-out infinite; }
+      .haku-head-float { transform-origin: 160px 45px; animation: hakuHeadAnim 5s ease-in-out infinite; }
+      .whisker-top { transform-origin: 215px 44px; animation: whiskerWaveUpper 3.5s ease-in-out infinite; }
+      .whisker-bot { transform-origin: 210px 52px; animation: whiskerWaveLower 4s ease-in-out infinite; }
+      .mane-ripple { transform-origin: 140px 30px; animation: maneBreezeAnim 3s ease-in-out infinite; }
+      .claw-glow { animation: clawGripPulse 2.5s ease-in-out infinite; }
+      .sparkle-1 { animation: stardustTwinkle 2.8s ease-in-out infinite; }
+      .sparkle-2 { animation: stardustTwinkle 3.6s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- Background Base with Grid & Nebulas -->
-  <rect width="900" height="240" rx="16" fill="url(#bgGradient)" />
-  <rect width="900" height="240" rx="16" fill="url(#glowCyan)" />
-  <rect width="900" height="240" rx="16" fill="url(#glowPurple)" />
-  <rect width="900" height="240" rx="16" fill="url(#cyberGrid)" />
+  <!-- ======================================================== -->
+  <!-- 01. MAIN CYBER CONTAINER BOX                             -->
+  <!-- ======================================================== -->
+  <g transform="translate(10, 5)">
+    <rect width="900" height="240" rx="16" fill="url(#bgGradient)" />
+    <rect width="900" height="240" rx="16" fill="url(#glowCyan)" />
+    <rect width="900" height="240" rx="16" fill="url(#glowPurple)" />
+    <rect width="900" height="240" rx="16" fill="url(#cyberGrid)" />
 
-  <!-- Outer Neon Border Frame -->
-  <rect x="1" y="1" width="898" height="238" rx="15" fill="none" stroke="url(#borderGlow)" stroke-width="1.5" />
+    <!-- Outer Neon Border Frame -->
+    <rect x="1" y="1" width="898" height="238" rx="15" fill="none" stroke="url(#borderGlow)" stroke-width="1.5" />
 
-  <!-- Corner Tech Geometry -->
-  <path d="M 12 26 L 12 12 L 26 12" fill="none" stroke="#00f2fe" stroke-width="2.5" />
-  <path d="M 874 12 L 888 12 L 888 26" fill="none" stroke="#a855f7" stroke-width="2.5" />
-  <path d="M 12 214 L 12 228 L 26 228" fill="none" stroke="#00f2fe" stroke-width="2.5" />
-  <path d="M 874 228 L 888 228 L 888 214" fill="none" stroke="#a855f7" stroke-width="2.5" />
+    <!-- Corner Tech Geometry -->
+    <path d="M 12 26 L 12 12 L 26 12" fill="none" stroke="#00f2fe" stroke-width="2.5" />
+    <path d="M 874 12 L 888 12 L 888 26" fill="none" stroke="#a855f7" stroke-width="2.5" />
+    <path d="M 12 214 L 12 228 L 26 228" fill="none" stroke="#00f2fe" stroke-width="2.5" />
+    <path d="M 874 228 L 888 228 L 888 214" fill="none" stroke="#a855f7" stroke-width="2.5" />
 
-  <!-- Animated Laser Scanline -->
-  <line x1="20" y1="0" x2="880" y2="0" stroke="#00f2fe" stroke-width="1.5" opacity="0.4" class="laser" />
-
-  <!-- Top Badges Row -->
-  <g transform="translate(45, 34)">
-    <rect width="132" height="24" rx="5" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    <circle cx="14" cy="12" r="4" fill="#22c55e" class="live-pulse" />
-    <text x="26" y="16" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">SYSTEM.ONLINE</text>
+    <!-- Animated Laser Scanline -->
+    <line x1="20" y1="0" x2="880" y2="0" stroke="#00f2fe" stroke-width="1.5" opacity="0.4" class="laser" />
   </g>
 
-  <g transform="translate(635, 34)">
-    <rect width="220" height="24" rx="5" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-    <circle cx="14" cy="12" r="3.5" fill="#a855f7" />
-    <text x="25" y="16" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#cbd5e1" letter-spacing="0.5">NARESUAN UNIVERSITY // CS</text>
+  <!-- ======================================================== -->
+  <!-- 02. HAKU DRAGON: SERPENTINE BODY COILING AROUND FRAME    -->
+  <!-- ======================================================== -->
+  <g class="haku-body-float">
+    
+    <!-- Ghibli Ethereal Cloud Mists (Behind Body) -->
+    <g opacity="0.25" fill="#38bdf8">
+      <ellipse cx="60" cy="180" rx="45" ry="18" filter="url(#hakuAura)" />
+      <ellipse cx="860" cy="190" rx="55" ry="22" filter="url(#hakuAura)" />
+      <ellipse cx="500" cy="15" rx="70" ry="14" filter="url(#hakuAura)" />
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- DRAGON BODY: SEGMENT 1 (Bottom-Left Coiling up to Top)   -->
+    <!-- ======================================================== -->
+    <!-- Dragon Body Under-Shadow -->
+    <path d="M 30 220 C 0 160 8 90 45 40 C 70 10 120 18 160 38" fill="none" stroke="#060914" stroke-width="22" stroke-linecap="round" />
+    <!-- Dragon Main White Serpentine Torso -->
+    <path d="M 30 220 C 0 160 8 90 45 40 C 70 10 120 18 160 38" fill="none" stroke="url(#hakuBodyGrad)" stroke-width="18" stroke-linecap="round" filter="url(#hakuAura)" />
+    <!-- Dragon Underbelly Scales (Soft lavender-cyan belly stripes) -->
+    <path d="M 28 220 C -2 160 6 90 42 42 C 67 12 118 20 158 40" fill="none" stroke="url(#hakuBellyGrad)" stroke-width="6" stroke-linecap="round" stroke-dasharray="8 4" />
+
+    <!-- Emerald Mane running along the back (Left Arch) -->
+    <g class="mane-ripple">
+      <path d="M 32 205 Q 12 180 24 165 Q 8 140 22 120 Q 6 95 25 75 Q 15 50 42 32 Q 35 15 65 12 Q 95 10 125 22 Q 145 28 165 35" fill="none" stroke="url(#hakuManeGrad)" stroke-width="11" stroke-linecap="round" filter="url(#hakuAura)" />
+      <!-- Sharp Mane Fur Strands -->
+      <polygon points="20,170 8,155 24,158" fill="#10b981" />
+      <polygon points="18,130 6,115 22,118" fill="#6ee7b7" />
+      <polygon points="24,90 12,75 28,78" fill="#10b981" />
+      <polygon points="36,55 22,40 40,45" fill="#6ee7b7" />
+      <polygon points="55,25 45,8 65,18" fill="#10b981" />
+      <polygon points="90,14 85,-4 105,10" fill="#6ee7b7" />
+      <polygon points="125,18 128,0 142,18" fill="#10b981" />
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- DRAGON BODY: SEGMENT 2 (Top Arch wrapping across to Right)-->
+    <!-- ======================================================== -->
+    <!-- Loop behind the top frame & emerge at the right corner -->
+    <path d="M 160 38 C 240 65 360 25 490 20 C 620 15 760 10 840 40 C 900 65 920 130 890 195 C 870 235 820 245 770 235" fill="none" stroke="#060914" stroke-width="18" stroke-linecap="round" />
+    <path d="M 160 38 C 240 65 360 25 490 20 C 620 15 760 10 840 40 C 900 65 920 130 890 195 C 870 235 820 245 770 235" fill="none" stroke="url(#hakuBodyGrad)" stroke-width="15" stroke-linecap="round" filter="url(#hakuAura)" />
+    <path d="M 160 40 C 240 67 360 27 490 22 C 620 17 760 12 838 42 C 896 67 916 130 886 193 C 866 233 818 243 770 235" fill="none" stroke="url(#hakuBellyGrad)" stroke-width="5" stroke-linecap="round" stroke-dasharray="8 4" />
+
+    <!-- Right Side Mane & Spine Fins -->
+    <g class="mane-ripple">
+      <path d="M 830 35 Q 865 25 875 45 Q 910 65 895 95 Q 925 130 895 160 Q 915 190 875 215 Q 840 245 790 238" fill="none" stroke="url(#hakuManeGrad)" stroke-width="9" stroke-linecap="round" filter="url(#hakuAura)" />
+      <polygon points="865,35 885,25 875,45" fill="#10b981" />
+      <polygon points="895,85 918,80 898,100" fill="#6ee7b7" />
+      <polygon points="895,145 920,150 890,165" fill="#10b981" />
+      <polygon points="875,200 895,218 865,215" fill="#6ee7b7" />
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- 🐾 DRAGON CLAW 1: FRONT CLAW GRIPPING TOP-LEFT FRAME    -->
+    <!-- ======================================================== -->
+    <g transform="translate(68, 16)" class="claw-glow">
+      <!-- Dragon Arm Foreleg -->
+      <path d="M -15 28 Q 0 18 14 12" stroke="url(#hakuBodyGrad)" stroke-width="10" stroke-linecap="round" />
+      <!-- 4 Sharp Dragon Talons (Clutching the cyber frame edge) -->
+      <!-- Talon 1 -->
+      <path d="M 12 8 Q 20 2 24 10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <!-- Talon 2 -->
+      <path d="M 16 12 Q 26 8 28 16" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <!-- Talon 3 -->
+      <path d="M 14 16 Q 22 16 25 24" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <!-- Thumb Talon -->
+      <path d="M 4 15 Q 6 24 14 26" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+      <!-- Talon Knuckle Glow Beads -->
+      <circle cx="14" cy="12" r="3" fill="#00f2fe" filter="url(#hakuSparkle)" />
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- 🐾 DRAGON CLAW 2: REAR CLAW GRIPPING BOTTOM-RIGHT FRAME -->
+    <!-- ======================================================== -->
+    <g transform="translate(865, 200)" class="claw-glow">
+      <!-- Dragon Hind Leg -->
+      <path d="M 20 -15 Q 10 0 -2 10" stroke="url(#hakuBodyGrad)" stroke-width="10" stroke-linecap="round" />
+      <!-- Talons clutching bottom frame -->
+      <path d="M -2 10 Q -10 18 -18 14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M -2 8 Q -12 24 -22 22" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M 2 12 Q -4 28 -14 30" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="-2" cy="10" r="3" fill="#a855f7" filter="url(#hakuSparkle)" />
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- 🪶 DRAGON TAIL: PLUMES SWIRLING UNDER BOTTOM-LEFT        -->
+    <!-- ======================================================== -->
+    <g transform="translate(30, 220)">
+      <!-- Majestic Tail Fin Lotus Plumes -->
+      <path d="M 0 0 Q -25 10 -40 -5 Q -20 -15 0 0 Z" fill="url(#hakuManeGrad)" filter="url(#hakuAura)" />
+      <path d="M 0 0 Q -30 25 -50 18 Q -30 5 0 0 Z" fill="#6ee7b7" opacity="0.9" />
+      <path d="M 0 0 Q -15 35 -30 38 Q -20 20 0 0 Z" fill="#00f2fe" opacity="0.8" />
+      <!-- Trailing Tail Stardust Embers -->
+      <circle cx="-45" cy="12" r="1.5" fill="#00f2fe" class="sparkle-1" />
+      <circle cx="-32" cy="28" r="1.8" fill="#ffffff" class="sparkle-2" />
+      <circle cx="-55" cy="-2" r="1.2" fill="#6ee7b7" class="sparkle-1" />
+    </g>
+
+    <!-- ======================================================== -->
+    <!-- 🐉 HAKU DRAGON HEAD: MAJESTIC & REGAL (Top-Left: x=140..250)-->
+    <!-- ======================================================== -->
+    <g class="haku-head-float" transform="translate(140, 10)">
+      
+      <!-- Antler Horns (เขามังกรผลึกคริสตัลคู่) -->
+      <!-- Main Upper Branching Antler -->
+      <path d="M 15 15 Q 10 -15 28 -32 Q 32 -18 22 5 Z" fill="url(#hakuHornGrad)" filter="url(#hakuAura)" />
+      <path d="M 22 -14 Q 38 -25 45 -18 Q 35 -8 20 -4 Z" fill="url(#hakuHornGrad)" />
+      <!-- Secondary Antler -->
+      <path d="M 2 12 Q -8 -6 5 -18 Q 8 -6 6 8 Z" fill="#bae6fd" />
+
+      <!-- Dragon Crown / Forehead Emerald Mane -->
+      <path d="M -5 18 Q 15 -2 35 8 Q 18 12 5 22 Z" fill="url(#hakuManeGrad)" filter="url(#hakuAura)" />
+      <path d="M -15 22 Q 0 10 20 18 Q 5 22 -8 28 Z" fill="#6ee7b7" />
+
+      <!-- Dragon Ear (หูมังกรพริ้วไหว) -->
+      <polygon points="5,15 -18,8 2,24" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8" />
+      <polygon points="3,16 -12,11 1,22" fill="#f43f5e" opacity="0.4" />
+
+      <!-- Dragon Main Skull & Snout (โครงหน้าและจมูกมังกรขาวฮาคุ) -->
+      <path d="M 5 22 C 25 15 50 18 68 28 C 82 35 95 44 88 50 C 75 54 58 48 42 45 C 25 42 8 46 -2 38 Z" fill="url(#hakuBodyGrad)" stroke="#ffffff" stroke-width="1.2" filter="url(#hakuAura)" />
+      
+      <!-- Dragon Upper Muzzle / Bridge of Nose (สีฟ้าอมเขียวอ่อน) -->
+      <path d="M 45 22 C 60 26 78 34 85 45 C 75 45 60 38 42 32 Z" fill="#38bdf8" opacity="0.3" />
+
+      <!-- Dragon Nostril -->
+      <ellipse cx="80" cy="44" rx="2.5" ry="1.5" fill="#334155" />
+
+      <!-- Dragon Eye (ดวงตามังกรฮาคุ สีอำพันทองล้ำลึก) -->
+      <g filter="url(#hakuSparkle)">
+        <polygon points="35,28 48,24 45,33 34,33" fill="#fbbf24" />
+        <ellipse cx="41" cy="28.5" rx="3" ry="2.5" fill="#d97706" />
+        <circle cx="42" cy="27.5" r="1.2" fill="#ffffff" />
+      </g>
+      <!-- Dragon Brow -->
+      <path d="M 32 25 Q 42 21 52 25" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" />
+
+      <!-- Dragon Mouth Line & Gentle Smile -->
+      <path d="M 50 44 Q 68 46 84 48" fill="none" stroke="#64748b" stroke-width="1" />
+      <!-- Lower Jaw (กรามล่าง) -->
+      <path d="M 48 46 C 60 52 75 52 82 49 C 74 56 58 56 42 50 Z" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="0.8" />
+      <!-- Chin Beard Whisker -->
+      <path d="M 68 53 Q 75 62 82 72 Q 74 65 65 55" fill="none" stroke="url(#hakuManeGrad)" stroke-width="2" stroke-linecap="round" />
+
+      <!-- ====================================================== -->
+      <!-- 🌊 FLOWING TWIN WHISKERS (หนวดมังกรยาวพลิ้วไหว)       -->
+      <!-- ====================================================== -->
+      <!-- Upper Long Whisker -->
+      <g class="whisker-top">
+        <path d="M 76 43 C 110 30 160 38 210 22 C 240 12 280 20 310 10 Q 260 22 210 30 C 160 42 110 36 76 45" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" filter="url(#hakuSparkle)" />
+        <path d="M 76 43 C 110 30 160 38 210 22 C 240 12 280 20 310 10" fill="none" stroke="#38bdf8" stroke-width="0.8" />
+      </g>
+
+      <!-- Lower Flowing Whisker -->
+      <g class="whisker-bot">
+        <path d="M 74 48 C 105 52 145 70 190 62 C 230 55 270 75 300 70 Q 255 72 215 62 C 170 54 125 50 74 49" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" filter="url(#hakuSparkle)" />
+        <path d="M 74 48 C 105 52 145 70 190 62 C 230 55 270 75 300 70" fill="none" stroke="#00f2fe" stroke-width="0.8" />
+      </g>
+
+      <!-- Astral Dragon Pearl (Floating Celestial Orb at Snout) -->
+      <g transform="translate(108, 48)">
+        <circle cx="0" cy="0" r="7" fill="#00f2fe" fill-opacity="0.3" filter="url(#hakuAura)" />
+        <circle cx="0" cy="0" r="4" fill="#ffffff" />
+        <circle cx="0" cy="0" r="9" stroke="#38bdf8" stroke-width="0.8" stroke-dasharray="2 3" />
+      </g>
+    </g>
+
+    <!-- Floating Stardust Stars around Haku -->
+    <g fill="#00f2fe">
+      <circle cx="80" cy="70" r="1.5" class="sparkle-1" />
+      <circle cx="280" cy="18" r="1.8" class="sparkle-2" fill="#ffffff" />
+      <circle cx="480" cy="8" r="1.2" class="sparkle-1" />
+      <circle cx="680" cy="12" r="1.5" class="sparkle-2" />
+      <circle cx="880" cy="80" r="1.8" class="sparkle-1" fill="#ffffff" />
+      <circle cx="850" cy="160" r="1.3" class="sparkle-2" />
+    </g>
   </g>
 
-  <!-- Hero Name Display -->
-  <text x="450" y="112" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="900" fill="url(#textShimmer)" letter-spacing="3" filter="url(#softGlow)">
-    THANAPHAT CHICHU
-  </text>
+  <!-- ======================================================== -->
+  <!-- 03. FOREGROUND UI CONTENT: STATUS, IDENTITY & TECH PILLS -->
+  <!-- ======================================================== -->
+  <g transform="translate(10, 5)">
+    <!-- Top Badges Row -->
+    <g transform="translate(250, 34)">
+      <rect width="128" height="24" rx="5" fill="#0b1329" fill-opacity="0.9" stroke="#1e293b" stroke-width="1" />
+      <circle cx="14" cy="12" r="4" fill="#22c55e" class="live-pulse" />
+      <text x="26" y="16" class="font-mono" font-size="10.5" font-weight="700" fill="#94a3b8" letter-spacing="1">SYSTEM.ONLINE</text>
+    </g>
 
-  <!-- Role Subtitle -->
-  <text x="450" y="145" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="14" font-weight="600" fill="#38bdf8" letter-spacing="1.5">
-    FULL STACK DEVELOPER // BACKEND &amp; CLOUD SYSTEMS ENGINEER
-  </text>
+    <g transform="translate(640, 34)">
+      <rect width="215" height="24" rx="5" fill="#0b1329" fill-opacity="0.9" stroke="#1e293b" stroke-width="1" />
+      <circle cx="14" cy="12" r="3.5" fill="#a855f7" />
+      <text x="25" y="16" class="font-mono" font-size="10.5" font-weight="600" fill="#cbd5e1" letter-spacing="0.5">NARESUAN UNIVERSITY // CS</text>
+    </g>
 
-  <!-- Interactive Stack Quick Bar -->
-  <g transform="translate(45, 174)">
-    <!-- Pill 1 -->
-    <g transform="translate(0, 0)">
-      <rect width="185" height="32" rx="6" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-      <text x="92.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#f8fafc">✦ Next.js • React • TS</text>
-    </g>
-    <!-- Pill 2 -->
-    <g transform="translate(195, 0)">
-      <rect width="195" height="32" rx="6" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-      <text x="97.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#38bdf8">◈ FastAPI • Python Async</text>
-    </g>
-    <!-- Pill 3 -->
-    <g transform="translate(400, 0)">
-      <rect width="200" height="32" rx="6" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-      <text x="100" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#a855f7">⬡ PostgreSQL • Prisma</text>
-    </g>
-    <!-- Pill 4 -->
-    <g transform="translate(610, 0)">
-      <rect width="200" height="32" rx="6" fill="#0b1329" stroke="#1e293b" stroke-width="1" />
-      <text x="100" y="20" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600" fill="#4ade80">⬢ Docker • AWS • Linux</text>
+    <!-- Hero Name Display -->
+    <text x="450" y="116" text-anchor="middle" class="font-title" font-size="38" font-weight="900" fill="url(#textShimmer)" letter-spacing="3" filter="url(#softGlow)">
+      THANAPHAT CHICHU
+    </text>
+
+    <!-- Role Subtitle -->
+    <text x="450" y="148" text-anchor="middle" class="font-mono" font-size="13.5" font-weight="600" fill="#38bdf8" letter-spacing="1.5">
+      FULL STACK DEVELOPER // BACKEND &amp; CLOUD SYSTEMS ENGINEER
+    </text>
+
+    <!-- Interactive Stack Quick Bar (Bottom) -->
+    <g transform="translate(45, 178)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="185" height="32" rx="6" fill="#0b1329" fill-opacity="0.9" stroke="#1e293b" stroke-width="1" />
+        <text x="92.5" y="20" text-anchor="middle" class="font-mono" font-size="11" font-weight="600" fill="#f8fafc">✦ Next.js • React • TS</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(195, 0)">
+        <rect width="195" height="32" rx="6" fill="#0b1329" fill-opacity="0.9" stroke="#1e293b" stroke-width="1" />
+        <text x="97.5" y="20" text-anchor="middle" class="font-mono" font-size="11" font-weight="600" fill="#38bdf8">◈ FastAPI • Python Async</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(400, 0)">
+        <rect width="200" height="32" rx="6" fill="#0b1329" fill-opacity="0.9" stroke="#1e293b" stroke-width="1" />
+        <text x="100" y="20" text-anchor="middle" class="font-mono" font-size="11" font-weight="600" fill="#a855f7">⬡ PostgreSQL • Prisma</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(610, 0)">
+        <rect width="200" height="32" rx="6" fill="#0b1329" fill-opacity="0.9" stroke="#1e293b" stroke-width="1" />
+        <text x="100" y="20" text-anchor="middle" class="font-mono" font-size="11" font-weight="600" fill="#4ade80">⬢ Docker • AWS • Linux</text>
+      </g>
     </g>
   </g>
 </svg>
