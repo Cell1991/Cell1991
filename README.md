@@ -5,7 +5,7 @@
 <div align="center">
 
   <!-- Self-Hosted High-Resolution Animated SVG Banner -->
-  <img src="./assets/header.svg" width="100%" alt="Thanaphat Chichu - Full Stack & Backend Systems Architect" />
+  <img src="./assets/hero_header.svg" width="100%" alt="Thanaphat Chichu - Full Stack & Backend Systems Architect" />
 
   <br/><br/>
 
