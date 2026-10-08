@@ -107,6 +107,73 @@
         to { transform: rotate(360deg); }
       }
 
+      /* Radar Detection and Phosphor Persistence (Synchronized with 4s Sweep) */
+      @keyframes radarBlip1 {
+        0%, 49.5% { opacity: 0; transform: scale(0.4); }
+        50% { opacity: 1; transform: scale(1.4); }
+        53% { opacity: 0.15; transform: scale(1); }
+        56% { opacity: 1; transform: scale(1.15); }
+        60% { opacity: 0.25; transform: scale(1); }
+        65% { opacity: 0.95; transform: scale(1.05); }
+        72% { opacity: 0.35; transform: scale(1); }
+        80% { opacity: 0.7; transform: scale(0.95); }
+        88% { opacity: 0.2; transform: scale(0.85); }
+        94% { opacity: 0.05; transform: scale(0.7); }
+        98%, 100% { opacity: 0; transform: scale(0.4); }
+      }
+      @keyframes radarSonar1A {
+        0%, 49.9% { opacity: 0; transform: scale(0.1); stroke-width: 2px; }
+        50% { opacity: 1; transform: scale(0.2); stroke-width: 2px; }
+        66% { opacity: 0.6; transform: scale(1.1); stroke-width: 1.2px; }
+        80% { opacity: 0; transform: scale(1.8); stroke-width: 0.5px; }
+        100% { opacity: 0; transform: scale(1.9); }
+      }
+      @keyframes radarSonar1B {
+        0%, 55.9% { opacity: 0; transform: scale(0.1); stroke-width: 1.8px; }
+        56% { opacity: 0.9; transform: scale(0.2); stroke-width: 1.8px; }
+        72% { opacity: 0.5; transform: scale(1.0); stroke-width: 1px; }
+        86% { opacity: 0; transform: scale(1.6); stroke-width: 0.5px; }
+        100% { opacity: 0; transform: scale(1.7); }
+      }
+
+      @keyframes radarBlip2 {
+        0%, 61.5% { opacity: 0; transform: scale(0.4); }
+        62% { opacity: 1; transform: scale(1.35); }
+        65% { opacity: 0.15; transform: scale(1); }
+        68% { opacity: 1; transform: scale(1.15); }
+        72% { opacity: 0.2; transform: scale(1); }
+        77% { opacity: 0.85; transform: scale(1.05); }
+        84% { opacity: 0.35; transform: scale(0.95); }
+        90% { opacity: 0.15; transform: scale(0.85); }
+        95%, 100% { opacity: 0; transform: scale(0.4); }
+      }
+      @keyframes radarSonar2 {
+        0%, 61.9% { opacity: 0; transform: scale(0.1); stroke-width: 1.6px; }
+        62% { opacity: 0.95; transform: scale(0.2); stroke-width: 1.6px; }
+        76% { opacity: 0.5; transform: scale(1.1); stroke-width: 1px; }
+        88% { opacity: 0; transform: scale(1.7); stroke-width: 0.5px; }
+        100% { opacity: 0; transform: scale(1.8); }
+      }
+
+      @keyframes radarBlip3 {
+        0%, 11.5% { opacity: 0; transform: scale(0.4); }
+        12% { opacity: 1; transform: scale(1.35); }
+        15% { opacity: 0.15; transform: scale(1); }
+        18% { opacity: 1; transform: scale(1.15); }
+        22% { opacity: 0.2; transform: scale(1); }
+        27% { opacity: 0.85; transform: scale(1.05); }
+        34% { opacity: 0.35; transform: scale(0.95); }
+        40% { opacity: 0.15; transform: scale(0.85); }
+        45%, 100% { opacity: 0; transform: scale(0.4); }
+      }
+      @keyframes radarSonar3 {
+        0%, 11.9% { opacity: 0; transform: scale(0.1); stroke-width: 1.6px; }
+        12% { opacity: 0.95; transform: scale(0.2); stroke-width: 1.6px; }
+        26% { opacity: 0.5; transform: scale(1.1); stroke-width: 1px; }
+        38% { opacity: 0; transform: scale(1.7); stroke-width: 0.5px; }
+        100% { opacity: 0; transform: scale(1.8); }
+      }
+
       .ship-flight {
         animation: rocketAnnualFlight 8.5s ease-in-out infinite;
       }
@@ -130,6 +197,34 @@
       .sweep-beam {
         transform-origin: 0px 0px;
         animation: radarSweep 4s linear infinite;
+      }
+      .blip-lock {
+        transform-origin: 0px 0px;
+        animation: radarBlip1 4s linear infinite;
+      }
+      .sonar-1a {
+        transform-origin: 0px 0px;
+        animation: radarSonar1A 4s cubic-bezier(0.1, 0.4, 0.2, 1) infinite;
+      }
+      .sonar-1b {
+        transform-origin: 0px 0px;
+        animation: radarSonar1B 4s cubic-bezier(0.1, 0.4, 0.2, 1) infinite;
+      }
+      .blip-contact2 {
+        transform-origin: 0px 0px;
+        animation: radarBlip2 4s linear infinite;
+      }
+      .sonar-2 {
+        transform-origin: 0px 0px;
+        animation: radarSonar2 4s cubic-bezier(0.1, 0.4, 0.2, 1) infinite;
+      }
+      .blip-contact3 {
+        transform-origin: 0px 0px;
+        animation: radarBlip3 4s linear infinite;
+      }
+      .sonar-3 {
+        transform-origin: 0px 0px;
+        animation: radarSonar3 4s cubic-bezier(0.1, 0.4, 0.2, 1) infinite;
       }
     </style>
   </defs>
@@ -632,27 +727,71 @@
 
     <!-- Crosshair Quadrant from Real GitHub Profile -->
     <g transform="translate(150, 75)">
-      <!-- Radar Sweep Beam -->
+      <!-- Radar Concentric Range Rings (16px, 32px, 48px) -->
+      <circle cx="0" cy="0" r="16" stroke="#162036" stroke-width="0.8" stroke-dasharray="2, 2" fill="none" />
+      <circle cx="0" cy="0" r="32" stroke="#1b2844" stroke-width="0.9" stroke-dasharray="2, 2" fill="none" />
+      <circle cx="0" cy="0" r="48" stroke="#1e293b" stroke-width="1.2" stroke-dasharray="3, 3" fill="none" />
+
+      <!-- Crosshair Axes -->
+      <line x1="-58" y1="0" x2="58" y2="0" stroke="#1e293b" stroke-width="1.5" />
+      <line x1="0" y1="-38" x2="0" y2="38" stroke="#1e293b" stroke-width="1.5" />
+
+      <!-- Commits Line (99%) Underlay Axis -->
+      <line x1="0" y1="0" x2="-48" y2="0" stroke="#22c55e" stroke-width="2.5" stroke-opacity="0.85" />
+
+      <!-- Radar Sweep Beam (Rotating Clockwise 360 deg in 4s) -->
       <g class="sweep-beam">
-        <line x1="0" y1="0" x2="48" y2="0" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.8" />
+        <line x1="0" y1="0" x2="48" y2="0" stroke="#22c55e" stroke-width="1.5" stroke-opacity="0.85" />
         <path d="M 0 0 L 44 -19 A 48 48 0 0 1 48 0 Z" fill="url(#radarCone)" />
       </g>
 
-      <!-- Outer Radar Ring & Crosshair Axes -->
-      <circle cx="0" cy="0" r="48" stroke="#1e293b" stroke-width="1.2" stroke-dasharray="3, 3" fill="none" />
-      <line x1="-58" y1="0" x2="58" y2="0" stroke="#1e293b" stroke-width="1.5" />
-      <line x1="0" y1="-38" x2="0" y2="38" stroke="#1e293b" stroke-width="1.5" />
+      <!-- RADAR CONTACT 3: Bottom-Right Quadrant (bearing ~42 deg, sweeps at 12%) -->
+      <g transform="translate(24, 22)">
+        <circle cx="0" cy="0" r="12" class="sonar-3" fill="none" stroke="#38bdf8" />
+        <g class="blip-contact3">
+          <circle cx="0" cy="0" r="2.2" fill="#38bdf8" filter="url(#laserGlow)" />
+          <path d="M -3 -1.5 L -3 -3 L -1.5 -3 M 1.5 -3 L 3 -3 L 3 -1.5 M -3 1.5 L -3 3 L -1.5 3 M 1.5 3 L 3 3 L 3 1.5" stroke="#38bdf8" stroke-width="0.7" fill="none" />
+          <text x="5" y="2" font-size="5.5" fill="#38bdf8" font-family="ui-monospace, monospace" font-weight="700">SIG·A</text>
+        </g>
+      </g>
+
+      <!-- RADAR CONTACT 2: Top-Left Quadrant (bearing ~222.5 deg, sweeps at 62%) -->
+      <g transform="translate(-24, -22)">
+        <circle cx="0" cy="0" r="12" class="sonar-2" fill="none" stroke="#00f2fe" />
+        <g class="blip-contact2">
+          <circle cx="0" cy="0" r="2.2" fill="#00f2fe" filter="url(#laserGlow)" />
+          <path d="M -3 -1.5 L -3 -3 L -1.5 -3 M 1.5 -3 L 3 -3 L 3 -1.5 M -3 1.5 L -3 3 L -1.5 3 M 1.5 3 L 3 3 L 3 1.5" stroke="#00f2fe" stroke-width="0.7" fill="none" />
+          <text x="5" y="2" font-size="5.5" fill="#00f2fe" font-family="ui-monospace, monospace" font-weight="700">SIG·B</text>
+        </g>
+      </g>
+
+      <!-- RADAR CONTACT 1 (PRIMARY LOCK): 99% Commits Node at (-48, 0) (sweeps at 50%) -->
+      <!-- Permanent subtle anchor node -->
+      <circle cx="-48" cy="0" r="2.5" fill="#15803d" opacity="0.6" />
+      <g transform="translate(-48, 0)">
+        <!-- Expanding Sonar Ping Rings -->
+        <circle cx="0" cy="0" r="14" class="sonar-1a" fill="none" stroke="#22c55e" />
+        <circle cx="0" cy="0" r="14" class="sonar-1b" fill="none" stroke="#00f2fe" />
+
+        <!-- Detected Target Lock Blip Reticle & Beacon (Blinks & Phosphor Decay) -->
+        <g class="blip-lock">
+          <!-- Outer Lock Reticle Brackets -->
+          <path d="M -6 -3 L -6 -6 L -3 -6 M 3 -6 L 6 -6 L 6 -3 M -6 3 L -6 6 L -3 6 M 3 6 L 6 6 L 6 3" stroke="#00f2fe" stroke-width="1.2" fill="none" />
+          <!-- Neon Target Beacon Dot -->
+          <circle cx="0" cy="0" r="3.5" fill="#39d353" filter="url(#nodeGlow)" />
+          <circle cx="0" cy="0" r="1.5" fill="#ffffff" />
+        </g>
+      </g>
 
       <!-- Labels -->
       <text x="0" y="-42" text-anchor="middle" class="font-ui" font-size="8" fill="#94a3b8">Code review</text>
       <text x="64" y="3" text-anchor="start" class="font-ui" font-size="8" fill="#64748b">Issues</text>
       <text x="0" y="46" text-anchor="middle" class="font-ui" font-size="8" fill="#64748b">Pull requests (1%)</text>
-      
-      <!-- Commits Line (99%) Glowing & Target Locked -->
-      <line x1="0" y1="0" x2="-48" y2="0" stroke="#22c55e" stroke-width="2.5" />
-      <circle cx="-48" cy="0" r="3.5" fill="#39d353" filter="url(#nodeGlow)" />
       <text x="-54" y="-4" text-anchor="end" class="font-ui" font-size="9" font-weight="700" fill="#22c55e">99% Commits</text>
+
+      <!-- Radar Center Core Hub -->
       <circle cx="0" cy="0" r="2.5" fill="#00f2fe" />
+      <circle cx="0" cy="0" r="1" fill="#ffffff" />
     </g>
 
     <!-- Sub-info -->
