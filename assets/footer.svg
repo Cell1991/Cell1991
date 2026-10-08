@@ -1,28 +1,200 @@
-<svg width="100%" height="100%" viewBox="0 0 900 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="100%" viewBox="0 0 900 86" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#040711" />
-      <stop offset="50%" stop-color="#090d1a" />
-      <stop offset="100%" stop-color="#0e1424" />
+    <!-- Dark Cosmic Void Gradient -->
+    <linearGradient id="footerCosmicBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040713" />
+      <stop offset="50%" stop-color="#080e22" />
+      <stop offset="100%" stop-color="#0c1328" />
     </linearGradient>
 
-    <linearGradient id="footerGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8" />
+    <!-- Neon Cyber Border Gradient -->
+    <linearGradient id="footerBorderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#818cf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.9" />
     </linearGradient>
+
+    <!-- Shimmering Text Gradient -->
+    <linearGradient id="shimmerAuthor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="30%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#a855f7" />
+      <animate attributeName="x1" from="-100%" to="100%" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="0%" to="200%" dur="4s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- Shooting Star Gradient -->
+    <linearGradient id="meteorTail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0" />
+      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Radial Nebula Clouds -->
+    <radialGradient id="nebulaCyan" cx="15%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="nebulaPurple" cx="85%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft Sparkle Glow Filter -->
+    <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, Menlo, Consolas, monospace; }
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+      /* Star Twinkle Animations with Varied Timing */
+      @keyframes twinkleA {
+        0%, 100% { opacity: 0.2; transform: scale(0.65); }
+        50% { opacity: 1; transform: scale(1.35); }
+      }
+      @keyframes twinkleB {
+        0%, 100% { opacity: 0.95; transform: scale(1.3); }
+        50% { opacity: 0.15; transform: scale(0.55); }
+      }
+      @keyframes twinkleC {
+        0%, 100% { opacity: 0.35; transform: scale(0.8); }
+        50% { opacity: 1; transform: scale(1.45); }
+      }
+
+      /* Big 4-Point Sparkle Star Breath */
+      @keyframes sparklePulse1 {
+        0%, 100% { transform: scale(0.7) rotate(0deg); opacity: 0.3; }
+        50% { transform: scale(1.3) rotate(45deg); opacity: 1; }
+      }
+      @keyframes sparklePulse2 {
+        0%, 100% { transform: scale(1.2) rotate(45deg); opacity: 1; }
+        50% { transform: scale(0.6) rotate(0deg); opacity: 0.25; }
+      }
+
+      /* Elegant Shooting Star Streak */
+      @keyframes shootingStarAnim {
+        0% { transform: translate(-80px, -40px); opacity: 0; }
+        5% { opacity: 0.9; }
+        20% { transform: translate(320px, 90px); opacity: 0; }
+        100% { transform: translate(320px, 90px); opacity: 0; }
+      }
+
+      .star-a { animation: twinkleA 2.4s ease-in-out infinite; }
+      .star-b { animation: twinkleB 3.2s ease-in-out infinite; }
+      .star-c { animation: twinkleC 2.8s ease-in-out infinite; }
+
+      .sparkle-1 { transform-origin: 75px 28px; animation: sparklePulse1 2.6s ease-in-out infinite; }
+      .sparkle-2 { transform-origin: 825px 26px; animation: sparklePulse2 3s ease-in-out infinite; }
+      .sparkle-3 { transform-origin: 195px 60px; animation: sparklePulse2 2.7s ease-in-out infinite; }
+      .sparkle-4 { transform-origin: 710px 58px; animation: sparklePulse1 3.3s ease-in-out infinite; }
+
+      .meteor { animation: shootingStarAnim 7s ease-in-out infinite; }
+    </style>
   </defs>
 
-  <!-- Background Card -->
-  <rect width="900" height="80" rx="12" fill="url(#footerBg)" />
-  <rect x="1" y="1" width="898" height="78" rx="11" fill="none" stroke="url(#footerGlow)" stroke-width="1" />
+  <!-- ======================================================== -->
+  <!-- 01. COSMIC BACKGROUND & NEBULA AURA                      -->
+  <!-- ======================================================== -->
+  <rect width="900" height="86" rx="14" fill="url(#footerCosmicBg)" />
+  <rect width="900" height="86" rx="14" fill="url(#nebulaCyan)" />
+  <rect width="900" height="86" rx="14" fill="url(#nebulaPurple)" />
 
-  <!-- Center Text -->
-  <text x="450" y="38" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="600" fill="#94a3b8" letter-spacing="1.5">
-    ✦ DESIGNED &amp; ARCHITECTED BY <tspan fill="#38bdf8">THANAPHAT CHICHU</tspan> (@Cell1991) ✦
+  <!-- Outer Neon Border Frame -->
+  <rect x="1" y="1" width="898" height="84" rx="13" fill="none" stroke="url(#footerBorderGlow)" stroke-width="1.2" />
+
+  <!-- Tech Corner Brackets -->
+  <path d="M 10 20 L 10 10 L 20 10" fill="none" stroke="#00f2fe" stroke-width="2" />
+  <path d="M 890 20 L 890 10 L 880 10" fill="none" stroke="#a855f7" stroke-width="2" />
+  <path d="M 10 66 L 10 76 L 20 76" fill="none" stroke="#00f2fe" stroke-width="2" />
+  <path d="M 890 66 L 890 76 L 880 76" fill="none" stroke="#a855f7" stroke-width="2" />
+
+  <!-- ======================================================== -->
+  <!-- 02. TWINKLING STARS & CELESTIAL STARDUST (ประกายดวงดาว)  -->
+  <!-- ======================================================== -->
+
+  <!-- Subtle Gliding Shooting Star -->
+  <g class="meteor">
+    <line x1="120" y1="6" x2="190" y2="35" stroke="url(#meteorTail)" stroke-width="1.6" stroke-linecap="round" />
+    <circle cx="190" cy="35" r="1.8" fill="#ffffff" filter="url(#starGlow)" />
+  </g>
+
+  <!-- Layer 1: Twinkle Rhythm A (Cyan & Diamond White) -->
+  <g class="star-a" fill="#00f2fe">
+    <circle cx="45" cy="22" r="1.2" />
+    <circle cx="115" cy="65" r="1.4" fill="#ffffff" />
+    <circle cx="160" cy="18" r="1" />
+    <circle cx="230" cy="40" r="1.3" />
+    <circle cx="310" cy="72" r="0.9" fill="#ffffff" />
+    <circle cx="410" cy="14" r="1.2" />
+    <circle cx="590" cy="74" r="1.1" />
+    <circle cx="670" cy="20" r="1.3" fill="#ffffff" />
+    <circle cx="755" cy="42" r="1" />
+    <circle cx="850" cy="68" r="1.4" />
+  </g>
+
+  <!-- Layer 2: Twinkle Rhythm B (Purple & Silver) -->
+  <g class="star-b" fill="#c084fc">
+    <circle cx="85" cy="52" r="1.3" />
+    <circle cx="138" cy="32" r="0.9" fill="#ffffff" />
+    <circle cx="270" cy="16" r="1.4" />
+    <circle cx="350" cy="62" r="1.1" />
+    <circle cx="480" cy="76" r="1.2" fill="#ffffff" />
+    <circle cx="540" cy="15" r="1" />
+    <circle cx="630" cy="60" r="1.4" />
+    <circle cx="780" cy="18" r="1.1" fill="#ffffff" />
+    <circle cx="865" cy="35" r="1.2" />
+  </g>
+
+  <!-- Layer 3: Twinkle Rhythm C (Gold & Electric Blue) -->
+  <g class="star-c" fill="#38bdf8">
+    <circle cx="30" cy="60" r="1" />
+    <circle cx="175" cy="74" r="1.3" fill="#fef08a" />
+    <circle cx="255" cy="58" r="0.8" />
+    <circle cx="380" cy="22" r="1.2" />
+    <circle cx="510" cy="12" r="1.1" fill="#fef08a" />
+    <circle cx="690" cy="70" r="1.2" />
+    <circle cx="740" cy="26" r="0.8" />
+    <circle cx="810" cy="74" r="1.3" fill="#fef08a" />
+    <circle cx="880" cy="54" r="1.1" />
+  </g>
+
+  <!-- 4 Large Sparkling 4-Pointed Stars (ประกายดาว 4 แฉกเรืองแสง) -->
+  <!-- Top Left Sparkle -->
+  <g class="sparkle-1" filter="url(#starGlow)">
+    <path d="M 75 22 Q 75 28 69 28 Q 75 28 75 34 Q 75 28 81 28 Q 75 28 75 22 Z" fill="#ffffff" />
+    <circle cx="75" cy="28" r="1" fill="#00f2fe" />
+  </g>
+
+  <!-- Bottom Left Sparkle -->
+  <g class="sparkle-3" filter="url(#starGlow)">
+    <path d="M 195 55 Q 195 60 190 60 Q 195 60 195 65 Q 195 60 200 60 Q 195 60 195 55 Z" fill="#38bdf8" />
+  </g>
+
+  <!-- Top Right Sparkle -->
+  <g class="sparkle-2" filter="url(#starGlow)">
+    <path d="M 825 20 Q 825 26 819 26 Q 825 26 825 32 Q 825 26 831 26 Q 825 26 825 20 Z" fill="#ffffff" />
+    <circle cx="825" cy="26" r="1" fill="#a855f7" />
+  </g>
+
+  <!-- Bottom Right Sparkle -->
+  <g class="sparkle-4" filter="url(#starGlow)">
+    <path d="M 710 53 Q 710 58 705 58 Q 710 58 710 63 Q 710 58 715 58 Q 710 58 710 53 Z" fill="#c084fc" />
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 03. CENTER FOREGROUND TYPOGRAPHY                         -->
+  <!-- ======================================================== -->
+  <text x="450" y="40" text-anchor="middle" class="font-mono" font-size="13" font-weight="700" fill="#94a3b8" letter-spacing="1.5">
+    ✦ DESIGNED &amp; ARCHITECTED BY <tspan fill="url(#shimmerAuthor)" font-weight="800">THANAPHAT CHICHU</tspan> (@Cell1991) ✦
   </text>
-  
-  <text x="450" y="58" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#64748b" letter-spacing="0.5">
+
+  <text x="450" y="62" text-anchor="middle" class="font-sans" font-size="11.5" font-weight="500" fill="#64748b" letter-spacing="0.5">
     Focused on High-Performance Microservices, Clean System Architecture &amp; Cloud Infrastructure
   </text>
 </svg>

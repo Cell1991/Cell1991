@@ -250,6 +250,6 @@
   <br/>
 
   <!-- Self-Hosted High-Resolution SVG Footer -->
-  <img src="./assets/footer.svg" width="100%" alt="Footer Banner" />
+  <img src="./assets/footer.svg?v=2" width="100%" alt="Footer Banner" />
 
 </div>
