@@ -191,7 +191,7 @@
   <br/><br/>
 
   <!-- Self-Hosted Animated Starship Orbital Telemetry Matrix -->
-  <img src="./assets/snake_matrix.svg?v=3" width="100%" alt="Starship Flight Telemetry & 365-Day Annual Orbital Matrix" />
+  <img src="./assets/snake_matrix.svg?v=4" width="100%" alt="Starship Flight Telemetry & 365-Day Annual Orbital Matrix" />
 
   <br/><br/>
 
