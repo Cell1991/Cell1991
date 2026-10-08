@@ -225,6 +225,12 @@
 
   <br/>
 
+  <!-- Self-Hosted Animated Cosmic Starfield Communications Card -->
+  <img src="./assets/contact_card.svg?v=1" width="100%" alt="Communications & Collaboration Hub" />
+
+  <br/><br/>
+
+  <!-- Direct Clickable Badges -->
   <p align="center">
     <a href="https://github.com/Cell1991" target="_blank">
       <img src="https://img.shields.io/badge/GitHub-Cell1991-030712?style=for-the-badge&logo=github&logoColor=00f2fe&labelColor=0b0f19" alt="GitHub Profile" />

@@ -1,0 +1,241 @@
+<svg width="100%" height="100%" viewBox="0 0 860 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="contactBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040713" />
+      <stop offset="50%" stop-color="#080e22" />
+      <stop offset="100%" stop-color="#0c1328" />
+    </linearGradient>
+
+    <!-- Outer Border Glow -->
+    <linearGradient id="contactBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.85" />
+      <stop offset="35%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="70%" stop-color="#818cf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.85" />
+    </linearGradient>
+
+    <!-- Shooting Star Gradient -->
+    <linearGradient id="starTail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0" />
+      <stop offset="70%" stop-color="#38bdf8" stroke-opacity="0.5" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Pill Background -->
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1226" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#080d1b" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Radial Nebulas -->
+    <radialGradient id="nebulaLeft" cx="15%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="nebulaRight" cx="85%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glow Filter -->
+    <filter id="sparkleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .font-ui { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, Menlo, Consolas, monospace; }
+
+      /* Star Twinkle Animations */
+      @keyframes twinkle1 {
+        0%, 100% { opacity: 0.2; transform: scale(0.65); }
+        50% { opacity: 1; transform: scale(1.35); }
+      }
+      @keyframes twinkle2 {
+        0%, 100% { opacity: 0.95; transform: scale(1.3); }
+        50% { opacity: 0.15; transform: scale(0.55); }
+      }
+      @keyframes twinkle3 {
+        0%, 100% { opacity: 0.35; transform: scale(0.8); }
+        50% { opacity: 1; transform: scale(1.45); }
+      }
+
+      /* 4-Point Sparkle Pulse */
+      @keyframes starPulse1 {
+        0%, 100% { transform: scale(0.7) rotate(0deg); opacity: 0.3; }
+        50% { transform: scale(1.3) rotate(45deg); opacity: 1; }
+      }
+      @keyframes starPulse2 {
+        0%, 100% { transform: scale(1.2) rotate(45deg); opacity: 1; }
+        50% { transform: scale(0.6) rotate(0deg); opacity: 0.25; }
+      }
+
+      /* Shooting Star */
+      @keyframes cometRun {
+        0% { transform: translate(-60px, -30px); opacity: 0; }
+        4% { opacity: 0.95; }
+        18% { transform: translate(360px, 80px); opacity: 0; }
+        100% { transform: translate(360px, 80px); opacity: 0; }
+      }
+
+      @keyframes liveDot {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+      }
+
+      .star-layer-1 { animation: twinkle1 2.3s ease-in-out infinite; }
+      .star-layer-2 { animation: twinkle2 3.1s ease-in-out infinite; }
+      .star-layer-3 { animation: twinkle3 2.7s ease-in-out infinite; }
+
+      .big-sparkle-1 { transform-origin: 50px 24px; animation: starPulse1 2.8s ease-in-out infinite; }
+      .big-sparkle-2 { transform-origin: 810px 22px; animation: starPulse2 3.2s ease-in-out infinite; }
+      .big-sparkle-3 { transform-origin: 120px 125px; animation: starPulse2 2.5s ease-in-out infinite; }
+      .big-sparkle-4 { transform-origin: 740px 122px; animation: starPulse1 3.0s ease-in-out infinite; }
+
+      .comet-streak { animation: cometRun 6.5s ease-in-out infinite; }
+      .status-dot { animation: liveDot 2s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- ======================================================== -->
+  <!-- 01. COSMIC BACKGROUND & TWINKLING STARFIELD               -->
+  <!-- ======================================================== -->
+  <rect width="860" height="148" rx="14" fill="url(#contactBg)" stroke="url(#contactBorder)" stroke-width="1.2" />
+  <rect width="860" height="148" rx="14" fill="url(#nebulaLeft)" />
+  <rect width="860" height="148" rx="14" fill="url(#nebulaRight)" />
+
+  <!-- Corner Tech Geometry -->
+  <path d="M 10 22 L 10 10 L 22 10" fill="none" stroke="#00f2fe" stroke-width="2" />
+  <path d="M 850 22 L 850 10 L 838 10" fill="none" stroke="#a855f7" stroke-width="2" />
+  <path d="M 10 126 L 10 138 L 22 138" fill="none" stroke="#00f2fe" stroke-width="2" />
+  <path d="M 850 126 L 850 138 L 838 138" fill="none" stroke="#a855f7" stroke-width="2" />
+
+  <!-- Shooting Star Streak -->
+  <g class="comet-streak">
+    <line x1="80" y1="8" x2="160" y2="40" stroke="url(#starTail)" stroke-width="1.6" stroke-linecap="round" />
+    <circle cx="160" cy="40" r="1.8" fill="#ffffff" filter="url(#sparkleGlow)" />
+  </g>
+
+  <!-- Twinkling Stars (ประกายดวงดาวระยิบระยับ Layer 1, 2, 3) -->
+  <g class="star-layer-1" fill="#00f2fe">
+    <circle cx="35" cy="45" r="1.2" />
+    <circle cx="95" cy="18" r="1.4" fill="#ffffff" />
+    <circle cx="180" cy="38" r="1" />
+    <circle cx="270" cy="15" r="1.3" />
+    <circle cx="390" cy="42" r="0.9" fill="#ffffff" />
+    <circle cx="480" cy="16" r="1.2" />
+    <circle cx="580" cy="38" r="1.1" />
+    <circle cx="680" cy="18" r="1.3" fill="#ffffff" />
+    <circle cx="770" cy="45" r="1" />
+    <circle cx="830" cy="65" r="1.4" />
+  </g>
+
+  <g class="star-layer-2" fill="#c084fc">
+    <circle cx="60" cy="95" r="1.3" />
+    <circle cx="140" cy="135" r="0.9" fill="#ffffff" />
+    <circle cx="230" cy="100" r="1.4" />
+    <circle cx="330" cy="138" r="1.1" />
+    <circle cx="440" cy="98" r="1.2" fill="#ffffff" />
+    <circle cx="530" cy="135" r="1" />
+    <circle cx="630" cy="102" r="1.4" />
+    <circle cx="710" cy="138" r="1.1" fill="#ffffff" />
+    <circle cx="800" cy="98" r="1.2" />
+  </g>
+
+  <g class="star-layer-3" fill="#38bdf8">
+    <circle cx="25" cy="118" r="1" />
+    <circle cx="105" cy="72" r="1.3" fill="#fef08a" />
+    <circle cx="210" cy="125" r="0.8" />
+    <circle cx="310" cy="65" r="1.2" />
+    <circle cx="410" cy="128" r="1.1" fill="#fef08a" />
+    <circle cx="510" cy="68" r="1.2" />
+    <circle cx="610" cy="125" r="0.8" />
+    <circle cx="740" cy="70" r="1.3" fill="#fef08a" />
+    <circle cx="835" cy="122" r="1.1" />
+  </g>
+
+  <!-- 4 Large Sparkling 4-Point Stars -->
+  <g class="big-sparkle-1" filter="url(#sparkleGlow)">
+    <path d="M 50 18 Q 50 24 44 24 Q 50 24 50 30 Q 50 24 56 24 Q 50 24 50 18 Z" fill="#ffffff" />
+    <circle cx="50" cy="24" r="1" fill="#00f2fe" />
+  </g>
+  <g class="big-sparkle-2" filter="url(#sparkleGlow)">
+    <path d="M 810 16 Q 810 22 804 22 Q 810 22 810 28 Q 810 22 816 22 Q 810 22 810 16 Z" fill="#ffffff" />
+    <circle cx="810" cy="22" r="1" fill="#a855f7" />
+  </g>
+  <g class="big-sparkle-3" filter="url(#sparkleGlow)">
+    <path d="M 120 120 Q 120 125 115 125 Q 120 125 120 130 Q 120 125 125 125 Q 120 125 120 120 Z" fill="#38bdf8" />
+  </g>
+  <g class="big-sparkle-4" filter="url(#sparkleGlow)">
+    <path d="M 740 117 Q 740 122 735 122 Q 740 122 740 127 Q 740 122 745 122 Q 740 122 740 117 Z" fill="#c084fc" />
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 02. HEADER BAR INSIDE CARD                                -->
+  <!-- ======================================================== -->
+  <text x="28" y="26" class="font-ui" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="0.8">✦ TRANSMISSION CHANNELS &amp; PROTOCOLS</text>
+  
+  <g transform="translate(832, 22)">
+    <circle cx="-100" cy="0" r="3.5" fill="#22c55e" class="status-dot" />
+    <text x="-90" y="3.5" class="font-mono" font-size="9.5" font-weight="700" fill="#22c55e">ONLINE // READY</text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- 03. 5 HIGH-TECH CYBER CONTACT TERMINAL PILLS              -->
+  <!-- ======================================================== -->
+
+  <!-- ROW 1 (3 PILLS: GITHUB, EMAIL, FACEBOOK) -->
+  
+  <!-- Pill 1: GitHub (x=24, y=42, w=256, h=40) -->
+  <g transform="translate(24, 42)">
+    <rect width="256" height="40" rx="8" fill="url(#pillBg)" stroke="#00f2fe" stroke-width="1.2" stroke-opacity="0.8" />
+    <!-- GitHub Icon -->
+    <path d="M 28 20 C 28 15.6 24.4 12 20 12 C 15.6 12 12 15.6 12 20 C 12 23.5 14.3 26.5 17.4 27.5 C 17.8 27.6 17.9 27.3 17.9 27.1 C 17.9 26.9 17.9 26.4 17.9 25.8 C 15.7 26.3 15.2 24.8 15.2 24.8 C 14.8 23.9 14.3 23.6 14.3 23.6 C 13.6 23.1 14.4 23.1 14.4 23.1 C 15.2 23.2 15.6 23.9 15.6 23.9 C 16.3 25.1 17.4 24.8 17.8 24.6 C 17.9 24.1 18.1 23.7 18.3 23.5 C 16.5 23.3 14.7 22.6 14.7 19.5 C 14.7 18.6 15 17.9 15.6 17.3 C 15.5 17.1 15.2 16.3 15.7 15.1 C 15.7 15.1 16.4 14.9 17.9 16 C 18.6 15.8 19.3 15.7 20 15.7 C 20.7 15.7 21.4 15.8 22.1 16 C 23.6 14.9 24.3 15.1 24.3 15.1 C 24.8 16.3 24.5 17.1 24.4 17.3 C 25 17.9 25.3 18.6 25.3 19.5 C 25.3 22.6 23.5 23.3 21.7 23.5 C 22 23.7 22.2 24.2 22.2 25 C 22.2 26.1 22.2 26.9 22.2 27.1 C 22.2 27.3 22.3 27.6 22.8 27.5 C 25.8 26.5 28 23.5 28 20 Z" fill="#00f2fe" />
+    <text x="44" y="19" class="font-ui" font-size="9" font-weight="700" fill="#94a3b8" letter-spacing="0.5">GITHUB</text>
+    <text x="44" y="31" class="font-mono" font-size="11.5" font-weight="700" fill="#f8fafc">@Cell1991</text>
+  </g>
+
+  <!-- Pill 2: Email (x=300, y=42, w=260, h=40) -->
+  <g transform="translate(300, 42)">
+    <rect width="260" height="40" rx="8" fill="url(#pillBg)" stroke="#ea4335" stroke-width="1.2" stroke-opacity="0.8" />
+    <!-- Email Envelope Icon -->
+    <path d="M 14 15 L 26 15 C 27.1 15 28 15.9 28 17 L 28 25 C 28 26.1 27.1 27 26 27 L 14 27 C 12.9 27 12 26.1 12 25 L 12 17 C 12 15.9 12.9 15 14 15 Z" fill="none" stroke="#ea4335" stroke-width="1.5" />
+    <path d="M 12 17 L 20 22 L 28 17" fill="none" stroke="#ea4335" stroke-width="1.5" />
+    <text x="44" y="19" class="font-ui" font-size="9" font-weight="700" fill="#94a3b8" letter-spacing="0.5">DIRECT EMAIL</text>
+    <text x="44" y="31" class="font-mono" font-size="10.5" font-weight="700" fill="#f8fafc">celleb1991@gmail.com</text>
+  </g>
+
+  <!-- Pill 3: Facebook (x=580, y=42, w=256, h=40) -->
+  <g transform="translate(580, 42)">
+    <rect width="256" height="40" rx="8" fill="url(#pillBg)" stroke="#1877f2" stroke-width="1.2" stroke-opacity="0.8" />
+    <!-- Facebook Icon -->
+    <path d="M 22 13 L 18 13 C 15.8 13 14 14.8 14 17 L 14 19 L 12 19 L 12 22 L 14 22 L 14 28 L 17 28 L 17 22 L 20 22 L 21 19 L 17 19 L 17 17 C 17 16.4 17.4 16 18 16 L 22 16 L 22 13 Z" fill="#1877f2" />
+    <text x="44" y="19" class="font-ui" font-size="9" font-weight="700" fill="#94a3b8" letter-spacing="0.5">FACEBOOK</text>
+    <text x="44" y="31" class="font-mono" font-size="11" font-weight="700" fill="#f8fafc">Thanaphat Chichu</text>
+  </g>
+
+  <!-- ROW 2 (2 PILLS CENTERED: INSTAGRAM & LINE) -->
+  
+  <!-- Pill 4: Instagram (x=160, y=94, w=260, h=40) -->
+  <g transform="translate(160, 94)">
+    <rect width="260" height="40" rx="8" fill="url(#pillBg)" stroke="#e4405f" stroke-width="1.2" stroke-opacity="0.8" />
+    <!-- Instagram Camera Icon -->
+    <rect x="13" y="13" width="14" height="14" rx="4" fill="none" stroke="#e4405f" stroke-width="1.5" />
+    <circle cx="20" cy="20" r="3.5" fill="none" stroke="#e4405f" stroke-width="1.5" />
+    <circle cx="24.5" cy="15.5" r="0.8" fill="#e4405f" />
+    <text x="44" y="19" class="font-ui" font-size="9" font-weight="700" fill="#94a3b8" letter-spacing="0.5">INSTAGRAM</text>
+    <text x="44" y="31" class="font-mono" font-size="11" font-weight="700" fill="#f8fafc">@cell.tnp</text>
+  </g>
+
+  <!-- Pill 5: LINE (x=440, y=94, w=260, h=40) -->
+  <g transform="translate(440, 94)">
+    <rect width="260" height="40" rx="8" fill="url(#pillBg)" stroke="#06c755" stroke-width="1.2" stroke-opacity="0.8" />
+    <!-- LINE Speech Bubble Icon -->
+    <path d="M 20 13 C 15.6 13 12 16.1 12 19.8 C 12 22.2 13.5 24.3 15.8 25.4 L 15.2 27.6 C 15.1 27.8 15.4 28 15.6 27.8 L 18.5 26.2 C 19 26.3 19.5 26.4 20 26.4 C 24.4 26.4 28 23.3 28 19.8 C 28 16.1 24.4 13 20 13 Z" fill="none" stroke="#06c755" stroke-width="1.5" />
+    <text x="44" y="19" class="font-ui" font-size="9" font-weight="700" fill="#94a3b8" letter-spacing="0.5">LINE OFFICIAL ID</text>
+    <text x="44" y="31" class="font-mono" font-size="11" font-weight="700" fill="#f8fafc">cellz05</text>
+  </g>
+
+</svg>
